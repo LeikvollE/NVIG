@@ -1,4 +1,4 @@
-var mainPhoto = {source:"bilder/artikkelBilde1.png", alter:"artikkelbilde", heading:"Til alle med hjerte i NTNUI"};
+var mainPhoto = {source:"bilder/Topp.png", alter:"artikkelbilde", heading:"Til alle med hjerte i NTNUI"};
 var details = {dato:"08/11/17",forfatter:"Frédéric Ménard Lindboe"};
 var artikkelContent = [
     {type:"p",content:"\n" +
