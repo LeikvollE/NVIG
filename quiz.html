@@ -1,0 +1,70 @@
+<!--
+Filnavn: quiz.html
+Skrevet av: Lars Martin Hodne, Einar Viddal
+Når: November 2017
+Mening: Lage en grunnstruktur for quiz siden.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NVIG</title>
+    <link rel="shortcut icon" type="image/png" href="bilder/NVIGlogo2.png"/>
+    <link rel="stylesheet" href="css/quizStyle.css">
+    <link rel="stylesheet" href="css/defaultStyle.css">
+</head>
+<body>
+
+  <header id="headerContainer">
+  </header>
+
+  <main>
+    <div id="velgQuiz" class="contentDiv">
+      <h2>Velg en quiz!</h2>
+      <div id="quizListe">
+
+        <div class="quizValgBoks" id="quiz1">
+          <img src="bilder/mangeFlagg.jpg" alt="Flagg-Mosaikk">
+          <p> Hvor godt kjenner du disse flaggene</p>
+        </div>
+
+        <div class="quizValgBoks" id="quiz2">
+          <img src="bilder/eu_flag.jpg" alt="Eu-flagg">
+          <p>Gjett på europeiske flagg</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="SampleDiv" class="contentDiv">
+        <img id="img" src="" alt="alt">
+        <div id="sporsmaalsDiv">
+            <h3 id="tekst"></h3>
+            <label class="label"></label>
+            <label class="label"></label>
+            <label class="label"></label>
+            <label class="label"></label>
+        </div>
+        <div id="navDiv">
+            <input type="button" class="byttKnapp" value="<" id="knappForrige">
+            <div id="fremgang"></div>
+            <input type="button" class="byttKnapp" value=">" id="knappNeste">
+        </div>
+    </div>
+
+    <div id="ferdig">
+      <h2 id="antallRiktig"></h2>
+      <input type="button" id="avslutt" value="Tilbake til quiz startside">
+    </div>
+  </main>
+  <footer id="footer"></footer>
+  <script src="script/footer.js"></script>
+
+
+  <script src="script/dataMaler/quizer.js"></script>
+  <script src="script/quizJs.js"></script>
+  <script src="script/header.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+.contentDiv {
+    max-width: 1200px;
+    width:inherit;
+    background-color: #f2f2f2;
+    margin-bottom: 10px;
+    padding-bottom:1vh;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 3vw;
+}
+
+.bilde {
+    width: inherit;
+}
+
+#artikkel {
+    max-width: 1200px;
+    padding: 1px 2vh 20px;
+    font-size: 2vh;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    line-height: 1.625em;
+    font-family: "Helvetica";
+    font-size: 100%;
+}
+#artikkel h4 {
+    text-align: center;
+}
+#info p {
+    font-size: 1.5vh;
+}
+
+section {
+    max-width: 1200px;
+    width: 60vw;
+    margin:0 auto;
+}
+
+img{
+   max-width: 1200px;
+    display: block;
+    margin:0 auto;
+}
+
+#artikkel img{
+    max-width: 90%;
+}
+
+blockquote a, .dobbelDiv a, p a {
+    text-decoration: underline;
+}
+blockquote a:hover, p a:hover, .dobbelDiv a:hover {
+    text-decoration: none;
+}
+blockquote {
+    font-style: italic;
+    font-size: 80%;
+}
+.dobbelDiv {
+    display: inline-block;
+    width: 48%;
+    text-align: left;
+    padding: 1%;
+    align-self: flex-start;
+}
+.dobbelContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shareLinkFacebook {
+    padding: 5px 10px;
+    background-color: #3b5998;
+    color: #f7f7f7;
+    width: inherit;
+}
+
+.shareLinkTwitter {
+    display: inline;
+    padding: 5px 10px;
+    margin: 10px;
+    background-color: #55acee;
+    color: #f5f8fa;
+    width: inherit;
+}
+

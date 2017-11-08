@@ -1,0 +1,152 @@
+/*
+Filnavn: defaultStyle.css
+Skrevet av: Eirik Leikvoll, Einar Viddal, Lars Martin Hodne
+Når: Oktober/Noveber 2017
+Mening: Beskrive de generelle stilene til hver side, alle sidene vil være ta i bruk denne css filen.
+Dette inneholder generelle stiler, headeren og footeren.
+*/
+
+/* Default */
+body, html {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, Verdana, Georgia, Arial, sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1 0 auto;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Header */
+
+#header {
+    background-color: #c33838;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    min-height: 40px;
+    box-shadow: 0px 4px 20px #BBB;
+}
+b {
+    color: #c33838;
+}
+#header h1 {
+    margin: 0;
+    color: #FFF;
+    display: inline;
+    font-size: 6vh;
+}
+header a {
+    display: flex;
+    align-items: center;
+}
+
+#header img {
+    display: inline;
+    width:auto;
+    border-radius: 0;
+    height: 8vh;
+}
+
+#navbar {
+    background-color: #eee;
+    left: 0;
+    top:100%;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    height: 0;
+    font-size: 3vh;
+    flex-flow: row wrap;
+}
+@keyframes openNavbar{
+    0%    { height: 0;       padding: 0;            }
+    100%  { height: 20vh; padding: 1vh 0 4vh 0;  }
+}
+@keyframes closeNavbar{
+    0%    { height: 20vh; padding: 1vh 0 4vh 0;  }
+    100%  { height: 0;       padding: 0;            }
+}
+.menyDiv {
+    text-align: left;
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.menyDiv a {
+    margin: 0.7vh 0;
+}
+
+#navOpener {
+    margin: auto;
+    width: 33%;
+    height: 4vh;
+    background-color: #eee;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+#navOpener img {
+    width: auto;
+    max-height: 4vh;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+#arrow{
+    font-size: 4vh;
+    padding-top: 1vh;
+    font-weight: bold;
+}
+#arrow:hover {
+    cursor: pointer;
+}
+
+.closeArrow {
+    transform: rotate(180deg) !important;
+    transition: all 0.3s ease !important;
+}
+
+
+/* Footer */
+
+footer h3 {
+    color: #666666;
+}
+
+footer a {
+    text-decoration: underline;
+    color: #666666;
+}
+
+footer {
+    font-size: 2vh;
+    padding-top: 2vh;
+    height: 18vh;
+    text-align: center;
+    width: inherit;
+    background-color: #dbdbdb;
+    margin-top: 20px;
+    border-top: 1px solid darkgrey;
+}
+footer a:hover {
+    cursor: pointer;
+    color: #666666;
+    text-decoration: none;
+}

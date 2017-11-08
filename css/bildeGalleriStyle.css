@@ -1,0 +1,115 @@
+.bildeRad, .sisteBildeRad {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sisteBildeRad {
+    justify-content: space-around;
+}
+
+.imgDiv:hover img{
+    cursor: pointer;
+    -ms-transform: translate(2px,2px); /* IE 9 */
+    -webkit-transform: translate(2px,2px); /* Safari */
+    transform: translate(2px,2px);
+}
+
+@keyframes extend {
+    0% {height: 0;}
+    100% {height: 63vh;}
+}
+@keyframes retract {
+    0% {height: 63vh}
+    100% {height: 0;}
+}
+
+#overskrift {
+    font-size: 35px;
+}
+.boldOverskrift {
+    font-size: 140%;
+    color: #c33838;
+}
+
+section {
+    width: inherit;
+    padding:10px;
+}
+
+#pilDiv {
+    background-color: #dbdbdb;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: 12px;
+    margin: 0 auto;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari */
+    transform: rotate(45deg);
+}
+
+#infoDiv {
+    background-color: #dbdbdb;
+    position: relative;
+    width: 100%;
+    bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    animation: extend 0.4s ease-out 0s 1 forwards;
+}
+
+#fjernDiv {
+    background-color: #dbdbdb;
+    position: relative;
+    bottom: -5px;
+    animation: retract 0.4s ease-out 0s 1 forwards;
+}
+
+.bilde {
+    border: 1px solid #eee;
+}
+
+#bildeBeskrivelse, #flaggBeskrivelse {
+    white-space: pre-line;
+    min-width: 50%;
+    display: inline-block;
+    height: inherit;
+    animation: bliSynlig 0.6s linear 0s 1 forwards;
+}
+
+#bildeBeskrivelse img {
+    max-height: 80%;
+    max-width: 45vw;
+}
+
+#bildeIBeskrivelse, #paragraf {
+    position: relative;
+    top: 50%;
+    display: block;
+    margin:0 auto;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#paragraf {
+    padding: 5px;
+    overflow: auto;
+    max-height: 90%;
+    width: 90%;
+    font-size: 2.6vh;
+}
+
+@keyframes bliSynlig {
+    0% {opacity: 0;}
+    25% {opacity: 0.4;}
+    100% {opacity: 1;}
+}
+
+@keyframes bliUsynlig {
+    0% {opacity: 1;}
+    25% {opacity: 0.4;}
+    50% {opacity: 0}
+    100% {opacity: 0;}
+}
+

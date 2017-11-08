@@ -1,0 +1,22 @@
+{
+  "name":"A winner is you",
+  "map":"game/img/maps/mapWinscreen.png",
+  "nextLevel":"",
+  "lines":[
+    "Det ser ut til at alle flaggene i verden er trygge, takket være deg!"
+  ],
+  "winCondition":{
+    "red":1,
+    "blue":1,
+    "yellow":1
+  },
+  "startPosition":{
+    "x":100,
+    "y":300
+  },
+  "playerTextures":{
+    "red":"game/img/player/02Red.png",
+    "blue":"game/img/player/02Blue.png",
+    "yellow":"game/img/player/02Yellow.png"
+  }
+}

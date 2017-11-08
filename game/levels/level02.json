@@ -1,0 +1,29 @@
+{
+  "name":"Level 2",
+  "map":"game/img/maps/map02.png",
+  "nextLevel":"game/levels/level03.json",
+  "lines":[
+    "I sitt nyeste trekk har den spanske regjeringen bestemt",
+    "å fjerne fargene i Katalonia sitt flagg. Du må hjelpe",
+    "Katalonia å få tilbake fargene sine, men pass på for spanske",
+    "regjeringsstyrker. Blir du tatt vil de ta fra deg fargene",
+    "og du må starte på nytt",
+    ""
+  ],
+  "winCondition":{
+    "red":1,
+    "blue":1,
+    "yellow":1
+  },
+  "startPosition":{
+    "x":100,
+    "y":10
+  },
+  "playerTextures":{
+    "red":"game/img/player/02Red.png",
+    "blue":"game/img/player/02Blue.png",
+    "yellow":"game/img/player/02Yellow.png"
+  },
+  "endSong":"game/sound/catalonia.mp3",
+  "levelTheme":""
+}

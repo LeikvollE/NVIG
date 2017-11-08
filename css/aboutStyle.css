@@ -1,0 +1,59 @@
+#content {
+    display: flex;
+    margin: 0 auto;
+    width: 80vh;
+    height: 50vh;
+    background-color: #f2f2f2;
+    align-items: center;
+}
+
+#aboutDiv {
+    font-size: 2vh;
+    width: 70%;
+    padding: 10px;
+}
+
+
+#aboutNavigator {
+    border-width: 10px 10px 10px 0;
+    border-color: #c33838;
+    width: 30%;
+    height: inherit;
+}
+
+.button:first-of-type {
+    border-top: none;
+}
+
+#aboutDiv h2 {
+    color: #c33838;
+}
+
+.button {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 4.3vh;
+    border-style: solid;
+    border-color: #c33838;
+    border-width: 1px 1px 0 0;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    height: 20%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.button:hover {
+  background-color: #c33838;
+}
+
+.button:focus {
+    outline: none;
+    background-color: #c33838;
+    color: #FFF;
+    font-weight: bold;
+}
+

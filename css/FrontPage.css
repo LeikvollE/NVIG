@@ -1,0 +1,140 @@
+/*
+Filnavn: FrontPage.css
+Skrevet av: Einar Viddal, Eirik Leikvoll, Lars Martin Hodne
+Når: Oktober/Noveber 2017
+Mening: Beskrive stilen til front siden.
+*/
+
+body {
+    text-align: center;
+}
+
+main {
+    max-width: 1300px;
+    width: 60vw;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    /*border-radius: 5px 5px 0 0;*/
+}
+
+.contentSection {
+    margin-bottom: 10px;
+    width: inherit;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentDiv {
+    background-color: #EEE;
+    box-shadow: 0 1px 1px #BBB;
+    margin: 0;
+    padding: 0 0 10px 0;
+    /*border-radius: 5px;*/
+    height: inherit;
+    width: 100%;
+}
+
+.items_1  {
+    width: 100%;
+}
+
+.items_1 a {
+    height: 100%;
+    font-size: 4vw;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.items_2 {
+    width: 49%;
+}
+
+.items_2 a {
+    font-size: 2.9vw;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.items_3 {
+    width: 32%;
+}
+
+.items_3 a {
+    height: 100%;
+    font-size: 1.7vw;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+#twitterOgYoutube {
+    margin-top: 4vh;
+    width: 60vw;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+#twitter {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+iframe {
+    width: 49%;
+}
+
+.overskrift {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 480px) {
+    main {
+        width: 100vw;
+        padding: 0 10px 0 10px;
+    }
+    .contentSection {
+        flex-flow: column wrap;
+        flex: 1 1 auto;
+
+    }
+    .items_2 {
+        width: 100%;
+    }
+    .items_3 {
+        width: 100%;
+    }
+    .items_1 a {
+        height: 100%;
+        font-size: 4vw;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+    }
+    .items_2 a {
+        height: 100%;
+        font-size: 4vw;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+    }
+    .items_3 a {
+        height: 100%;
+        font-size: 4vw;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,39 @@
+<!--
+Filnavn: index.html
+Skrevet av: Einar Viddal
+Når: Oktober 2017
+Mening: Lage grunnsturkturen til frontsiden
+-->
+
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8">
+  <title>NVIG</title>
+  <link rel="shortcut icon" type="image/png" href="bilder/NVIGlogo2.png"/>
+  <link rel="stylesheet" href="css/defaultStyle.css">
+  <link rel="stylesheet" href="css/FrontPage.css">
+</head>
+<body>
+
+  <header id="headerContainer"></header>
+
+  <main>
+    <div id="articleDiv"></div>
+    <!--script plassert her lsik at artikklene lastes inn før twitter/youtube-->
+    <script type="text/javascript" src="script/FrontPage.js"></script>
+    <div id="twitterOgYoutube">
+      <div id="twitter">
+        <a class="twitter-timeline" data-theme="dark" data-width="98%" data-height="100%" data-theme="light" data-link-color="#2B7BB9" href="https://twitter.com/NVIGntnu?ref_src=twsrc%5Etfw">Tweets by NVIGntnu</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+
+      <iframe width="854" height="250vh" src="https://www.youtube.com/embed/pnv5iKB2hl4" frameborder="0" gesture="media" allowfullscreen></iframe>
+    </div>
+  </main>
+
+  <footer id="footer"></footer>
+  <script src="script/footer.js"></script>
+  <script type="text/javascript" src="script/header.js"></script>
+</body>
+</html>

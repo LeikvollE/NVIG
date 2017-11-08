@@ -1,0 +1,138 @@
+/*
+Filnavn: quizStyle.css
+Skrevet av: Lars Martin Hodne, Eirik Leikvoll, Einar Viddal
+Når: November 2017
+Mening: Beskrive stilen til quiz siden.
+*/
+
+h2 {
+  font-size: 30px;
+}
+
+.contentDiv {
+    width: 80vw;
+    margin-bottom: 10px;
+    margin: auto;
+
+}
+
+#velgQuiz {
+  text-align: center;
+}
+#velgQuiz input {
+  margin: 10px;
+}
+#quizListe {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  width: inherit;
+}
+.quizValgBoks {
+  background-color: #eee;
+  height: auto;
+  margin: 10px;
+  box-shadow: 0 1px 1px #BBB;
+  text-align: center;
+  width: 65vh;
+  max-width: 700px;
+}
+.quizValgBoks img {
+  width: 100%;
+}
+.quizValgBoks p {
+  font-weight: bold;
+  font-size: 4vh;
+  margin: 5px;
+}
+.quizValgBoks:hover {
+    cursor: pointer;
+}
+.quizValgBoks input:focus {
+    outline:0;
+}
+
+#SampleDiv {
+  display: none;
+  height: 75vh;
+}
+
+#SampleDiv img {
+    display: block;
+    height: 50vh;
+    margin: 0 auto;
+}
+
+#sporsmaalsDiv {
+    margin:0 auto;
+    height: 30%;
+    max-width: 1200px;
+}
+
+#sporsmaalsDiv h3 {
+    margin: 10px 0 10px 10px;
+}
+
+input[type=radio]{
+    margin: 10px;
+}
+
+.label {
+    display: block;
+    font-size: 20px;
+}
+
+#navDiv {
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: 15px;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#fremgang {
+    display: inline;
+}
+
+#ferdig {
+  display: none;
+  height: 75vh;
+  background-color: #eee;
+  text-align: center;
+  padding: 20px;
+}
+#ferdig input {
+  margin-top: 20px;
+  border-radius: 10px;
+      height: 8vh;
+  width: auto;
+    color: #f2f2f2;
+  background-color: #c33838;
+}
+
+.byttKnapp {
+    position: relative;
+    bottom: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+    max-height: 100%;
+}
+
+.byttKnapp:hover {
+    cursor: pointer;
+}
+
+.byttKnapp:active {
+    border: 1px solid black;
+    outline:none;
+}
+
+.byttKnapp:focus {
+    outline:0;
+}
