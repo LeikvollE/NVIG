@@ -9,7 +9,7 @@ var artikler = [
     [
         {
             "tittel":"Til alle med hjerte i NTNUI",
-            "bilde":"artikkelTopp.png",
+            "bilde":"artikkelBilde1.png",
             "fil":"artikkel.html"
         }
     ],
