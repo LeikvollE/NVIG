@@ -1,6 +1,3 @@
-body {
-    justify-content: center;
-}
 .contentDiv {
     max-width: 1300px;
     width:inherit;
@@ -12,10 +9,6 @@ body {
 h1 {
     margin: 10px;
     font-size: 3vw;
-}
-
-.bilde {
-    width: inherit;
 }
 
 #artikkel {
@@ -43,7 +36,8 @@ section {
 }
 
 img{
-   max-width: 1300px;
+    width: inherit;
+    max-width: 1300px;
     display: block;
     margin:0 auto;
 }
