@@ -17,7 +17,7 @@ h1 {
 }
 
 #artikkel {
-    max-width: 1200px;
+    max-width: 1100px;
     padding: 1px 2vh 20px;
     font-size: 2vh;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -88,4 +88,3 @@ blockquote {
     color: #f5f8fa;
     width: inherit;
 }
-
