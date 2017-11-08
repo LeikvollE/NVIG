@@ -1,4 +1,8 @@
+main {
+    display: flex;
+}
 #content {
+    align-self: center;
     display: flex;
     margin: 0 auto;
     width: 80vh;
