@@ -26,13 +26,13 @@ let aboutText = ["NTNUs Veksillologiske Interesse Gruppe, også kjent som NVIG, 
 "        seg med. De fleste byflagg går glemt på grunn av sine dårlige design." +
 "        De fleste vexillogister mener at alle har rett til et bra flagg å samle seg bak," +
 "        og ved å engasjere deg i denne saken, kan DU utgjøre en forskjell for dine" +
-"        fremtidige barn og deres vexillogiske verden!", "Hjernen symboliserer NVIGs medlemmers sinn, " +
+"        fremtidige barn og deres veksillogiske verden!", "Hjernen symboliserer NVIGs medlemmers sinn, " +
 "flaggstangen er presentert som en plante som er spirt opp av hjernen, alt som skal til er" +
-" å plante veksologiens frø i sinnet. Gjennom NVIg håper vi å oppnå akkuratt dette for andre medstudenter" +
+" å plante veksillologiens frø i sinnet. Gjennom NVIg håper vi å oppnå akkuratt dette for andre medstudenter" +
 "på NTNU, og alle andre som kunne la seg friste av å lære noe om veksillologi"];
 
 //Overskrifter til beskrivelsene
-let aboutHeading = ["NVIG", "NVIG sitt mål", "MALE³", "Hvorfor Vexillologi?", "Logo"];
+let aboutHeading = ["NVIG", "NVIG sitt mål", "MALE³", "Hvorfor Veksillologi?", "Logo"];
 
 let about = document.getElementById("aboutDiv");
 let text  = document.createElement("div");
