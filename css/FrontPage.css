@@ -23,7 +23,6 @@ img {
 .contentSection {
     margin-bottom: 10px;
     width: inherit;
-    padding: 0;
     display: flex;
     justify-content: space-between;
 }
@@ -31,11 +30,7 @@ img {
 .contentDiv {
     background-color: #EEE;
     box-shadow: 0 1px 1px #BBB;
-    margin: 0;
     padding: 0 0 10px 0;
-    /*border-radius: 5px;*/
-    height: inherit;
-    width: 100%;
 }
 
 .items_1  {
@@ -59,7 +54,6 @@ img {
     font-weight: bold;
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 
 .items_3 {
@@ -67,7 +61,6 @@ img {
 }
 
 .items_3 a {
-    height: 100%;
     font-size: 1.7vw;
     font-weight: bold;
     display: flex;
