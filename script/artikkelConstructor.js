@@ -1,5 +1,9 @@
 var bildeVindu = document.getElementById("bildeVindu");
 
+var artikkelHeading = document.createElement("h1");
+artikkelHeading.innerText = mainPhoto.heading;
+bildeVindu.appendChild(artikkelHeading);
+
 var artikkelBilde = document.createElement("img");
 artikkelBilde.className = "bilde";
 artikkelBilde.src = mainPhoto.source;
@@ -7,14 +11,7 @@ artikkelBilde.alt = mainPhoto.alter;
 bildeVindu.appendChild(artikkelBilde);
 
 
-var artikkelHeading = document.createElement("h1");
-artikkelHeading.innerText = mainPhoto.heading;
-bildeVindu.appendChild(artikkelHeading);
 var infoBoks = document.getElementById("info");
-
-
-
-
 
 var dato = document.createElement("p");
 var datoBold = document.createElement("strong");
