@@ -119,7 +119,7 @@ function move(elapsedSinceLastLoop) {
 
 
     for (let i = 0; i < Entities.length; i++) {
-        Entities[i].move();
+        Entities[i].move(elapsedSinceLastLoop);
         Entities[i].checkCollision();
     }
 
