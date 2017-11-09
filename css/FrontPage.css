@@ -89,9 +89,7 @@ iframe {
 
 .overskrift {
     flex: 1 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   text-align: center;
 }
 
 @media (max-width: 480px) {
