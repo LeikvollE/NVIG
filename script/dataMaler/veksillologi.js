@@ -1,11 +1,11 @@
 /*
-Filnavn: flaggHistorie.js
+Filnavn: veksillologi.js
 Skrevet av: Lars Martin Hodne
 Når: November 2017
 Mening: mal for flagghistorie artikkelen, gir info til artikkelConstructor.js.
 */
-var mainPhoto = {source:"bilder/fnBilde.png", alter:"artikkelbilde", heading:"Artikkel om flaggdesign kommer"};
-var details = {dato:"23/09/98",forfatter:"Torfrid Heigirsdottir"};
+var mainPhoto = {source:"bilder/veksillologi.png", alter:"artikkelbilde", heading:"Vexillology vs Veksillologi"};
+var details = {dato:"09/11/17",forfatter:"Lars Martin Hodne"};
 var artikkelContent = [
     {type:"p",content:"Venter artikkel om flaggdesign"},
     {type:"p",content:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore" +

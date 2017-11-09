@@ -14,7 +14,6 @@ for (var a=0; a<artikler.length; a++){ //For løkke som lager seksjonene og legg
     div.innerHTML += newSection.outerHTML;
 
     for (var b=0; b<artikler[a].length; b++){ //For løkke som legger artikler inn i seksjonene.
-
         var newDiv = document.createElement("div"); //Lager div som inneholder en enkelt artikkel.
         newDiv.classList.add("contentDiv");
         newDiv.classList.add("items_" + artikler[a].length);

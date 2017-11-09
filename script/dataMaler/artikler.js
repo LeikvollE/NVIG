@@ -14,7 +14,7 @@ var artikler = [
             "fil":"Article.html"
         },
         {
-            "tittel":"Historien om flagg",
+            "tittel":"Veksillologi v vexillology",
             "bilde":"Flagg/ae.png",
             "fil":"Article2.html"
         },
