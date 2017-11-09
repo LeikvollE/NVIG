@@ -15,12 +15,14 @@ var artikkelContent = [
     {type:"p",content:"Med flaggenes åpenbare innflytelse i vår hverdag er det NVIG syn at Vexillologien bør spres til alle og enhver." +
     "Med seg fører vexillologien et hav av goder, ja, jeg vil si at etter man lærer å sette pris på flagg ser man verden på en annen måte enn før." +
     "Hvorfor? Jo, fordi når man forstår hva som utgjør et godt eller dårlig flagg, kan man forstå designet til nesten hva som helst!" +
-    "Designreglene for flagg er enkle og kortfattede og kan, i realiteten anvendes som retningslninjer uansett hva man ønsker å lage."},
+    "Designreglene for flagg er enkle og kortfattede og kan mer eller mindre anvendes som retningslninjer uansett hva man ønsker å lage."},
     {type:"blockquote",content:'"Med seg fører vexillologien et hav av goder, ja, jeg vil si at etter man lærer å' +
     ' sette pris på flagg ser man verden på en annen måte enn før."'},
-    {type:"p",content:"Med flaggenes åpenbare innflytelse i vår hverdag er det NVIG syn at Vexillologien bør spres til alle og enhver." +
-    "Med seg fører vexillologien et hav av goder, ja, jeg vil si at etter man lærer å sette pris på flagg ser man verden på en annen måte enn før." +
-    "Hvorfor? Jo, fordi når man forstår hva som utgjør et godt eller dårlig flagg, kan man forstå designet til nesten hva som helst!" +
-    "Designreglene for flagg er enkle og kortfattede og kan, i realiteten anvendes som retningslninjer uansett hva man ønsker å lage."},
+    {type:"p",content:"Kombiner dette med flaggenes evne til å representere oss selv gjennom menigsfull symbolikk " +
+    "så ser du forhåpentligvis hvorfor vexillologien er så viktig."},
+    {type:"p",content:"Vexillologien har mye å lære bort. Gjennom den kan vi forstå hverandre og forstå oss selv. " +
+    "Kunnskap om vexillologi kan hjelpe oss i det daglige - både på arbeid eller hjemme. Den kan også hjelpe oss å forstå" +
+    "symbolikk som brukes andre steder i samfunnet gjennom medier som film, bøker eller kunst. Å forstå flagg utvider ens forståelse" +
+    "av samfunnet man er en del av "}
 
 ];
