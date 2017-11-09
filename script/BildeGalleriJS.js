@@ -3,7 +3,6 @@
  //diven der alt innhold bli plassert
  let bildeContentDiv = document.querySelector("#galleri");
 
-
  //lar man bestemme antall bilder per rad
  const antallBilderPerRad = 4;
 
