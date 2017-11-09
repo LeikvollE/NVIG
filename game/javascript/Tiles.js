@@ -172,7 +172,7 @@ class poleTile extends Tile {
             running = false;
             let x = this.x;
             let y = this.y;
-            mainAudio.play();
+            //mainAudio.play();
             movePlayerToPoint(x*21+5,y*21, 2, function () {
                 movePlayerToPoint(x*21+5, y*21-40, 1, function () {
                     setTimeout(nextLevel, 1000);
