@@ -30,6 +30,6 @@ let beskrivelser = [
     "beskrivelser/Frankrike.txt","beskrivelser/Hellas.txt","beskrivelser/Indonesia.txt","beskrivelser/Vietnam.txt",
     "beskrivelser/Vatikanstaten.txt","beskrivelser/Ukraina.txt","beskrivelser/Tyskland.txt","beskrivelser/Tyrkia.txt",
     "beskrivelser/Sverige.txt","beskrivelser/Sveits.txt","beskrivelser/Storbritania.txt","beskrivelser/Spania.txt",
-    "beskrivelser/S_korea.txt","beskrivelser/Nepal.txt","beskrivelser/Qatar.txt","beskrivelser/Polen.txt",
+    "beskrivelser/S_Korea.txt","beskrivelser/Nepal.txt","beskrivelser/Qatar.txt","beskrivelser/Polen.txt",
     "beskrivelser/Russland.txt","beskrivelser/New_Zealand.txt","beskrivelser/palestina.txt"
 ];
