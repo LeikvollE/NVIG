@@ -4,7 +4,7 @@ Skrevet av: Lars Martin Hodne
 Når: November 2017
 Mening: mal for flagghistorie artikkelen, gir info til artikkelConstructor.js.
 */
-var mainPhoto = {source:"bilder/veksillologi.png", alter:"artikkelbilde", heading:"Vexillologi"};
+var mainPhoto = {source:"bilder/veksillologi.png", alter:"artikkelbilde", heading:"Vexillologi - Studiet av flagg"};
 var details = {dato:"09/11/17",forfatter:"Lars Martin Hodne"};
 var artikkelContent = [
     {type:"p",content:"NVIGs mål har helt siden sin unfangelse vært å spre glede over, og kunnskap om veksillologi. " +
