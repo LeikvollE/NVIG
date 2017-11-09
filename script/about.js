@@ -1,10 +1,3 @@
-//legger eventlisteners på knappene, kjører showBox med hensyn til tilhørende index i arrayene
-document.getElementById('NVIGButton').addEventListener('click', function () {showBox(0);});
-document.getElementById('GoalButton').addEventListener('click', function () {showBox(1);});
-document.getElementById('MALEButton').addEventListener('click',function () {showBox(2);});
-document.getElementById('VexologyButton').addEventListener('click', function () {showBox(3);});
-document.getElementById('LogoButton').addEventListener('click', function () {showBox(4);});
-
 /*
 Filnavn: about.js
 Skrevet av: Emil Strand, Lars Martin Hodne
@@ -12,6 +5,12 @@ Når: November 2017
 Mening: Legge til innhold i about.html siden.
 */
 
+//legger eventlisteners på knappene, kjører showBox med hensyn til tilhørende index i arrayene
+document.getElementById('NVIGButton').addEventListener('click', function () {showBox(0);});
+document.getElementById('GoalButton').addEventListener('click', function () {showBox(1);});
+document.getElementById('MALEButton').addEventListener('click',function () {showBox(2);});
+document.getElementById('VexologyButton').addEventListener('click', function () {showBox(3);});
+document.getElementById('LogoButton').addEventListener('click', function () {showBox(4);});
 
 //beskrivelser
 let aboutText = ["NTNUs Veksillologiske Interesse Gruppe, også kjent som NVIG, er en studentorganisasjon opptatt" +
