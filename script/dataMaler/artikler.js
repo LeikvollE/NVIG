@@ -4,7 +4,7 @@ var artikler = [
         {
             "tittel":"Til alle med hjerte i NTNUI",
             "bilde":"artikkelTopp.png",
-            "fil":"artikkel.html"
+            "fil":"til-alle-med-hjerte-i-ntnui.html"
         }
     ],
     [
