@@ -32,6 +32,9 @@ img {
     box-shadow: 0 1px 1px #BBB;
     width: 100%;
 }
+.contentDiv:hover {
+    box-shadow: 0 4px 10px #BBB
+}
 
 .items_1  {
     width: 100%;
