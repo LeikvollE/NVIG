@@ -56,16 +56,9 @@ for (var i=0;i<artikkelContent.length;i++) {
             element.innerHTML = artikkelContent[i].content;
             artikkel.appendChild(element);
         }
-        else if (artikkelContent[i].type === "img") {
+        else if (artikkelContent[i].type === "a" || artikkelContent[i].type === "img") {
             element.src = artikkelContent[i].source;
             element.alter = artikkelContent[i].source;
-            element.className = "artikkelBilde";
-            artikkel.appendChild(element);
-        }
-        else if (artikkelContent[i].type === "a") {
-            element.src = artikkelContent[i].source;
-            element.alter = artikkelContent[i].source;
-            element.className = "artikkelLink";
             artikkel.appendChild(element);
         }
     }
