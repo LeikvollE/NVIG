@@ -8,7 +8,8 @@
     "Katalonia å få tilbake fargene sine, men pass på for spanske",
     "regjeringsstyrker. Blir du tatt vil de ta fra deg fargene",
     "og du må starte på nytt",
-    ""
+    "",
+    "Trykk på [SPACE] for å starte"
   ],
   "winCondition":{
     "red":1,
