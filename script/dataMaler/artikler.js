@@ -15,7 +15,7 @@ var artikler = [
         },
         {
             "tittel":"Veksillologi v vexillology",
-            "bilde":"Flagg/ae.png",
+            "bilde":"veksillologi.png",
             "fil":"Article2.html"
         },
         {
