@@ -11,7 +11,7 @@ var artikler = [
         {
             "tittel":"Flaggdrama hos FN!",
             "bilde":"fnBilde.png",
-            "fil":"Article.html"
+            "fil":"NTNUIflaggforslag.html"
         },
         {
             "tittel":"Vexillologi - Studiet av flagg",
