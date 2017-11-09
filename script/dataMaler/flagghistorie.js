@@ -4,7 +4,7 @@ Skrevet av: Lars Martin Hodne
 Når: November 2017
 Mening: mal for flagghistorie artikkelen, gir info til artikkelConstructor.js.
 */
-var mainPhoto = {source:"bilder/fnBilde.png", alter:"artikkelbilde", heading:"Flaggdrama hos FN"};
+var mainPhoto = {source:"bilder/fnBilde.png", alter:"artikkelbilde", heading:"Historien om flagg"};
 var details = {dato:"23/09/98",forfatter:"Torfrid Heigirsdottir"};
 var artikkelContent = [
     {type:"p",content:"<strong>Historiker: </strong>Veksillologi er bedre enne ***!"},
