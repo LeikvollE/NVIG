@@ -12,11 +12,16 @@ Mening: Gi brukeren et engasjerende interaktivt (flaggrelatert) tilbud.
     <style>
         #game {
             align-self: center;
-            height: 65vh;
-            width: 130vh;
+            max-height: 65vh;
+            height: 40vw;
+            width: 80vw;
+            max-width: 130vh;
         }
-        body {
-            overflow: auto;
+        main {
+            justify-content: center;
+            display: flex;
+            width: inherit;
+            min-height: 70vh;
         }
     </style>
     <link rel="shortcut icon" type="image/png" href="bilder/NVIGlogo2.png"/>
@@ -26,11 +31,11 @@ Mening: Gi brukeren et engasjerende interaktivt (flaggrelatert) tilbud.
 
 <header id="headerContainer">
 </header>
-
+<main>
 <canvas id="game"></canvas>
+</main>
 
 <footer id="footer"></footer>
-
 
 <script src="game/javascript/Events.js"></script>
 <script src="game/javascript/Tiles.js"></script>
