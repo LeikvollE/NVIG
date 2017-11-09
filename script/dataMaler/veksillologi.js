@@ -7,17 +7,11 @@ Mening: mal for flagghistorie artikkelen, gir info til artikkelConstructor.js.
 var mainPhoto = {source:"bilder/veksillologi.png", alter:"artikkelbilde", heading:"Vexillology vs Veksillologi"};
 var details = {dato:"09/11/17",forfatter:"Lars Martin Hodne"};
 var artikkelContent = [
-    {type:"p",content:"Venter artikkel om flaggdesign"},
-    {type:"p",content:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore" +
-    "            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo" +
-    "            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." +
-    "            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."},
-    {type:"p",content:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore" +
-    "            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo" +
-    "            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." +
-    "            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."},
-    {type:"p",content:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore" +
-    "            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo" +
-    "            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." +
-    "            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
+    {type:"p",content:"<strong>Språket reflekterer ikke veksillologiens innflytelse i vårt lands historie</strong>"},
+    {type:"p",content:"NVIGs mål har helt siden sin unfangelse vært å spre glede over, og kunnskap om veksillologi. " +
+    "Flagg representerer både hvem vi er i det vi gjør, og det vi var i tiden før vår tid. Flagg står som kanskje" +
+    "det mest meningsfylte symbolet noen eller noe kan representeres ved, om det er nasjonalflagget på brystet til" +
+    "en idrettsutøver, eller på armen til en soldat omringet av krigens onder."},
+    {type:"blockquote",content:'"Flagg representerer både hvem vi er i det vi gjør, og det vi var i tiden før vår tid."'},
+    {type:"p",content:""}
 ];
