@@ -14,7 +14,7 @@ var artikler = [
             "fil":"Article.html"
         },
         {
-            "tittel":"Veksillologi v vexillology",
+            "tittel":"Vexillologi",
             "bilde":"veksillologi.png",
             "fil":"Article2.html"
         },
