@@ -1,5 +1,11 @@
-//alle henvendelser til arrayer viser til arrayene i data.js
+/*
+Filnavn: BildeGalleriJS.js
+Skrevet av: Lars Martin Hodne
+Når: November 2017
+Mening: Legge inn bilder i bildegalleriet og reagere på brukerinput
+*/
 
+//alle henvendelser til arrayer viser til arrayene i data.js
  //diven der alt innhold bli plassert
  let bildeContentDiv = document.querySelector("#galleri");
 

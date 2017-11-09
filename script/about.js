@@ -5,6 +5,14 @@ document.getElementById('MALEButton').addEventListener('click',function () {show
 document.getElementById('VexologyButton').addEventListener('click', function () {showBox(3);});
 document.getElementById('LogoButton').addEventListener('click', function () {showBox(4);});
 
+/*
+Filnavn: about.js
+Skrevet av: Emil Strand, Lars Martin Hodne
+Når: November 2017
+Mening: Legge til innhold i about.html siden.
+*/
+
+
 //beskrivelser
 let aboutText = ["NTNUs Veksillologiske Interesse Gruppe, også kjent som NVIG, er en studentorganisasjon opptatt" +
 "        av spredningen av veksillologiens goder, spesifikt blant våre medstudenter ved NTNU." +
