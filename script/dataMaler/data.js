@@ -1,3 +1,10 @@
+/*
+Filnavn: data.js
+Skrevet av: Lars Martin Hodne
+Når: November 2017
+Mening: tilby filplasseringer og navn når BildeGalleriJs spør etter dette, .
+*/
+
 let bilder = [
     "Flagg/Australia.png","Flagg/Norge.png", "Flagg/Brasil.png","Flagg/Canada.png",
     "Flagg/Danmark.png","Flagg/Estland.png","Flagg/Etiopia.png", "Flagg/Finland.png",
