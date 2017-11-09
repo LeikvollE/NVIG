@@ -33,7 +33,7 @@ var navbar = document.createElement("div"); //Lager navbar-diven.
 navbar.id = "navbar";
 
 var links = [ //Liste med linkene i navbaren
-  ["<b>Nyeste artikler</b>", "<a href='til-alle-med-hjerte-i-i-ntnui.html'>Til alle med et hjerte i NTNUI</a>", "<a href='NTNUIflaggforslag.html'>NTNUI flaggforslag</a>", "<a href='vexillologi.html'>vexillologi</a>"],
+  ["<b>Nyeste artikler</b>", "<a href='til-alle-med-hjerte-i-ntnui.html'>Til alle med et hjerte i NTNUI</a>", "<a href='NTNUIflaggforslag.html'>NTNUI flaggforslag</a>", "<a href='vexillologi.html'>vexillologi</a>"],
   ["<b>Interaktiv</b>", "<a href='spill.html'>Spill</a>", "<a href='quiz.html'>Quiz</a>"],
   ["<b>Info</b>", "<a href='bildeGalleri.html'>Flaggalleri</a>", "<a href='about.html'>Om oss</a>", "<a href='https://twitter.com/nvigntnu' target='_blank'>Twitter</a>"]
 ];
