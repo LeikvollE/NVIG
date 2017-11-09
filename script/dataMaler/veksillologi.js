@@ -22,7 +22,7 @@ var artikkelContent = [
     "så ser du forhåpentligvis hvorfor vexillologien er så viktig."},
     {type:"p",content:"Vexillologien har mye å lære bort. Gjennom den kan vi forstå hverandre og forstå oss selv. " +
     "Kunnskap om vexillologi kan hjelpe oss i det daglige - både på arbeid eller hjemme. Den kan også hjelpe oss å forstå" +
-    "symbolikk som brukes andre steder i samfunnet gjennom medier som film, bøker eller kunst. Å forstå flagg utvider ens forståelse" +
-    "av samfunnet man er en del av "}
-
+    "symbolikk som brukes andre steder i samfunnet gjennom medier som film, bøker og kunst. Å forstå flagg utvider ens forståelse" +
+    "av samfunnet man er en del av samtidig som den kan hjelpe oss i møte med symbolbruk fra andre hold. Om du prøver vexillologiens røde eple" +
+    "lærer dom så mye mer enn bare flagg."}
 ];
