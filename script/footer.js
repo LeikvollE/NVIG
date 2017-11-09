@@ -1,3 +1,10 @@
+/*
+Filnavn: footerJS.js
+Skrevet av: Lars Martin Hodne
+Når: November 2017
+Mening: Legge til footer på på alle sider.
+*/
+
 //henter footer fra html fokumentet
 let footer = document.getElementById("footer");
 

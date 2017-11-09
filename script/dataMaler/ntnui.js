@@ -1,4 +1,11 @@
-var mainPhoto = {source:"bilder/artikkelBilde1.png", alter:"artikkelbilde", heading:"Til alle med hjerte i NTNUI"};
+/*
+Filnavn: ntnui.js
+Skrevet av:Lars Martin Hodne
+Når: November 2017
+Mening: mal for ntnui artikkelen, gir info til artikkelConstructor.js.
+*/
+
+var mainPhoto = {source:"bilder/artikkelTopp.png", alter:"artikkelbilde", heading:"Til alle med hjerte i NTNUI"};
 var details = {dato:"08/11/17",forfatter:"Frédéric Ménard Lindboe"};
 var artikkelContent = [
     {type:"p",content:"\n" +
@@ -10,7 +17,7 @@ var artikkelContent = [
     "Sometimes I bring up the topic of flags, and people are like, \"I don't care about flags,\" and then we start talking about flags, and trust me, " +
     "100 percent of people care about flags. There's just something about them that works on our emotions."},
     {type:"img",source:"bilder/artikkelBilde1.png",alter:"Karl Johann"},
-    {type:"p",content:"Enten du er tradisjonell monarkist eller ønsker en norsk republikk så vil dette bildet vekke følelser i deg: Flagget symboliserer Norge."},
+    {type:"p",content:"Dette bildet vekker nok noen følelser i deg. Det norske flagget assosieres både med lykkelige stunder og folkefester."},
     {type:"blockquote",content:"<a href='https://youtu.be/pnv5iKB2hl4?t=2m02s' alt='video' target='_blank'>2:02</a><br>\n" +
     "What I love about flags is that once you understand the design of flags," +
     " what makes a good flag, what makes a bad flag, you can understand the design of almost anything."},
@@ -42,12 +49,12 @@ var artikkelContent = [
     {type:"img",source:"bilder/artikkelBilde4.png",alter:"NTNUI's flagg"},
     {type:"blockquote",content:"<a href='https://youtu.be/pnv5iKB2hl4?t=7m27s' alt='video' target='_blank'>7:27</a><br>\n" +
     "If you need to write the name of what you're representing on your flag, your symbolism has failed."},
-    {type:"p",content:"Dagens NTNUI-flagg er et NTNUI-emblem på grønn bunn. Det assosiasjonssterke fargemotivet" +
-    " kommer ikke særlig tydelig frem. Andreas Wahl referer til 'NTNUI-fargene', ikke til NTNUI-emblemet. Flagg blir " +
-    "gode idet man tilegner dets motiv en betydning. Det er det symbolikk handler om. Men når NTNUI står skrevet eksplisitt " +
-    "på flagget så blir motiv og hva flagget skal representere én og samme ting. Da er betydningstilegnelsesprosessen gjort " +
-    "for deg allerede. Derfor synes jeg at dagens NTNUI-flagg ikke symboliserer NTNUI godt nok. Tenk deg om Norges flagg hadde " +
-    "vært desginet på samme måte."},
+    {type:"p",content:"Dagens NTNUI-flagg er et NTNUI-logo på grønn bunn. Det assosiasjonssterke fargemotivet kommer " +
+    "ikke særlig tydelig frem. Andreas Wahl referer til 'NTNUI-fargene', ikke til NTNUI-logoen. Flagg blir gode idet " +
+    "man tilegner dets motiv en betydning. Det er det symbolikk handler om. Men når NTNUI står skrevet eksplisitt " +
+    "på flagget så blir motiv og hva flagget skal representere én og samme ting. Da er betydningstilegnelsesprosessen " +
+    "gjort for deg allerede. Derfor synes jeg at dagens NTNUI-flagg ikke symboliserer NTNUI godt nok. Tenk deg om Norges " +
+    "flagg hadde vært desginet på samme måte."},
     {type:"img",source:"bilder/artikkelBilde5.png",alter:"Norge's nye flagg"},
     {type:"p",content:"Jeg har ingen tro på at Norge hadde hatt samme flaggtradisjoner under 17. mai " +
     "eller skiidrettsarrangementer dersom flagget hadde sett slikt ut."},
@@ -74,14 +81,14 @@ var artikkelContent = [
     "<a href='http://www.ausflag.com.au/assets/images/Good-Flag-Bad-Flag.pdf' alt='flaggregler' target='_blank'>flaggdesignprinsippene:</a>"},
     {type:"dobbelDiv",heading:"",venstre:"<img src='bilder/artikkelBilde7.png' alt='NTNUI'>", hoyre:"<img src='bilder/artikkelBilde8.png' alt='NTNUI'>"},
     {type:"dobbelDiv",heading:"1. Keep it simple (so simple a child can draw it from memory)",
-        venstre:"NTNUI-emblemet " +
+        venstre:"NTNUI-logoen " +
         "er faktisk ganske simplistisk og flagget er dermed ingen versting blant idrettsklubber. " +
         "Dog er emblemer vanskelige å anvende annet enn i sin hele form.",
         hoyre:"Mønsteret i dette flagget er redusert til sine kjernekomponenter og kan " +
         "dermed ikke bli enklere. Anvendeligheten til mønsteret i flagget er skyhøyt, " +
         "slik som illustrert i bildeserien lenger oppe."},
     {type:"dobbelDiv",heading:"2. Use meaningful symbolism",
-        venstre:"NTNUI-emblemet symboliserer sammenslåing av NTHI (grønt, gult og svart) og AVHI og rødt. " +
+        venstre:"NTNUI-logoen symboliserer sammenslåing av NTHI (grønt, gult og svart) og AVHI og rødt. " +
         "Den historiske symbolikken er ganske god. Likevel anerkjenner dette flagget grønt som klubbens hovedfarge " +
         "ved å bruke grønt i bunn.",
         hoyre:"Dette flagget inkluderer ikke det AVHI-røde, kun de eldste NTHI-fargene. Det er synd. Men det " +
@@ -110,11 +117,11 @@ var artikkelContent = [
         "<a href='http://www.strindahistorielag.no/wiki/images/thumb/Studenterhytta_i_2014.JPG/200px-Studenterhytta_i_2014.JPG' alt='flaggside' target='_blank'>Studenterhytta</a> " +
         "enn det gjør med dagens flagg."},
     {type:"dobbelDiv",heading:"5. Be distinctive or be related",
-        venstre:"Emblemflagget flagget ligner på andre idrettsklubbflagg: " +
+        venstre:"Logoflagget flagget ligner på andre idrettsklubbflagg: " +
         "<a href='http://www.rbnett.no/incoming/article6615769.ece/BINARY/w980-adaptive/per%20h%C3%A5nde.JPG' alt='Molde' target='_blank'>Molde FK</a> og " +
         "<a href='https://nidarosfoto.smugmug.com/Sport/H%C3%A5ndball-Kvinner/By%C3%A5sen-Elite/Sesongen-2014-15/By%C3%A5sen-vs-Storhamar-H%C3%A5ndball-2/i-Gkfxr6C' " +
         "alt='Håndballside' target='_blank'>Byåsen Håndball</a> har alle " +
-        "klubbemblemet i flagget på ensfarget bakgrunn. På samme måte viser Norge tilhørighet til Norden ved å bruke" +
+        "klubblogoen i flagget på ensfarget bakgrunn. På samme måte viser Norge tilhørighet til Norden ved å bruke" +
         " det usentrerte nordiske korset i flagget sitt. Man kan dermed augumentere for at emblemflagget viser at også " +
         "det tilhører idrettsklubb. Jeg vil sagt at det også føyer seg i rekken for under middels godt designede flagg.",
         hoyre:"NTNUIs unike fargemønster gjøre naturlig nok dette flagget også unikt. En kan si at stripene og " +
@@ -124,17 +131,17 @@ var artikkelContent = [
         "nesten slik ut! Forskjellen i stripetykkelse, fargenyanse og ikke minst bruksområde (helt urelatert tidl. " +
         "nasjon vs. nåværende lokal idrettsklubb) gjør at denne potensielle forvekslingen nok ikke er noe å bry seg om:" +
         " Flagg trenger primært bli gjenkjent internt for å samle mennesker med felles tilhørighet. "},
-    {type:"p",content:"Selvfølgelig finnes det mennesker som utenfor student-Trondheim som ikke vil gjenkjenne " +
-    "stripeflagget som NTNUI-flagg. Hvordan skal man vise overfor dem at man er fra NTNUI? Stripeflagg som brukes på " +
-    "idrettsarrangement vil ha NTNUI-utdøvere tilstede. Disse utdøverne har oftest på seg NTNUI-klær med samme fargemønster " +
-    "og med NTNUI tydelig skrevet på ryggen eller i emblemet på brystet. Ev. kan man fra før vite at de med grønne drakter og " +
-    "gulsvarte striper er NTNUI. Uansett vil det fort bli veldig åpenbart hvilken klubb stripeflagget representerer og da vil " +
-    "assosiasjonen mellom fargemønsteret på flagget og klubben NTNUI feste seg også hos eksterne idrettsutøvere. Jeg vil også si " +
-    "at stripeflagget et flagg flere vil vaie med stolhet enn emblemflagget. Dersom eksterne ser mange kledd i grønt gult og svart " +
-    "som vaier entusiastisk med stripeflagget vil de kanskje bli nysgjerrige og spørre noen “Hvilket flagg er det? Jeg så det på lang " +
-    "avstand!” og da vil de få svaret “Det er NTNUI, klubbflagget til alle de idrettsutdøverne som er kledd i samme farger!”. \n" +
-    "For at eksterne skal kunne tolke emblemflagget må de, med mindre det blåser sterkt, komme så nærme flagget for å kunne lese " +
-    "“NTNUI” på bannere eller på noens klær i nærheten uansett!\n"},
+    {type:"p",content:"Selvfølgelig finnes det mennesker som utenfor student-Trondheim som ikke vil gjenkjenne stripeflagget " +
+    "som NTNUI-flagg. Hvordan skal man vise overfor dem at man er fra NTNUI? Stripeflagg som brukes på idrettsarrangement vil" +
+    " ha NTNUI-utøvere tilstede. Disse utøverne har oftest på seg NTNUI-klær med samme fargemønster og med NTNUI tydelig skrevet på " +
+    "ryggen eller i logoen på brystet. Ev. kan man fra før vite at de med grønne drakter og gulsvarte striper er NTNUI." +
+    " Uansett vil det fort bli veldig åpenbart hvilken klubb stripeflagget representerer og da vil assosiasjonen mellom " +
+    "fargemønsteret på flagget og klubben NTNUI feste seg også hos eksterne idrettsutøvere. Jeg vil også si at stripeflagget " +
+    "et flagg flere vil vaie med stolhet enn logoflagget. Dersom eksterne ser mange kledd i grønt gult og svart som vaier " +
+    "entusiastisk med stripeflagget vil de kanskje bli nysgjerrige og spørre noen “Hvilket flagg er det? Jeg så det på lang " +
+    "avstand!” og da vil de få svaret “Det er NTNUI, klubbflagget til alle de idrettsutøverne som er kledd i de fargene!”." +
+    "For at eksterne skal kunne tolke logoflagget må de, med mindre det blåser sterkt, komme så nærme flagget for å kunne " +
+    "lese “NTNUI” på bannere eller på noens klær i nærheten uansett."},
     {type:"p",content:"Avslutningsvis vil jeg dele noen bilder og videoer av et NTNUI-stripeflagg som jeg har sydd selv " +
     "og brukt på volleyballarrangementer i hele høst. Jeg har også vist det for andre med tilknytting til student-Trondheim " +
     "hvilket flagg de tror det er. De fleste svarer NTNUI og blir overrasket når jeg forteller dem at NTNUI egentlig har " +

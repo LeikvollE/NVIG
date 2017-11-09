@@ -1,13 +1,19 @@
+/*
+Filnavn: artikkelStyle.css
+Skrevet av: Lars Martin Hodne, Eirik Leikvolll, Emil Strand
+Når: November 2017
+Mening: Presentere innholdet i de ulike artiklene på en attraktiv og udistraherende måte.
+*/
+
 .contentDiv {
     max-width: 1300px;
     width:inherit;
-    /*background-color: #f2f2f2;*/
     margin-bottom: 10px;
     padding-bottom:1vh;
 }
 
 h1 {
-    margin: 10px;
+    margin: 10px 0 10px 0;
     font-size: 3vw;
 }
 
@@ -17,12 +23,8 @@ h1 {
 }
 
 #artikkel {
-    max-width: 1200px;
-    padding: 1px 2vh 20px;
-    font-size: 2vh;
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
+    max-width: 1000px;
+    font-size: 2.5vh;
     line-height: 1.625em;
     font-family: "Helvetica", sans-serif;
     margin: 0 auto;
@@ -31,7 +33,7 @@ h1 {
     text-align: center;
 }
 #info p {
-    font-size: 1.5vh;
+    font-size: 2.3vh;
 }
 
 section {
@@ -88,4 +90,3 @@ blockquote {
     color: #f5f8fa;
     width: inherit;
 }
-

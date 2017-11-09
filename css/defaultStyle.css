@@ -2,7 +2,7 @@
 Filnavn: defaultStyle.css
 Skrevet av: Eirik Leikvoll, Einar Viddal, Lars Martin Hodne
 Når: Oktober/Noveber 2017
-Mening: Beskrive de generelle stilene til hver side, alle sidene vil være ta i bruk denne css filen.
+Mening: Beskrive de generelle stilene(footer header osv.) til hver side, alle sidene vil ta i bruk denne css filen.
 Dette inneholder generelle stiler, headeren og footeren.
 */
 
@@ -66,7 +66,7 @@ header a {
     padding: 0;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     overflow: hidden;
     height: 0;
     font-size: 3vh;
