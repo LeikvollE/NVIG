@@ -1,5 +1,5 @@
 function tileAtScreenPos(x, y) {
-    if (x < 0 || Math.floor(x/21) >= map.length || y < 0 || Math.floor(y/24) >= map[0].length) return new Tile(x, y);
+    if (x < 0 || Math.floor(x/21) >= map.length || y < 0 || Math.floor(y/21) >= map[0].length) return new Tile(x, y);
     return map[Math.floor(x/21)][Math.floor(y/21)];
 }
 
@@ -27,6 +27,7 @@ function loadMap(levelFile) {
                 if (pixelData[1] == 255) map[i][j] = new grassTile(i, j);
                 else if (pixelData[1] == 254) map[i][j] = new grassSnowTile(i, j);
                 else if (pixelData[1] == 200) map[i][j] = new bridgeTile(i, j);
+                else if (pixelData[1] == 40) map[i][j] = new leverTile(i, j);
                 else if (pixelData[2] == 250) map[i][j] = new redFlagTile(i, j);
                 else if (pixelData[2] == 240) map[i][j] = new blueFlagTile(i, j);
                 else if (pixelData[2] == 230) map[i][j] = new yellowFlagTile(i, j);

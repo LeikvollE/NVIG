@@ -156,6 +156,36 @@ class yellowFlagTile extends FlagTile {
     }
 }
 
+class leverTile extends Tile {
+    constructor(x, y) {
+        super(x, y);
+        this.activated = false;
+    }
+
+    get texture() {
+
+        if (this.activated) {
+            return [10, 8];
+        } else {
+            return [12, 8]
+        }
+
+    }
+
+    onCollide() {
+        if (!this.activated) {
+            this.activated = true;
+            for (let i = 0; i < map.length; i++) {
+                for (let j = 0; j < map[i].length; j++) {
+                    if (map[i][j] instanceof bridgeTile) {
+                        map[i][j] = new Tile(i, j);
+                    }
+                }
+            }
+        }
+    }
+}
+
 class poleTile extends Tile {
     constructor(x, y) {
         super(x, y);

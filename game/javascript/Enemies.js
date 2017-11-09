@@ -8,7 +8,7 @@ class Entity {
         return null;
     }
 
-    move() {
+    move(delta) {
         return;
     }
 }
@@ -20,7 +20,7 @@ class Enemy extends Entity {
         this.direction = 1;
     }
 
-    move() {
+    move(delta) {
         if (tileAtScreenPos(this.x+this.speed*this.direction, this.y).solid || (!tileAtScreenPos(this.x+this.speed*this.direction, this.y).solid && !tileAtScreenPos(this.x+this.speed*this.direction, this.y+25).solid)) {
             this.direction*=-1;
         }
@@ -54,9 +54,10 @@ class Boss extends Enemy {
         super(x, y);
         this.initX = x;
         this.initY = y;
+        this.ySpeed = 0;
     }
 
-    move() {
+    move(delta) {
         if (tileAtScreenPos(this.x+this.speed*this.direction, this.y).solid || (!tileAtScreenPos(this.x+this.speed*this.direction, this.y).solid && !tileAtScreenPos(this.x+this.speed*this.direction, this.y+45).solid)) {
             this.direction*=-1;
         }
@@ -88,7 +89,13 @@ class nepalBoss extends Boss {
         this.speed = 0.5;
     }
 
-    move() {
+    move(delta) {
+
+        if (this.y > map[0].length*21) {
+            running = false;
+            setTimeout(nextLevel, 1000);
+        }
+
         if (player.xPos - this.x > 0) {
             this.direction = 1;
         } else {
@@ -99,6 +106,18 @@ class nepalBoss extends Boss {
         } else if (Math.abs(player.xPos - this.x) > 5) {
             this.x += this.speed*this.direction*(1 / (1 + Math.pow(Math.exp(1), (4 - Math.abs(this.x-player.xPos) / 2.5)))); //1 / (1 + e^(4 - x / 2.5))
         }
+
+        this.ySpeed += player.gravity*delta;
+
+        if (tileAtScreenPos(this.x, this.y+this.ySpeed+40).solid ||
+            tileAtScreenPos(this.x, this.y+this.ySpeed).solid ||
+            tileAtScreenPos(this.x+20, this.y+this.ySpeed+40).solid ||
+            tileAtScreenPos(this.x+20, this.y+this.ySpeed).solid) {
+            this.ySpeed = 0;
+        } else {
+            this.y += this.ySpeed;
+        }
+
     }
 
     get texture() {
