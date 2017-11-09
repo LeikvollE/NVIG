@@ -18,15 +18,12 @@ let aboutText = ["NTNUs Veksillologiske Interesse Gruppe, også kjent som NVIG, 
 "        Eirik Leikvoll, Emil Strand, Lars Martin Hodne, August Noer Steinset og Einar Viddal." +
 "        Navnet MALE³ kommer fra forbokstavene i navnene til medlemene av gruppa. MALE³" +
 "        er også grunnleggerne av NVIG.", "Har du noen gang sett det norske flagget i utlandet eller på internasjonal TV?" +
-"        Et blikk på en olympisk utøver sin drakt så ser du det kanskje. Et raskt" +
-"        blikk og du vet med en gang hvilket land utøveren representerer. Flagg" +
+"        Et blikk på en olympisk utøver sin drakt så ser du det kanskje. Flagg" +
 "        er både språk og identitet samtidig. Det er ikke bare nasjoner som har egne" +
-"        flagg. Byer har også flagg, men de er sjeldent verdt å nevne. Trondheim og" +
-"        Amsterdam er et par av de få byene med flagg som befolkningen identifiserer" +
-"        seg med. De fleste byflagg går glemt på grunn av sine dårlige design." +
+"        flagg. Byer har også flagg, men de er desverre sjeldent verdt å nevne. " +
+"        De fleste byflagg går glemt på grunn av sitt dårlige design." +
 "        De fleste vexillogister mener at alle har rett til et bra flagg å samle seg bak," +
-"        og ved å engasjere deg i denne saken, kan DU utgjøre en forskjell for dine" +
-"        fremtidige barn og deres veksillogiske verden!", "Hjernen symboliserer NVIGs medlemmers sinn, " +
+"        og ved å engasjere deg i denne saken, kan DU utgjøre en forskjell!", "Hjernen symboliserer NVIGs medlemmers sinn, " +
 "flaggstangen er presentert som en plante som er spirt opp av hjernen, alt som skal til er" +
 " å plante veksillologiens frø i sinnet. Gjennom NVIg håper vi å oppnå akkuratt dette for andre medstudenter" +
 "på NTNU, og alle andre som kunne la seg friste av å lære noe om veksillologi"];
