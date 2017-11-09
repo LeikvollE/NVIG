@@ -1,6 +1,4 @@
-//json fil med informasjon om filplasseringer for bilder, flaggbeskrivelser og navn på land
-//hentes gjennom getJsonObject
-const data = getJsonObject("script/dataMaler/data.json") ;
+//alle henvendelser til arrayer viser til arrayene i data.js
 
  //diven der alt innhold bli plassert
  let bildeContentDiv = document.querySelector("#galleri");
@@ -10,7 +8,7 @@ const data = getJsonObject("script/dataMaler/data.json") ;
  const antallBilderPerRad = 4;
 
  //regner ut antall rader gitt ved antallbilderperrad
- const antallRader = (data.bilder.length - data.bilder.length%antallBilderPerRad)/antallBilderPerRad;
+ const antallRader = (bilder.length - bilder.length%antallBilderPerRad)/antallBilderPerRad;
 
  //regner ut en hoydekonstant til bildene gitt ut ifra antallBilderPerRade
  //en hoydekonstant paa 14 fungerer fint med 4 bilder per rad,vi ganger med 4/antallbilderperrad slik at konstanen
@@ -18,7 +16,7 @@ const data = getJsonObject("script/dataMaler/data.json") ;
  const hoyde = 14*(4/antallBilderPerRad);
 
  //regner ut hvor mange bilder som "flyter over" og må legges på bunnen
- const antallBilderPaaBunnen = data.bilder.length%antallBilderPerRad;
+ const antallBilderPaaBunnen = bilder.length%antallBilderPerRad;
 
 
  //legger til bilder på en rad, velger bilder fra bildearrayen med indeks fra start til men ikke med slutt
@@ -37,8 +35,8 @@ const data = getJsonObject("script/dataMaler/data.json") ;
          let img = document.createElement('img');
 
          //setter src og alt attributtene
-         img.setAttribute('src', "bilder/" + data.bilder[a]);
-         img.setAttribute('alt',data.land[a]);
+         img.setAttribute('src', "bilder/" + bilder[a]);
+         img.setAttribute('alt',land[a]);
          img.classList.add("bilde");
 
          //setter hoyden på bilde gitt ved hoydekonstanten
@@ -61,7 +59,7 @@ const data = getJsonObject("script/dataMaler/data.json") ;
  }
 //hvis noen bilder "flyter over" legges disse til i en egen div på bunnen
  if (antallBilderPaaBunnen) {
-     leggTilRad(data.bilder.length - antallBilderPaaBunnen,data.bilder.length);
+     leggTilRad(bilder.length - antallBilderPaaBunnen,bilder.length);
      bildeContentDiv.lastChild.className = "sisteBildeRad";
  }
 
@@ -139,19 +137,19 @@ const data = getJsonObject("script/dataMaler/data.json") ;
 
  function lagBildeBeskrivelse(elementId) {
      let img = document.createElement("img");
-     img.src = "bilder/" + data.bilder[elementId];
-     img.alt = data.land[elementId];
+     img.src = "bilder/" + bilder[elementId];
+     img.alt = land[elementId];
      img.id = "bildeIBeskrivelse";
      return (img.outerHTML)
  }
  function lagFlaggBeskrivelse(elementId) {
      let read = new XMLHttpRequest();
-     read.open('GET', data.beskrivelser[elementId], false);
+     read.open('GET', beskrivelser[elementId], false);
      read.send();
 
      let overskrift = document.createElement("strong");
      overskrift.classList.add("boldOverskrift");
-     overskrift.innerText = data.land[elementId];
+     overskrift.innerText = land[elementId];
 
      let documentText = read.responseText;
      let paragraf = document.createElement("p");
@@ -169,12 +167,4 @@ const data = getJsonObject("script/dataMaler/data.json") ;
      setTimeout(function () {
          element.parentNode.removeChild(element);
      },400)
- }
-
- function getJsonObject(object) {
-     let read = new XMLHttpRequest();
-     read.open('GET', object, false);
-     read.send();
-
-     return JSON.parse(read.responseText);
  }
