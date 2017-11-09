@@ -104,8 +104,8 @@ Mening: Legge inn bilder i bildegalleriet og reagere på brukerinput
      }
      //ingen infodiv tilstede, lager en ny
      else {
-         lagPil(this);
          lagInfoDiv(this);
+         lagPil(this);
          eksisterendeDiv = true;
      }
      //lagrer seg selv som forrige div
