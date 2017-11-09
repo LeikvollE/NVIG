@@ -1,6 +1,6 @@
 /*
 Filnavn: header.js
-Skrevet av: Einar Viddal, Emil Strand, Eirik Leikvoll
+Skrevet av: Einar Viddal, Emil Strand, Eirik Leikvoll og Lars Martin Hodne
 Når: Oktober 2017
 Mening: Lage alt innholdet i headeren og gi den funksjonalitet.
 Det vil si, linke til forsiden,

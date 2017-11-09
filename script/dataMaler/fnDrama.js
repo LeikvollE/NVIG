@@ -1,3 +1,9 @@
+/*
+Filnavn: fnDrama.js
+Skrevet av: Lars Martin Hodne
+Når: November 2017
+Mening: mal for flaggdrama artikkelen, gir info til artikkelConstructor.js.
+*/
 var mainPhoto = {source:"bilder/fnBilde.png", alter:"artikkelbilde", heading:"Flaggdrama hos FN"};
 var details = {dato:"23/09/98",forfatter:"Torfrid Heigirsdottir"};
 var artikkelContent = [

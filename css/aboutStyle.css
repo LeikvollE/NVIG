@@ -1,3 +1,10 @@
+/*
+Filnavn: aboutStyle.css
+Skrevet av: Emil Strand, Lars Martin Hodne
+Når: November 2017
+Mening: Presentere innholdet i about.html på en attraktiv måte.
+*/
+
 main {
     display: flex;
 }
@@ -5,23 +12,21 @@ main {
     align-self: center;
     display: flex;
     margin: 0 auto;
-    width: 80vh;
-    height: 50vh;
+    width: 100vh;
+    height: 60vh;
     background-color: #f2f2f2;
     align-items: center;
 }
 
 #aboutDiv {
-    font-size: 2vh;
-    width: 70%;
+    font-size: 3vh;
+    width: 75%;
     padding: 10px;
 }
 
 
 #aboutNavigator {
-    border-width: 10px 10px 10px 0;
-    border-color: #c33838;
-    width: 30%;
+    width: 25%;
     height: inherit;
 }
 
@@ -36,9 +41,9 @@ main {
 .button {
     display: flex;
     width: 100%;
+    font-size: 2.5vh;
     align-items: center;
     justify-content: center;
-    padding: 4.3vh;
     border-style: solid;
     border-color: #c33838;
     border-width: 1px 1px 0 0;

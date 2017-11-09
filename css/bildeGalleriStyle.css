@@ -1,3 +1,9 @@
+/*
+Filnavn: bildeGalleriStyle.css
+Skrevet av:Lars Martin Hodne
+Når: November 2017
+Mening: Presentere innholdet i bildeGalleri.html på en attraktiv måte også beskrive ulike animasjoner på siden.
+*/
 .bildeRad, .sisteBildeRad {
     display: flex;
     justify-content: space-between;
