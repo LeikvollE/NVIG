@@ -20,6 +20,8 @@ artikkelBilde.src = "bilder/" + mainPhoto.source;
 artikkelBilde.alt = mainPhoto.alter;
 bildeVindu.appendChild(artikkelBilde);
 
+
+var artikkel = document.getElementById("artikkel");
 var shareLinkFacebook = document.createElement("a");
 var shareLinkTwitter = document.createElement("a");
 shareLinkFacebook.innerHTML = "Del på facebook!";
