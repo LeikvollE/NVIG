@@ -113,12 +113,8 @@ tr:first-child img{
     width: inherit;
 }
 
-.shareLinkTwitter:hover {
+.shareLinkTwitter:hover,.shareLinkFacebook:hover  {
     box-shadow: 2px 2px 3px #BBB ;
-}
-
-.shareLinkFacebook:hover {
-    box-shadow: 2px 2px 3px #BBB;
 }
 
 #fbBilde {
