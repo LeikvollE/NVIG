@@ -90,3 +90,7 @@ blockquote {
     color: #f5f8fa;
     width: inherit;
 }
+
+#FBpost {
+    width: 800px;
+}
