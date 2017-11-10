@@ -11,6 +11,31 @@ class Entity {
     move(delta) {
         return;
     }
+
+    checkCollision() {
+
+    }
+}
+
+class fireBall extends Entity {
+    constructor(x, y, xSpeed, ySpeed) {
+        super(x, y);
+        this.xSpeed = xSpeed;
+        this.ySpeed = ySpeed;
+    }
+
+    get texture() {
+        return "game/img/fireball.png";
+    }
+
+    move(delta) {
+
+        this.ySpeed += player.gravity*delta;
+        this.y+=this.ySpeed;
+        this.x+=this.xSpeed;
+
+
+    }
 }
 
 class Enemy extends Entity {
@@ -87,6 +112,7 @@ class nepalBoss extends Boss {
     constructor(x, y, health) {
         super(x,y,health);
         this.speed = 0.5;
+        this.timer = 0;
     }
 
     move(delta) {
@@ -94,6 +120,13 @@ class nepalBoss extends Boss {
         if (this.y > map[0].length*21) {
             running = false;
             setTimeout(nextLevel, 1000);
+        }
+
+        this.timer++;
+
+        if (this.timer > 100) {
+            Entities.push(new fireBall(this.x, this.y, (Math.abs(this.x-player.xPos)/(2.39113*(delta*1000))*this.direction)/1.75, -5));
+            this.timer = 0;
         }
 
         if (player.xPos - this.x > 0) {
