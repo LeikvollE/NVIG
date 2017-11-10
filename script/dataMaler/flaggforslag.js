@@ -7,8 +7,8 @@ Mening: mal for flaggdrama artikkelen, gir info til artikkelConstructor.js.
 var mainPhoto = {source:artikler[1][0].bilde, alter:"artikkelbilde", heading:artikler[1][0].tittel};
 var details = {dato:"09/11/17",forfatter:"Frédéric Ménard Lindboe"};
 var artikkelContent = [
-    {type: "p", content: "<strong>OPPDATERING:</strong>"},
-    {type: "p", content: "<a href='http://org.ntnu.no/ntnui/wp-content/uploads/2016/10/Statutter.pdf' alt='NTNUI-statutt' target='_blank'>NTNUI-statuttene</a> " +
+
+    {type: "p", content: "<strong>OBS:</strong><a href='http://org.ntnu.no/ntnui/wp-content/uploads/2016/10/Statutter.pdf' alt='NTNUI-statutt' target='_blank'>NTNUI-statuttene</a> " +
     "ønsker at stripene har relativ størrelse 3:4:3 (gul:svart:gul). " +
     "Dette var noe jeg ble gjort oppmerksom på ved en tilfeldighet samme dag som dette innlegget publiseres. " +
     "Der var det også bestemt en standard grønntone. Jeg synes det er best å samkjøre flaggdesignet med etablert " +
