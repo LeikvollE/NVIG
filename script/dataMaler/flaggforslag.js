@@ -2,7 +2,7 @@
 Filnavn: flaggforslag.js
 Skrevet av: Emil Strand
 Når: November 2017
-Mening: mal for flaggforslag artikkelen, gir info til artikkelConstructor.js.
+Mening: mal for flaggforslag artikkelen, gir info til artikkelConstructor.js. oppfylle krav om modularitet
 */
 
 //gir info til hvordan artikkelen skal bygges opp. Merk at tanken er at
