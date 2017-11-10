@@ -130,7 +130,7 @@ footer h3 {
     color: #666666;
 }
 
-footer a {
+footer a {font-size: 120%;
     text-decoration: underline;
     color: #666666;
 }
