@@ -41,6 +41,7 @@ var links = [ //Viser til arrayen som holder info om nettstedets sider, denne br
 ];
 
 for (var a=0; a<headings.length; a++){
+    //lager en kolonne i navbaren
   var newDiv = document.createElement("div");
   newDiv.className = "menyDiv";
   var boldHeading = document.createElement("b");
@@ -65,7 +66,7 @@ navOpener.id = "navOpener";
 headerContainer.appendChild(navOpener);
 document.getElementById("navOpener").onclick = openNavbar; //Kaller funksjon som åpner navbaren.
 
-//Lager er pil som viser at man kan åpne navbaren
+//Lager en pil som viser at man kan åpne navbaren
 var arrow = document.createElement("img");
 arrow.src = "bilder/Arrow.png";
 arrow.alt = "^";
