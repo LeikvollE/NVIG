@@ -74,6 +74,7 @@ img {
 #twitterOgYoutube {
     margin-top: 4vh;
     width: 60vw;
+    max-height: 16.6vw;
     max-width: 1300px;
     display: flex;
     justify-content: space-between;
@@ -81,13 +82,16 @@ img {
 }
 
 #twitter {
+    overflow: hidden;
     width: 50%;
     display: flex;
     justify-content: flex-start;
 }
 
 iframe {
-    width: 49%;
+    width: 29.5vw;
+    max-width: 637px;
+    height: 16.6vw;
 }
 
 .overskrift {

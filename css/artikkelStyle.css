@@ -61,18 +61,40 @@ blockquote a:hover, p a:hover, .dobbelDiv a:hover {
 }
 blockquote {
     font-style: italic;
-    font-size: 80%;
+    font-size: 90%;
 }
-.dobbelDiv {
-    display: inline-block;
-    width: 48%;
-    text-align: left;
-    padding: 1%;
+
+tr:nth-child(even) {
+    width: 100%;
+    justify-content: center;
+    font-weight: bold;
+    align-self: center;
+    font-size: 120%;
+    margin: 3vh;
+}
+
+table {
+    display: flex;
+    flex-flow: column;
+}
+
+tr {
+    display: flex;
+}
+
+td {
+    margin: 0 2vh;
+    width: 50%;
     align-self: flex-start;
 }
-.dobbelContainer {
-    display: flex;
-    flex-wrap: wrap;
+
+tr:first-child {
+    display: block;
+    margin: auto;
+}
+
+tr:first-child img{
+    padding:0 18vh;
 }
 
 .shareLinkFacebook {
@@ -96,5 +118,13 @@ blockquote {
 }
 
 .shareLinkFacebook:hover {
-    box-shadow: 2px 2px 3px #BBB ;
+    box-shadow: 2px 2px 3px #BBB;
+}
+
+#FBpost {
+    width: 500px;
+}
+
+a {
+    color: #55acee;
 }
