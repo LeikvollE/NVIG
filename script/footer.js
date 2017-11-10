@@ -21,7 +21,6 @@ footer.appendChild(displayClient);
 
 let displayLink = document.createElement("a");
 displayLink.href = ekstraSider[1].fil;
-displayLink.alt = ekstraSider[1].tittel;
 displayLink.target = ekstraSider[1].target;
 displayLink.id = "displayLinkTwitter";
 displayLink.innerText = ekstraSider[1].tittel;
