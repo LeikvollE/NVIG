@@ -16,7 +16,7 @@ bildeVindu.appendChild(artikkelHeading);
 //setter inn hovedbilde
 var artikkelBilde = document.createElement("img");
 artikkelBilde.className = "bilde";
-artikkelBilde.src = mainPhoto.source;
+artikkelBilde.src = "bilder/" + mainPhoto.source;
 artikkelBilde.alt = mainPhoto.alter;
 bildeVindu.appendChild(artikkelBilde);
 
