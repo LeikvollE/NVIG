@@ -90,3 +90,11 @@ blockquote {
     color: #f5f8fa;
     width: inherit;
 }
+
+.shareLinkTwitter:hover {
+    box-shadow: 2px 2px 3px #BBB ;
+}
+
+.shareLinkFacebook:hover {
+    box-shadow: 2px 2px 3px #BBB ;
+}
