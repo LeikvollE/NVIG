@@ -22,7 +22,7 @@ var artikkelContent = [
     {type: "p", content: "<strong>OPPRINNELIG ARTIKKEL:</strong>"},
     {type:"p",content:"Merk at denne artikkelen bygger på det temaet i " +
     "<a href='til-alle-med-hjerte-i-ntnui.html' alt='NTNUI-artikkel'>denne</a> artikkelen. Det anbefales at du " +
-    "leser den før du fortsetter å lese. Her er begrunnelsen for farger og proporsjoner til det foreslåtte designet.\n"},
+    "leser den før du fortsetter å lese. Her er begrunnelsen for farger og proporsjoner til det foreslåtte designet:\n"},
     {type:"img",source:"bilder/NTNUI-flaggforslag.png", alter:"Foreslått design"},
     {type:"p",content:"<i>Fargetonene</i> er hentet fra den logoen som er å finne på NTNUIs hjemmesider:"},
     {type:"p",content:"<ul><li>Grønn: RGB #008000</li><li>Gul: RGB #ffff00</li><li>Svart: RGB #000000</li></ul>"},
