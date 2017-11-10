@@ -10,7 +10,7 @@ Mening: Legge inn bilder i bildegalleriet og reagere på brukerinput
  let bildeContentDiv = document.querySelector("#galleri");
 
  //lar man bestemme antall bilder per rad
- const antallBilderPerRad = 4;
+ const antallBilderPerRad = 5;
 
  //regner ut antall rader gitt ved antallbilderperrad
  const antallRader = (bilder.length - bilder.length%antallBilderPerRad)/antallBilderPerRad;
