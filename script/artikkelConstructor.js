@@ -85,6 +85,9 @@ for (var i=0;i<artikkelContent.length;i++) {
                 element.src = artikkelContent[i].source;
             }
             element.alter = artikkelContent[i].source;
+            if(artikkelContent[i].id) {
+                element.id = artikkelContent[i].id;
+            }
             artikkel.appendChild(element);
         }
     }
