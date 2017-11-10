@@ -7,7 +7,6 @@ Mening: mal for flaggdrama artikkelen, gir info til artikkelConstructor.js.
 var mainPhoto = {source:artikler[1][0].bilde, alter:"artikkelbilde", heading:artikler[1][0].tittel};
 var details = {dato:"09/11/17",forfatter:"Frederic"};
 var artikkelContent = [
-    {type: "p" content:"<strong>ARTIKKELEN ER FORTSATT UNDER KONSTRUKSJON</strong>"},
     {type:"p",content:"Her er begrunnelsen for farger og proporsjoner til det foreslåtte designet.\n"},
     {type:"img",source:"bilder/NTNUI-flaggforslag.png", alter:"Foreslått design"},
     {type:"p",content:"<i>Fargetonene</i> er hentet fra den logoen som er å finne på NTNUIs hjemmesider:"},
