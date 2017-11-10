@@ -55,6 +55,7 @@ for (var a=0; a<headings.length; a++){
       newLink.alt = links[a][b].tittel;
       newLink.innerText = links[a][b].tittel;
 
+      //hvis linken har target: definert legges denne til
       if (links[a][b].target) {
           newLink.target = links[a][b].target;
       }
