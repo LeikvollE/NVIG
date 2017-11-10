@@ -47,7 +47,7 @@ for (var a=0; a<headings.length; a++){
 
   var boldHeading = document.createElement("b");
   boldHeading.innerText = headings[a];
-
+  //setter inn linker
   newDiv.appendChild(boldHeading);
   for (var b=0; b<links[a].length; b++){
       var newLink = document.createElement("a");
