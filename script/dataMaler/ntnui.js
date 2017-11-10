@@ -151,7 +151,7 @@ var artikkelContent = [
     {type:"img",source:"bilder/artikkelBilde11.png",alter:"Snap"},
     {type:"p",content:"Jeg kommer sannsynligvis til å fremme et forslag om å få anerkjent dette stripeflagget som " +
     "NTNUI-flagg ved NTNUI hovedstyrets generalforsamling i februar 2018. Dersom du er NTNUI-medlem og enig i dette innleggets " +
-    "budskap håper jeg du vil stille opp for å stemme frem forslaget. NTNUI fortjener et flott flagg"},
+    "budskap håper jeg du vil stille opp for å stemme frem forslaget. NTNUI fortjener et flott flagg."},
     {type:"p",content:
     "Med håpefull hilsen<br>" +
     "Frédéric Ménard Lindboe,<br>" +

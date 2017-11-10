@@ -34,7 +34,9 @@ navbar.id = "navbar";
 
 var headings = ["Nyeste artikler","Interaktiv","Info"];
 
-var links = [ //Viser til arrayen som holder info om nettstedets sider, denne brukes også av forsiden og artiklene selv
+var links = [
+    //Viser til arrayen i artikellData.js
+    // som holder info om nettstedets sider, denne brukes også av forsiden og artiklene selv
   [artikler[0][0], artikler[1][0], artikler[1][1]],
   [artikler[1][2], artikler[2][0]],
   [ekstraSider[0], ekstraSider[1], ekstraSider[2]]
@@ -47,7 +49,7 @@ for (var a=0; a<headings.length; a++){
 
   var boldHeading = document.createElement("b");
   boldHeading.innerText = headings[a];
-
+  //setter inn linker
   newDiv.appendChild(boldHeading);
   for (var b=0; b<links[a].length; b++){
       var newLink = document.createElement("a");
