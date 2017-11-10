@@ -8,8 +8,8 @@ var artikler = [
     ],
     [
         {
-            tittel:"Flaggdrama hos FN!",
-            bilde:"fnBilde.png",
+            tittel:"Forslag til nytt NTNUI-flagg",
+            bilde:"artikkelBilde6.png",
             fil:"NTNUIflaggforslag.html"
         },
         {
