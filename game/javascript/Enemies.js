@@ -25,7 +25,7 @@ class fireBall extends Entity {
     }
 
     get texture() {
-        return "game/img/fireball.png";
+        return "game/img/fireBall.png";
     }
 
     move(delta) {
