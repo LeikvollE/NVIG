@@ -55,7 +55,8 @@ var artikkelContent = [
     "være lett å regne på det om man skal lage det for hånd. Om flagget blir litt lenger eller litt kortere er ganske " +
     "uvesentlig, men huskeregelen om å gange stripelengde med fem for gult og svart eller ti for grønt er et bra " +
     "utgangspunkt for å få noe som ligner på et ordentlig flagg.\n"},
-    {type: "p", content: "NTNUI-statuttene ønsker at stripene har relativ størrelse 3:4:3 (gul:svart:gul). " +
+    {type: "p", content: "<a href='http://org.ntnu.no/ntnui/wp-content/uploads/2016/10/Statutter.pdf' alt='NTNUI-statutt' target='_blank'>NTNUI-statuttene</a> " +
+    "ønsker at stripene har relativ størrelse 3:4:3 (gul:svart:gul). " +
     "Dette var noe jeg ble gjort oppmerksom på ved en tilfeldighet samme dag som dette innlegget publiseres. " +
     "Der var det også bestemt en standard grønntone. Jeg synes det er best å samkjøre flaggdesignet med etablert " +
     "draktdesign, det er jo tross alt det etablerte fargemønsteret jeg hyller, dermed blir det endelige flaggforslaget " +
