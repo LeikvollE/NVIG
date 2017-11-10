@@ -5,7 +5,7 @@ Når: November 2017
 Mening: mal for flaggdrama artikkelen, gir info til artikkelConstructor.js.
 */
 var mainPhoto = {source:artikler[1][0].bilde, alter:"artikkelbilde", heading:artikler[1][0].tittel};
-var details = {dato:"09/11/17",forfatter:"Frederic"};
+var details = {dato:"09/11/17",forfatter:"Frédéric Ménard Lindboe"};
 var artikkelContent = [
     {type:"p",content:"Her er begrunnelsen for farger og proporsjoner til det foreslåtte designet.\n"},
     {type:"img",source:"bilder/NTNUI-flaggforslag.png", alter:"Foreslått design"},
