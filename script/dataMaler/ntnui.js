@@ -5,7 +5,7 @@ Når: November 2017
 Mening: mal for ntnui artikkelen, gir info til artikkelConstructor.js.
 */
 
-var mainPhoto = {source:"bilder/artikkelTopp.png", alter:"artikkelbilde", heading:"Til alle med hjerte i NTNUI"};
+var mainPhoto = {source:"bilder/artikkelTopp.png", alter:"artikkelbilde", heading:artikler[0][0].tittel};
 var details = {dato:"08/11/17",forfatter:"Frédéric Ménard Lindboe"};
 var artikkelContent = [
     {type:"p",content:"\n" +
