@@ -5,6 +5,63 @@ Når: November 2017
 Mening: mal for ntnui artikkelen, gir info til artikkelConstructor.js.
 */
 
+//tabelldata brukt på siden
+var tabell_1 = [
+    ["<img src='bilder/artikkelBilde7.png' alt='NTNUI'>","<img src='bilder/artikkelBilde8.png' alt='NTNUI'>"],
+    ["1. Keep it simple (so simple a child can draw it from memory)"],
+    ["NTNUI-logoen " +
+    "er faktisk ganske simplistisk og flagget er dermed ingen versting blant idrettsklubber. " +
+    "Dog er logoer vanskelige å anvende annet enn i sin hele form.","Mønsteret i dette flagget er redusert til sine kjernekomponenter og kan \" +\n" +
+    "        \"dermed ikke bli enklere. Anvendeligheten til mønsteret i flagget er skyhøyt, \" +\n" +
+    "        \"slik som illustrert i bildeserien lenger oppe."],
+    ["2. Use meaningful symbolism"],
+    ["NTNUI-logoen symboliserer sammenslåingen av NTHI (grønt, gult og svart) og AVHI (rødt). \" +\n" +
+    "        \"Den historiske symbolikken er ganske god. Likevel anerkjenner logoflagget grønt som klubbens hovedfarge \" +\n" +
+    "        \"ved å bruke grønt i bunn.",
+        "Dette flagget inkluderer ikke det AVHI-røde, kun de opprinnelige NTHI-fargene. Det er synd. Men det \" +\n" +
+        "        \"røde er i dag nesten ikke anvendt i NTNUIs fargeprofil og (hjemme)drakter så jeg tør påstå at veldig få \" +\n" +
+        "        \"mennesker vil reagere på at det røde ikke er i dette flagget. Slik jeg ser det har det grønne og\" +\n" +
+        "        \" gulsvarte blitt omfavnet i dag av alle NTNUIs medlemmer uavhengig av campus og dermed \" +\n" +
+        "        \"representerer disse tre fargene nå alle. Akkurat hva dette fargemønsteret symboliserer er det få som vet \" +\n" +
+        "        \"(ikke jeg), men når stripemønsterets assosiasjonsverdi til NTNUI er så sterk allerede så synes jeg det holder \" +\n" +
+        "        \"i massevis for å lage et bra flagg."],
+    ["3. Use two to three basic colors"],
+    ["Denne regelen er kanskje den mest ignorerte blant flotte flagg. \" +\n" +
+    "        \"Jeg synes ikke det er noe i veien med å bruke flere farger så sant fargene har en \" +\n" +
+    "        \"relevant betydning, kontrasten i flagget er god og det fungerer for flaggets motiv.",
+        "Dette flagget bruker de tre mest brukte NTNUI-fargene grønt, \\\" +\\n\" +\n" +
+        "    \"        \\\"gult og svart. Å introdusere et rødt element synes jeg vil forstyrre stripemotivet og\\\" +\\n\" +\n" +
+        "    \"        \\\" redusere den etablerte og råsterke assosiasjonen til NTNUI det allerede har."],
+    ["4. No lettering or seals of any kind."],
+    ["<img src='bilder/artikkelBilde9.png' alt='flaggstang'><br> Skrift er dårlig egnet på flagg av to årsaker: \" +\n" +
+    "        \"Det er lite slagkraftig bruk av assosiasjoner og det er vanskelig å lese på avstand og når flagget vaier speilvendt eller det ikke er vind. Klikk \" +\n" +
+    "        \"<a href='https://krikienoid.github.io/flagwaver/#?src=http%3A%2F%2Fi.imgur.com%2Fl8sAgNf.png' alt='flaggside' target='_blank'>her</a> for å se\" +\n" +
+    "        \"hvordan dette flagget ser ut vaiende med og uten vind.",
+        "<img src='bilder/artikkelBilde10.png' alt='flaggstang'><br> Siden dette designet er redusert til sitt enkleste\" +\n" +
+        "        \" vil det være gjenkjennelig som NTNUI-flagg både med og uten vind vaiende rettvendt eller speilvendt! Klikk \" +\n" +
+        "        \"<a href='https://krikienoid.github.io/flagwaver/#?src=http%3A%2F%2Fi.imgur.com%2FKGIJ0oo.png' alt='flaggside' target='_blank'>her</a> \" +\n" +
+        "        \"for å se hvordan dette flagget ser ut vaiende med og uten vind. Jeg mener dette flagget hadde vært mye mer \" +\n" +
+        "        \"effektfullt å bruke på flaggstanga til \" +\n" +
+        "        \"<a href='http://www.strindahistorielag.no/wiki/images/thumb/Studenterhytta_i_2014.JPG/200px-Studenterhytta_i_2014.JPG' alt='flaggside' target='_blank'>Studenterhytta</a> \" +\n" +
+        "        \"enn dagens flagg."],
+    ["5. Be distinctive or be related"],
+    ["Logoflagget flagget ligner på andre idrettsklubbflagg: \" +\n" +
+    "        \"<a href='http://www.rbnett.no/incoming/article6615769.ece/BINARY/w980-adaptive/per%20h%C3%A5nde.JPG' alt='Molde' target='_blank'>Molde FK</a> og \" +\n" +
+    "        \"<a href='https://nidarosfoto.smugmug.com/Sport/H%C3%A5ndball-Kvinner/By%C3%A5sen-Elite/Sesongen-2014-15/By%C3%A5sen-vs-Storhamar-H%C3%A5ndball-2/i-Gkfxr6C' \" +\n" +
+    "        \"alt='Håndballside' target='_blank'>Byåsen Håndball</a> har alle \" +\n" +
+    "        \"klubblogoen i flagget på ensfarget bakgrunn. På samme måte viser Norge tilhørighet til Norden ved å bruke\" +\n" +
+    "        \" det usentrerte nordiske korset i flagget sitt. Man kan dermed argumentere for at logoflagget viser at også NTNUI \" +\n" +
+    "        \"er en idrettsklubb. Jeg personlig ville sagt at det også føyer seg i rekken for under middels godt designede flagg.",
+        "NTNUIs unike fargemønster gjøre naturlig nok dette flagget også unikt. En kan si at stripene og \" +\n" +
+        "        \"fargepaletten gjør at flagget minner om en eller annen afrikansk “demokratisk” republikk og dermed \" +\n" +
+        "        \"skaper feil asosiasjoner og viser feil tilhørighet. Faktisk så flagget til den kortlevde nasjonen \" +\n" +
+        "        \"<a href='https://en.wikipedia.org/wiki/Tanganyika' alt='wiki' target='_blank'>Tanganyika</a> \" +\n" +
+        "        \"nesten slik ut! Forskjellen i stripetykkelse, fargenyanse og ikke minst bruksområde (helt urelatert tidl. \" +\n" +
+        "        \"nasjon vs. nåværende lokal idrettsklubb) gjør at denne potensielle forvekslingen nok ikke er noe å bry seg om:\" +\n" +
+        "        \" Flagg trenger primært bli gjenkjent internt for å samle mennesker med felles tilhørighet."]
+];
+
+
 var mainPhoto = {source:artikler[0][0].bilde, alter:"artikkelbilde", heading:artikler[0][0].tittel};
 var details = {dato:"08/11/17",forfatter:"Frédéric Ménard Lindboe"};
 var artikkelContent = [
@@ -79,59 +136,7 @@ var artikkelContent = [
     "The five basic principles of flag design:"},
     {type:"p",content:"La oss nå sammenligne NTNUI-flaggene med hensyn på disse " +
     "<a href='http://www.ausflag.com.au/assets/images/Good-Flag-Bad-Flag.pdf' alt='flaggregler' target='_blank'>flaggdesignprinsippene:</a>"},
-    {type:"dobbelDiv",heading:"",venstre:"<img src='bilder/artikkelBilde7.png' alt='NTNUI'>", hoyre:"<img src='bilder/artikkelBilde8.png' alt='NTNUI'>"},
-    {type:"dobbelDiv",heading:"1. Keep it simple (so simple a child can draw it from memory)",
-        venstre:"NTNUI-logoen " +
-        "er faktisk ganske simplistisk og flagget er dermed ingen versting blant idrettsklubber. " +
-        "Dog er logoer vanskelige å anvende annet enn i sin hele form.",
-        hoyre:"Mønsteret i dette flagget er redusert til sine kjernekomponenter og kan " +
-        "dermed ikke bli enklere. Anvendeligheten til mønsteret i flagget er skyhøyt, " +
-        "slik som illustrert i bildeserien lenger oppe."},
-    {type:"dobbelDiv",heading:"2. Use meaningful symbolism",
-        venstre:"NTNUI-logoen symboliserer sammenslåingen av NTHI (grønt, gult og svart) og AVHI (rødt). " +
-        "Den historiske symbolikken er ganske god. Likevel anerkjenner logoflagget grønt som klubbens hovedfarge " +
-        "ved å bruke grønt i bunn.",
-        hoyre:"Dette flagget inkluderer ikke det AVHI-røde, kun de opprinnelige NTHI-fargene. Det er synd. Men det " +
-        "røde er i dag nesten ikke anvendt i NTNUIs fargeprofil og (hjemme)drakter så jeg tør påstå at veldig få " +
-        "mennesker vil reagere på at det røde ikke er i dette flagget. Slik jeg ser det har det grønne og" +
-        " gulsvarte blitt omfavnet i dag av alle NTNUIs medlemmer uavhengig av campus og dermed " +
-        "representerer disse tre fargene nå alle. Akkurat hva dette fargemønsteret symboliserer er det få som vet " +
-        "(ikke jeg), men når stripemønsterets assosiasjonsverdi til NTNUI er så sterk allerede så synes jeg det holder " +
-        "i massevis for å lage et bra flagg."},
-    {type:"dobbelDiv",heading:"3. Use two to three basic colors",
-        venstre:"Denne regelen er kanskje den mest ignorerte blant flotte flagg. " +
-        "Jeg synes ikke det er noe i veien med å bruke flere farger så sant fargene har en " +
-        "relevant betydning, kontrasten i flagget er god og det fungerer for flaggets motiv. ",
-        hoyre:"Dette flagget bruker de tre mest brukte NTNUI-fargene grønt, " +
-        "gult og svart. Å introdusere et rødt element synes jeg vil forstyrre stripemotivet og" +
-        " redusere den etablerte og råsterke assosiasjonen til NTNUI det allerede har.  "},
-    {type:"dobbelDiv",heading:"4. No lettering or seals of any kind.",
-        venstre:"<img src='bilder/artikkelBilde9.png' alt='flaggstang'><br> Skrift er dårlig egnet på flagg av to årsaker: " +
-        "Det er lite slagkraftig bruk av assosiasjoner og det er vanskelig å lese på avstand og når flagget vaier speilvendt eller det ikke er vind. Klikk " +
-        "<a href='https://krikienoid.github.io/flagwaver/#?src=http%3A%2F%2Fi.imgur.com%2Fl8sAgNf.png' alt='flaggside' target='_blank'>her</a> for å se" +
-        "hvordan dette flagget ser ut vaiende med og uten vind.",
-        hoyre:"<img src='bilder/artikkelBilde10.png' alt='flaggstang'><br> Siden dette designet er redusert til sitt enkleste" +
-        " vil det være gjenkjennelig som NTNUI-flagg både med og uten vind vaiende rettvendt eller speilvendt! Klikk " +
-        "<a href='https://krikienoid.github.io/flagwaver/#?src=http%3A%2F%2Fi.imgur.com%2FKGIJ0oo.png' alt='flaggside' target='_blank'>her</a> " +
-        "for å se hvordan dette flagget ser ut vaiende med og uten vind. Jeg mener dette flagget hadde vært mye mer " +
-        "effektfullt å bruke på flaggstanga til " +
-        "<a href='http://www.strindahistorielag.no/wiki/images/thumb/Studenterhytta_i_2014.JPG/200px-Studenterhytta_i_2014.JPG' alt='flaggside' target='_blank'>Studenterhytta</a> " +
-        "enn dagens flagg."},
-    {type:"dobbelDiv",heading:"5. Be distinctive or be related",
-        venstre:"Logoflagget flagget ligner på andre idrettsklubbflagg: " +
-        "<a href='http://www.rbnett.no/incoming/article6615769.ece/BINARY/w980-adaptive/per%20h%C3%A5nde.JPG' alt='Molde' target='_blank'>Molde FK</a> og " +
-        "<a href='https://nidarosfoto.smugmug.com/Sport/H%C3%A5ndball-Kvinner/By%C3%A5sen-Elite/Sesongen-2014-15/By%C3%A5sen-vs-Storhamar-H%C3%A5ndball-2/i-Gkfxr6C' " +
-        "alt='Håndballside' target='_blank'>Byåsen Håndball</a> har alle " +
-        "klubblogoen i flagget på ensfarget bakgrunn. På samme måte viser Norge tilhørighet til Norden ved å bruke" +
-        " det usentrerte nordiske korset i flagget sitt. Man kan dermed argumentere for at logoflagget viser at også NTNUI " +
-        "er en idrettsklubb. Jeg personlig ville sagt at det også føyer seg i rekken for under middels godt designede flagg.",
-        hoyre:"NTNUIs unike fargemønster gjøre naturlig nok dette flagget også unikt. En kan si at stripene og " +
-        "fargepaletten gjør at flagget minner om en eller annen afrikansk “demokratisk” republikk og dermed " +
-        "skaper feil asosiasjoner og viser feil tilhørighet. Faktisk så flagget til den kortlevde nasjonen " +
-        "<a href='https://en.wikipedia.org/wiki/Tanganyika' alt='wiki' target='_blank'>Tanganyika</a> " +
-        "nesten slik ut! Forskjellen i stripetykkelse, fargenyanse og ikke minst bruksområde (helt urelatert tidl. " +
-        "nasjon vs. nåværende lokal idrettsklubb) gjør at denne potensielle forvekslingen nok ikke er noe å bry seg om:" +
-        " Flagg trenger primært bli gjenkjent internt for å samle mennesker med felles tilhørighet. "},
+    {type:"table",content: tabell_1},
     {type:"p",content:"Selvfølgelig finnes det mennesker utenfor student-Trondheim som ikke vil gjenkjenne stripeflagget " +
     "som NTNUI-flagg. Hvordan skal man vise overfor dem at man er fra NTNUI? Jo, stripeflagg som brukes på idrettsarrangement " +
     "vil ha NTNUI-utøvere tilstede. Disse utøverne har oftest på seg NTNUI-klær med samme fargemønster og med NTNUI tydelig " +

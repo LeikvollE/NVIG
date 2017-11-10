@@ -63,17 +63,6 @@ blockquote {
     font-style: italic;
     font-size: 80%;
 }
-.dobbelDiv {
-    display: inline-block;
-    width: 48%;
-    text-align: left;
-    padding: 1%;
-    align-self: flex-start;
-}
-.dobbelContainer {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .shareLinkFacebook {
     padding: 5px 10px;

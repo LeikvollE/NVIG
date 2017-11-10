@@ -43,54 +43,33 @@ infoBoks.appendChild(understrek);
 var artikkel = document.getElementById("artikkel");
 //kjører for lengden til arrayen i det andre js-dokumentet
 for (var i=0;i<artikkelContent.length;i++) {
-    //Den ene artikkelen hadde bruk for en tabbell. I våre øyne er tabellr stygge og tungvindte å håndtere, vi gikk derfor
-    //for en annen, mer skreddersydd løsning, dobbelDiv, altså en todelt div med en venstre og høyre side, som en enkel tabell
-    if (artikkelContent[i].type === "dobbelDiv") {
-        //lager venstre og høyre side
-       var venstre = document.createElement("div");
-       venstre.className = "dobbelDiv";
-       var hoyre = document.createElement("div");
-       hoyre.className = "dobbelDiv";
-
-       //setter inn tekst
-       hoyre.innerHTML = artikkelContent[i].hoyre;
-       venstre.innerHTML = artikkelContent[i].venstre;
-
-       var container = document.createElement("div");
-       container.className = "dobbelContainer";
-       //henter heading
-       var dobbelHeading = document.createElement("h4");
-       dobbelHeading.innerText = artikkelContent[i].heading;
-
-       //setter alt inn i en containerdiv
-       artikkel.appendChild(dobbelHeading);
-       container.appendChild(venstre);
-       container.appendChild(hoyre);
-       artikkel.appendChild(container);
+    //ellers lages et element av typen spesifisert i arrayen
+    var element = document.createElement(artikkelContent[i].type);
+    //for p eller blockquote kjøres det følgende
+    if (artikkelContent[i].type === "p" || artikkelContent[i].type === "blockquote") {
+        element.innerHTML = artikkelContent[i].content;
     }
-    else {
-        //ellers lages et element av typen spesifisert i arrayen
-        var element = document.createElement(artikkelContent[i].type);
-        //for p eller blockquote kjøres det følgende
-        if (artikkelContent[i].type === "p" || artikkelContent[i].type === "blockquote") {
-            element.innerHTML = artikkelContent[i].content;
-            artikkel.appendChild(element);
+    else if (artikkelContent[i].type === "a" || artikkelContent[i].type === "img") {
+        if (artikkelContent[i].type === "a") {
+            element.href = artikkelContent[i].source;
         }
-        //bilder og linker
-        else if (artikkelContent[i].type === "a" || artikkelContent[i].type === "img") {
-            if (artikkelContent[i].type === "a") {
-                element.href = artikkelContent[i].source;
+        else {
+            element.src = artikkelContent[i].source;
+        }
+        element.alter = artikkelContent[i].source;
+    }
+    else if (artikkelContent[i].type === "table") {
+        for (var k = 0;k<artikkelContent[i].content.length;k++) {
+            var row = document.createElement("tr");
+            for (b = 0;b<artikkelContent[i].content[k].length;b++) {
+                var rowData = document.createElement("td");
+                rowData.innerHTML = artikkelContent[i].content[k][b];
+                row.appendChild(rowData)
             }
-            else {
-                element.src = artikkelContent[i].source;
-            }
-            element.alter = artikkelContent[i].source;
-            if(artikkelContent[i].id) {
-                element.id = artikkelContent[i].id;
-            }
-            artikkel.appendChild(element);
+            element.appendChild(row)
         }
     }
+    artikkel.appendChild(element)
 }
 
 var shareLinkFacebook = document.createElement("a");
