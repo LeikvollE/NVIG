@@ -110,7 +110,7 @@ var artikkelContent = [
         "Det er lite slagkraftig bruk av assosiasjoner og det er vanskelig å lese på avstand og når flagget vaier speilvendt eller det ikke er vind. Klikk " +
         "<a href='https://krikienoid.github.io/flagwaver/#?src=http%3A%2F%2Fi.imgur.com%2Fl8sAgNf.png' alt='flaggside' target='_blank'>her</a> for å se" +
         "hvordan dette flagget ser ut vaiende med og uten vind.",
-        hoyre:"<img src='bilder/artikkelBilde10.png' alt=flaggstang'><br> Siden dette designet er redusert til sitt enkleste" +
+        hoyre:"<img src='bilder/artikkelBilde10.png' alt='flaggstang'><br> Siden dette designet er redusert til sitt enkleste" +
         " vil det være gjenkjennelig som NTNUI-flagg både med og uten vind vaiende rettvendt eller speilvendt! Klikk " +
         "<a href='https://krikienoid.github.io/flagwaver/#?src=http%3A%2F%2Fi.imgur.com%2FKGIJ0oo.png' alt='flaggside' target='_blank'>her</a> " +
         "for å se hvordan dette flagget ser ut vaiende med og uten vind. Jeg mener dette flagget hadde vært mye mer " +
