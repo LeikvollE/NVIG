@@ -2,8 +2,11 @@
 Filnavn: flaggforslag.js
 Skrevet av: Emil Strand
 Når: November 2017
-Mening: mal for flaggdrama artikkelen, gir info til artikkelConstructor.js.
+Mening: mal for flaggforslag artikkelen, gir info til artikkelConstructor.js.
 */
+
+//gir info til hvordan artikkelen skal bygges opp. Merk at tanken er at
+//man skal kunne lage et script som gjør oppgaven av å lage malen for deg.
 var mainPhoto = {source:artikler[1][0].bilde, alter:"artikkelbilde", heading:artikler[1][0].tittel};
 var details = {dato:"09/11/17",forfatter:"Frédéric Ménard Lindboe"};
 var artikkelContent = [
@@ -30,7 +33,7 @@ var artikkelContent = [
     "Skal man bestille ordentlige og sydde flagg er det kun fåtall tilgjengelige fargetoner uansett, så ordentlige " +
     "flagg vil vike noe fra forslaget over. Under følger et nyansespekter av grønnalternativer og hvordan " +
     "de ser ut i flagget:\n"},
-    {type: "img", source: "bilder/NTNUItabell.png"},
+    {type: "img", source: "bilder/NTNUItabell.png", alter:"tabell"},
     {type:"p",content:"De relative stripetykkelsene er 2:1:1:1:2 (grønn:gul:svart:gul:svart) mens selve " +
     "flaggproporsjonene er satt til 7:10 (høyde:bredde). \n" +
     "Utgangspunktet for stripetykkelsene er at på de fleste NTNUI-drakter jeg har sett ser den svarte stripen omtrent " +
@@ -43,6 +46,5 @@ var artikkelContent = [
     {type: "p", content:"Flaggproporsjonene 7:10 er valgt fordi flagg pleier å være rektangulære og at det skal " +
     "være lett å regne på det om man skal lage det for hånd. Om flagget blir litt lenger eller litt kortere er ganske " +
     "uvesentlig, men huskeregelen om å gange stripelengde med fem for gult og svart eller ti for grønt er et bra " +
-    "utgangspunkt for å få noe som ligner på et ordentlig flagg.\n"},
-    {type: "p", content: "\n"}
+    "utgangspunkt for å få noe som ligner på et ordentlig flagg.\n"}
 ];
