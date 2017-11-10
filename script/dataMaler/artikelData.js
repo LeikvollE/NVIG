@@ -49,6 +49,6 @@ var ekstraSider = [
     {
         tittel:"Twitter",
         fil:"https://twitter.com/nvigntnu",
-        target:"blank"
+        target:"_blank"
     }
 ];

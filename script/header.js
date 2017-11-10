@@ -51,7 +51,7 @@ for (var a=0; a<headings.length; a++){
       newLink.alt = links[a][b].tittel;
       newLink.innerText = links[a][b].tittel;
       if (links[a][b].target) {
-          newLink.target = "_blank"
+          newLink.target = links[a][b].target;
       }
     newDiv.appendChild(newLink);
   }
