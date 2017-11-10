@@ -19,9 +19,8 @@ let displayClient = document.createElement("h3");
 displayClient.innerText = "\xA9NVIG - Trondheim 2017";
 footer.appendChild(displayClient);
 
+//link til toppen av siden
 let displayLink = document.createElement("a");
-displayLink.href = ekstraSider[1].fil;
-displayLink.target = ekstraSider[1].target;
-displayLink.id = "displayLinkTwitter";
-displayLink.innerText = ekstraSider[1].tittel;
+displayLink.href = "#";
+displayLink.innerText = "Til toppen";
 footer.appendChild(displayLink);
