@@ -40,7 +40,7 @@ var artikler = [
 var ekstraSider = [
     {
         tittel:"Flaggalleri",
-        fil:"bildeGallri.html"
+        fil:"bildeGalleri.html"
     },
     {
         tittel:"Om oss",
