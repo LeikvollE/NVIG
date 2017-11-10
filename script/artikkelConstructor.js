@@ -57,6 +57,9 @@ for (var i=0;i<artikkelContent.length;i++) {
             element.src = artikkelContent[i].source;
         }
         element.alter = artikkelContent[i].source;
+        if (artikkelContent[i].id) {
+            element.id = artikkelContent[i].id;
+        }
     }
     else if (artikkelContent[i].type === "table") {
         for (var k = 0;k<artikkelContent[i].content.length;k++) {
