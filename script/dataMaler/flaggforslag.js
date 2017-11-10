@@ -15,7 +15,8 @@ var artikkelContent = [
     "Skal man bestille ordentlige og sydde flagg er det kun fåtall tilgjengelige fargetoner uansett, så ordentlige " +
     "flagg vil vike noe fra forslaget over. Under følger et nyansespekter av grønnalternativer og hvordan " +
     "de ser ut i flagget:\n"},
-    {type: "table", content:
+    {type: "img", source: "bilder/NTNUItabell.png"},
+    /*{type: "table", content:
     "<tr>" +
     "    <th>#00<strong>40</strong>00</th>" +
     "    <th>#00<strong>50</strong>00</th>" +
@@ -40,7 +41,7 @@ var artikkelContent = [
     "    <th></th>" +
     "    <th></th>" +
     "</tr>"
-    },
+    },*/
     {type:"p",content:"De relative stripetykkelsene er 2:1:1:1:2 (grønn:gul:svart:gul:svart) mens selve " +
     "flaggproporsjonene er satt til 7:10 (høyde:bredde). \n" +
     "Utgangspunktet for stripetykkelsene er at på de fleste NTNUI-drakter jeg har sett ser den svarte stripen omtrent " +
