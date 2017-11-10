@@ -43,8 +43,8 @@ infoBoks.appendChild(understrek);
 var artikkel = document.getElementById("artikkel");
 //kjører for lengden til arrayen i det andre js-dokumentet
 for (var i=0;i<artikkelContent.length;i++) {
-    //dobbeldiv er en slags jukse-versjon av en tabell, valgte denne versjonen siden tabeller er stygge
-    //og tungvinte å style
+    //Den ene artikkelen hadde bruk for en tabbell. I våre øyne er tabellr stygge og tungvindte å håndtere, vi gikk derfor
+    //for en annen, mer skreddersydd løsning, dobbelDiv, altså en todelt div med en venstre og høyre side, som en enkel tabell
     if (artikkelContent[i].type === "dobbelDiv") {
         //lager venstre og høyre side
        var venstre = document.createElement("div");
