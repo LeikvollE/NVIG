@@ -69,7 +69,7 @@ var artikkelContent = [
     "Jeg heter Frédéric, spiller volleyball for NTNUI og elsker flagg. Det siste ble jeg av å ha sett " +
     "<a href='https://youtu.be/pnv5iKB2hl4' alt='Roman-Mars-snakker-om-flagg' target='_blank'>denne</a> TED-talken. Den er, helt oppriktig," +
     " noe av det mest inspirerende jeg noensinne har sett. Jeg anbefaler deg å faktisk se hele videoen før du leser dette innlegget videre." +
-    " Jeg kommer nemlig til å ta utgangspunkt i sitater derfra for å strukturere argumentene om <strong>hvorfor jeg mener NTNUI få et nytt flagg.</strong>"},
+    " Jeg kommer nemlig til å ta utgangspunkt i sitater derfra for å strukturere argumentene om <strong>hvorfor jeg mener NTNUI bør få et nytt flagg.</strong>"},
     {type:"blockquote",content:"<a href='https://youtu.be/pnv5iKB2hl4?t=1m22s' alt='video' target='_blank'>1:22</a><br>\n" +
     "Sometimes I bring up the topic of flags, and people are like, \"I don't care about flags,\" and then we start talking about flags, and trust me, " +
     "100 percent of people care about flags. There's just something about them that works on our emotions."},
