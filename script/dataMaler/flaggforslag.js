@@ -1,5 +1,5 @@
 /*
-Filnavn: fnDrama.js
+Filnavn: flaggforslag.js
 Skrevet av: Emil Strand
 Når: November 2017
 Mening: mal for flaggdrama artikkelen, gir info til artikkelConstructor.js.

@@ -15,7 +15,7 @@ var artikler = [
         {
             tittel:"Vexillologi - Studiet av flagg",
             bilde:"veksillologi.png",
-            fil:"Article2.html"
+            fil:"vexillologi.html"
         },
         {
             tittel:"Flaggspill",
