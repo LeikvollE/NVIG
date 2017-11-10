@@ -25,7 +25,7 @@ for (let i = 0; i < map.length; i++) {
 }
 
 var game = {
-    nextLevel: "game/levels/level01.json"
+    nextLevel: "game/levels/level03.json"
 }
 
 var player = {
