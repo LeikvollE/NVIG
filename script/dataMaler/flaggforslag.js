@@ -15,7 +15,7 @@ var artikkelContent = [
     "Skal man bestille ordentlige og sydde flagg er det kun fåtall tilgjengelige fargetoner uansett, så ordentlige " +
     "flagg vil vike noe fra forslaget over. Under følger et nyansespekter av grønnalternativer og hvordan " +
     "de ser ut i flagget:\n"},
-    {type: "img", source: "bilder/NTNUItabell.png"},
+    {type: "img", source: "bilder/NTNUItabell.PNG"},
     /*{type: "table", content:
     "<tr>" +
     "    <th>#00<strong>40</strong>00</th>" +
