@@ -35,6 +35,22 @@ class fireBall extends Entity {
         this.x+=this.xSpeed;
 
 
+        if (this.y > map[0].length*21) {
+            Entities.splice(Entities.indexOf(this), 1)
+        }
+
+    }
+
+    checkCollision() {
+        if ((player.xPos <= this.x+15 && this.x <= player.xPos+15) && (player.yPos <= this.y+15 && this.y <= player.yPos+15)) {
+            running = false;
+            player.xPos = player.xStart;
+            player.yPos = player.yStart;
+            player.ySpeed = 0;
+            setTimeout(function () {
+                resumeGame();
+            },1000);
+        }
     }
 }
 
@@ -124,7 +140,7 @@ class nepalBoss extends Boss {
 
         this.timer++;
 
-        if (this.timer > 100) {
+        if (this.timer > 60) {
             Entities.push(new fireBall(this.x, this.y, (Math.abs(this.x-player.xPos)/(2.39113*(delta*1000))*this.direction)/1.75, -5));
             this.timer = 0;
         }

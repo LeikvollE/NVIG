@@ -129,7 +129,7 @@ function move(elapsedSinceLastLoop) {
         tileAtScreenPos(player.xPos+player.speed*direction, player.yPos+20).solid ||
         tileAtScreenPos(player.xPos+20+player.speed*direction, player.yPos).solid ||
         tileAtScreenPos(player.xPos+20+player.speed*direction, player.yPos+20).solid)) {
-        player.xPos += player.speed*direction;
+        player.xPos += player.speed*direction*elapsedSinceLastLoop*75;
     }
 
 
