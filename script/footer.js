@@ -20,7 +20,7 @@ displayClient.innerText = "\xA9NVIG - Trondheim 2017";
 footer.appendChild(displayClient);
 
 let displayLink = document.createElement("a");
-displayLink.href = ekstraSider[2].fil;
+displayLink.href = ekstraSider[1].fil;
 displayLink.alt = "twitter";
 displayLink.target = "_blank";
 displayLink.id = "displayLinkTwitter";
