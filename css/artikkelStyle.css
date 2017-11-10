@@ -61,7 +61,40 @@ blockquote a:hover, p a:hover, .dobbelDiv a:hover {
 }
 blockquote {
     font-style: italic;
-    font-size: 80%;
+    font-size: 90%;
+}
+
+tr:nth-child(even) {
+    width: 100%;
+    justify-content: center;
+    font-weight: bold;
+    align-self: center;
+    font-size: 120%;
+    margin: 3vh;
+}
+
+table {
+    display: flex;
+    flex-flow: column;
+}
+
+tr {
+    display: flex;
+}
+
+td {
+    margin: 0 2vh;
+    width: 50%;
+    align-self: flex-start;
+}
+
+tr:first-child {
+    display: block;
+    margin: auto;
+}
+
+tr:first-child img{
+    padding:0 18vh;
 }
 
 .shareLinkFacebook {
