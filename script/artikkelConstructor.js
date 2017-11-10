@@ -20,61 +20,8 @@ artikkelBilde.src = "bilder/" + mainPhoto.source;
 artikkelBilde.alt = mainPhoto.alter;
 bildeVindu.appendChild(artikkelBilde);
 
-//henter infoboks
-var infoBoks = document.getElementById("info");
 
-//setter inn dato fra det andre js-dokumentet
-var dato = document.createElement("p");
-var datoBold = document.createElement("strong");
-datoBold.innerText = "Dato: ";
-dato.innerHTML = datoBold.outerHTML + details.dato;
-infoBoks.appendChild(dato);
-//setter inn forfatter og understrek
-var forfatter = document.createElement("p");
-var forfatterBold = document.createElement("strong");
-forfatterBold.innerText = "Forfatter: ";
-forfatter.innerHTML = forfatterBold.outerHTML + details.forfatter;
-infoBoks.appendChild(forfatter);
-
-var understrek = document.createElement("hr");
-infoBoks.appendChild(understrek);
-
-//henter artikkel og begynner å konstruere denne
 var artikkel = document.getElementById("artikkel");
-//kjører for lengden til arrayen i det andre js-dokumentet
-for (var i=0;i<artikkelContent.length;i++) {
-    //ellers lages et element av typen spesifisert i arrayen
-    var element = document.createElement(artikkelContent[i].type);
-    //for p eller blockquote kjøres det følgende
-    if (artikkelContent[i].type === "p" || artikkelContent[i].type === "blockquote") {
-        element.innerHTML = artikkelContent[i].content;
-    }
-    else if (artikkelContent[i].type === "a" || artikkelContent[i].type === "img") {
-        if (artikkelContent[i].type === "a") {
-            element.href = artikkelContent[i].source;
-        }
-        else {
-            element.src = artikkelContent[i].source;
-        }
-        element.alter = artikkelContent[i].source;
-        if (artikkelContent[i].id) {
-            element.id = artikkelContent[i].id;
-        }
-    }
-    else if (artikkelContent[i].type === "table") {
-        for (var k = 0;k<artikkelContent[i].content.length;k++) {
-            var row = document.createElement("tr");
-            for (b = 0;b<artikkelContent[i].content[k].length;b++) {
-                var rowData = document.createElement("td");
-                rowData.innerHTML = artikkelContent[i].content[k][b];
-                row.appendChild(rowData)
-            }
-            element.appendChild(row)
-        }
-    }
-    artikkel.appendChild(element)
-}
-
 var shareLinkFacebook = document.createElement("a");
 var shareLinkTwitter = document.createElement("a");
 shareLinkFacebook.innerHTML = "Del på facebook!";
