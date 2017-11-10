@@ -32,17 +32,28 @@ headerContainer.appendChild(header);
 var navbar = document.createElement("div"); //Lager navbar-diven.
 navbar.id = "navbar";
 
+var headings = ["Nyeste artikler","Interaktiv","Info"];
+
 var links = [ //Liste med linkene i navbaren
-  ["<b>Nyeste artikler</b>", "<a href='til-alle-med-hjerte-i-ntnui.html'>Til alle med et hjerte i NTNUI</a>", "<a href='NTNUIflaggforslag.html'>NTNUI flaggforslag</a>", "<a href='vexillologi.html'>Vexillologi - studiet av flagg</a>"],
-  ["<b>Interaktiv</b>", "<a href='spill.html'>Spill</a>", "<a href='quiz.html'>Quiz</a>"],
-  ["<b>Info</b>", "<a href='bildeGalleri.html'>Flaggalleri</a>", "<a href='about.html'>Om oss</a>", "<a href='https://twitter.com/nvigntnu' target='_blank'>Twitter</a>"]
+  [artikler[0][0], artikler[1][0], artikler[1][1]],
+  [artikler[1][2], artikler[2][0]],
+  [ekstraSider[0], ekstraSider[1], ekstraSider[2]]
 ];
 
-for (var a=0; a<links.length; a++){
+for (var a=0; a<headings.length; a++){
   var newDiv = document.createElement("div");
   newDiv.className = "menyDiv";
+  var boldHeading = document.createElement("b");
+  boldHeading.innerText = headings[a];
   for (var b=0; b<links[a].length; b++){
-    newDiv.innerHTML += links[a][b];
+      var newLink = document.createElement("a");
+      newLink.href = links[a][b].fil;
+      newLink.alt = links[a][b].tittel;
+      newLink.innerText = links[a][b].tittel;
+      if (links[a][b].target) {
+          newLink.target = "_blank"
+      }
+    newDiv.appendChild(newLink);
   }
   navbar.appendChild(newDiv);
 }

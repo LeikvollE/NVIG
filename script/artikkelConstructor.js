@@ -78,7 +78,12 @@ for (var i=0;i<artikkelContent.length;i++) {
         }
         //bilder og linker
         else if (artikkelContent[i].type === "a" || artikkelContent[i].type === "img") {
-            element.src = artikkelContent[i].source;
+            if (artikkelContent[i].type === "a") {
+                element.href = artikkelContent[i].source;
+            }
+            else {
+                element.src = artikkelContent[i].source;
+            }
             element.alter = artikkelContent[i].source;
             artikkel.appendChild(element);
         }
