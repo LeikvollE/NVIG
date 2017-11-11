@@ -114,3 +114,18 @@ tr:first-child {
 .shareLinkTwitter:hover,.shareLinkFacebook:hover  {
     box-shadow: 2px 2px 3px #BBB ;
 }
+/*for store skjermer*/
+@media (min-height: 1080px) {
+    .contentDiv h1 {
+        font-size: 2vw;
+    }
+
+    #artikkel {
+        font-size: 1.7vh;
+
+    }
+
+    #info p {
+        font-size: 1.5vh;
+    }
+}
