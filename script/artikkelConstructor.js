@@ -2,7 +2,7 @@
 Filnavn: artikkelConstructor.js
 Skrevet av: Eirik Leikvoll, Lars Martin Hodne
 Når: November 2017
-Mening: Lage artikler fra maler gitt i datamaler mappene og legge tidde ut på artikkel siden. Forsikrer modularitet.
+Mening: Lage artikler fra maler gitt i datamaler mappene og legge disse ut på artikkel siden. Forsikrer modularitet.
 */
 
 //henter hovedbilde diven
