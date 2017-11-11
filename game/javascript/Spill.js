@@ -4,6 +4,8 @@ var ctx = canvas.getContext("2d");
 canvas.width = 840;
 canvas.height = 420;
 
+var activeSession = 0;
+
 ctx.scale(2,2);
 
 var running = false;
@@ -69,7 +71,10 @@ function drawMap() {
             ctx.drawImage(tiles, texIndex[0]*(21+2), texIndex[1]*(21+2), 21, 21, i*21, j*21, 21, 21);
         }
     }
-
+    if (activeSession !== 0) {
+        ctx.fillStyle = "black";
+        ctx.fillText(((activeSession)).toFixed(2)+"s", canvas.width/4, 15);
+    }
 }
 
 function drawPlayer() {
@@ -117,7 +122,7 @@ function move(elapsedSinceLastLoop) {
         direction = 1;
     }
 
-
+    activeSession += elapsedSinceLastLoop;
     for (let i = 0; i < Entities.length; i++) {
         Entities[i].move(elapsedSinceLastLoop);
         Entities[i].checkCollision();

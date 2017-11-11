@@ -9,14 +9,14 @@ document.onkeydown = function (e) {
         e.preventDefault();
     }
 
-    if (e.keyCode == 39 && !right) {
+    if (e.keyCode === 39 && !right) {
         right = true;
-    } else if (e.keyCode == 37 && !left) {
+    } else if (e.keyCode === 37 && !left) {
         left = true;
-    } else if (e.keyCode == 38 && !up && running && (tileAtScreenPos(player.xPos, player.yPos+24).solid || tileAtScreenPos(player.xPos+20, player.yPos+24).solid)) {
+    } else if (e.keyCode === 38 && !up && running && (tileAtScreenPos(player.xPos, player.yPos+24).solid || tileAtScreenPos(player.xPos+20, player.yPos+24).solid)) {
         up = true;
         player.ySpeed = -5;
-    } else if (e.keyCode == 32 && !running && showingSplash) {
+    } else if (e.keyCode === 32 && !running && showingSplash) {
         showingSplash = false;
         resumeGame();
     }
