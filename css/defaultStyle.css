@@ -115,7 +115,7 @@ header a {
     font-weight: bold;
 }
 #arrow:hover {
-    cursor: pointer;
+    cursor: auto;
 }
 
 .closeArrow {
@@ -146,7 +146,7 @@ footer {
     border-top: 1px solid darkgrey;
 }
 footer a:hover {
-    cursor: pointer;
+    cursor: auto;
     color: #666666;
     text-decoration: none;
 }
