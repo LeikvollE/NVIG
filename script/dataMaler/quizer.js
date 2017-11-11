@@ -5,9 +5,11 @@ Når: November 2017
 Mening: Beskrive innholdet i quizene på quiz siden, dvs spørsmålene, svaralternativene, bildene og de riktige svarene.
 */
 
-let quizer = [
-  {
-    navn:"Hvor godt kjenner du disse flaggene?",
+let quizer = [ //Lager en array som inneholder vær quiz som et objekt.
+  {//Spørsmålene, svarealternativene, bildene og de riktige svarene til quizen blir lagret som hver sin array.
+      //Et spørsmål i quizen bruker en indeks for å hente informasjon fra alle arrayene
+      //Det er lett å legge til ekstra spørsmål, det er bare å legge til informasjonen i arrayene, bare pass på at all informasjonen har samme indeks.
+    navn:"Hvor godt kjenner du disse flaggene?", //Navnet på quizen
     sporsmaal:[
       "Hvilket stjernebilde representerer de 5 stjernene i den høyre delen av Australias flagg?",
       "Hva representerer stripene i Hellas flagg?",
