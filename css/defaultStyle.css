@@ -126,13 +126,12 @@ header a {
 
 /* Footer */
 
-footer h3 {
+footer h3, a {
     color: #666666;
 }
 
 footer a {font-size: 120%;
     text-decoration: underline;
-    color: #666666;
 }
 
 footer {
@@ -140,12 +139,10 @@ footer {
     padding-top: 2vh;
     height: 18vh;
     text-align: center;
-    width: inherit;
     background-color: #dbdbdb;
     margin-top: 20px;
     border-top: 1px solid darkgrey;
 }
 footer a:hover {
-    color: #666666;
     text-decoration: none;
 }
