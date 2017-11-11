@@ -12,23 +12,23 @@ let sporsmaalNr; //Viser til hvilket spørsmål man er på.
 let valgteSvar;  //En array som tar vare på poeng brukeren får på hvert spørsmål.
 
 function startQuiz(quizNr){
-  document.getElementById("velgQuiz").style.display = "none"; //Skjuler boks hvor bruker velger quiz
-  document.getElementById("SampleDiv").style.display = "block"; //Åpner quizboks
+    document.getElementById("velgQuiz").style.display = "none"; //Skjuler boks hvor bruker velger quiz
+    document.getElementById("SampleDiv").style.display = "block"; //Åpner quizboks
 
-  sporsmaalNr = 1;
+    sporsmaalNr = 1;
 
-  valgteSvar = [];
-  for (let i=0; i<quizer[quizNr].sporsmaal.length; i++){ //Starter med å sette inn 0 poeng for alle mulige svar.
-    valgteSvar.push(0);
-  }
+    valgteSvar = [];
+    for (let i=0; i<quizer[quizNr].sporsmaal.length; i++){ //Starter med å sette inn 0 poeng for alle mulige svar.
+        valgteSvar.push(0);
+    }
 
-  let fremgang = document.getElementById("fremgang");  //Lar brukeren se spørsmålet han er på og total antall spørsmål
-  fremgang.innerText = sporsmaalNr + "/" + quizer[quizNr].sporsmaal.length;
+    let fremgang = document.getElementById("fremgang");  //Lar brukeren se spørsmålet han er på og total antall spørsmål
+    fremgang.innerText = sporsmaalNr + "/" + quizer[quizNr].sporsmaal.length;
 
-  document.getElementById("knappNeste").onclick = function(){ nesteSporsmaal(quizNr); }; //Event listener som lar brukeren gå fram og tilbake mellom spørsmål.
-  document.getElementById("knappForrige").onclick =  function(){ forrigeSporsmaal(quizNr); };
+    document.getElementById("knappNeste").onclick = function(){ nesteSporsmaal(quizNr); }; //Event listener som lar brukeren gå fram og tilbake mellom spørsmål.
+    document.getElementById("knappForrige").onclick =  function(){ forrigeSporsmaal(quizNr); };
 
-  lagSporsmaal(quizNr); //Lager det første spørsmålet.
+    lagSporsmaal(quizNr); //Lager det første spørsmålet.
 }
 
 function lagSporsmaal(quizNr) { //Viser bilde og spørsmål
@@ -56,7 +56,7 @@ function nesteSporsmaal(quizNr) { //Tar brukeren til neste spørsmål
         valgteSvar[sporsmaalNr-1] = 1;
     }
     else {
-      valgteSvar[sporsmaalNr-1] = 0; //Gir 0 poeng om brukeren endrer til feil svar
+        valgteSvar[sporsmaalNr-1] = 0; //Gir 0 poeng om brukeren endrer til feil svar
     }
 
     if (sporsmaalNr === quizer[quizNr].sporsmaal.length) { //Viser resultat om brukeren går videre etter sise spørsmål
@@ -76,17 +76,17 @@ function forrigeSporsmaal(quizNr) { //Kalles på når brukeren går til forrige 
 }
 
 function visSvar(quizNr) { //Åpner boks med resultat
-  let poengsum = 0;
-  for (let i=0; i<valgteSvar.length; i++){//regner ut poengsum
-    poengsum += valgteSvar[i];
-  }
-  document.getElementById("SampleDiv").style.display = "none"; //Skjuler quizen
-  document.getElementById("ferdig").style.display = "block"; //Åpner resultatboks
-  document.getElementById("antallRiktig").innerText = ("Du fikk " + poengsum + "/" + quizer[quizNr].sporsmaal.length + " rette"); //Skriver resultatet
-  document.getElementById("avslutt").onclick = tilbakeTilStart; //Knapp som lar brukeren gå tilbake til quiz listen.
+    let poengsum = 0;
+    for (let i=0; i<valgteSvar.length; i++){//regner ut poengsum
+        poengsum += valgteSvar[i];
+    }
+    document.getElementById("SampleDiv").style.display = "none"; //Skjuler quizen
+    document.getElementById("ferdig").style.display = "block"; //Åpner resultatboks
+    document.getElementById("antallRiktig").innerText = ("Du fikk " + poengsum + "/" + quizer[quizNr].sporsmaal.length + " rette"); //Skriver resultatet
+    document.getElementById("avslutt").onclick = tilbakeTilStart; //Knapp som lar brukeren gå tilbake til quiz listen.
 }
 
 function tilbakeTilStart(){ //Tar bruker en tilbake til quiz listen
-  document.getElementById("ferdig").style.display = "none"; //Skjuler resultatboks
-  document.getElementById("velgQuiz").style.display = "block"; //Viser boksen hvor bruker velger quiz.
+    document.getElementById("ferdig").style.display = "none"; //Skjuler resultatboks
+    document.getElementById("velgQuiz").style.display = "block"; //Viser boksen hvor bruker velger quiz.
 }

@@ -7,6 +7,7 @@ Dette inneholder generelle stiler, headeren og footeren.
 */
 
 /* Default */
+/* Beskriven den generelle stilen for html-filene og innholdet*/
 body, html {
   padding: 0;
   margin: 0;
@@ -26,7 +27,7 @@ a {
 }
 
 /* Header */
-
+/* Her beskrives stilen til headeren og innholdet i den */
 #header {
     background-color: #c33838;
     display: flex;
@@ -61,6 +62,7 @@ header a {
     font-size: 3vh;
     flex-flow: row wrap;
 }
+/*Her beskrives animasjonene som gjennomføres når navbaren åpnes og lukkes*/
 @keyframes openNavbar{
     0%    { height: 0;       padding: 0;            }
     100%  { height: 20vh; padding: 1vh 0 4vh 0;  }
@@ -69,6 +71,8 @@ header a {
     0%    { height: 20vh; padding: 1vh 0 4vh 0;  }
     100%  { height: 0;       padding: 0;            }
 }
+
+/*Her beskrives stilen til de ulike kolonnene i navbaren*/
 .menyDiv {
     text-align: left;
     display:flex;
@@ -79,6 +83,7 @@ header a {
     margin: 0.7vh 0;
 }
 
+/*Her beskrives stilen til kanppen som åpner og lukker navbaren*/
 #navOpener {
     margin: auto;
     width: 33%;
@@ -114,7 +119,7 @@ header a {
 
 
 /* Footer */
-
+/* Her beskrives stilen til footeren som finnes på alle sidene */
 footer h3, footer a {
     color: #666666;
 }
