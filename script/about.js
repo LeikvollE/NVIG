@@ -38,18 +38,19 @@ let aboutText = ["NTNUs Vexillologiske Interesse Gruppe, også kjent som NVIG, e
 //Overskrifter til beskrivelsene
 let aboutHeading = ["NVIG", "NVIG sitt mål", "MALE³", "Hvorfor Vexillologi?", "Logo"];
 
-let about = document.getElementById("aboutDiv");
-let text  = document.createElement("div");
+let about = document.getElementById("aboutDiv");//henter container
+
+let text  = document.createElement("div");//lager div for tekst, lager overskrift
 let heading = document.createElement("h2");
 
-about.appendChild(heading);
+about.appendChild(heading);//setter disse inn i container
 about.appendChild(text);
 
 
 //gjør at NVIGknappen er i focus i CSSens øyne
 document.getElementById("NVIGButton").focus();
 
-function showBox(index) {
+function showBox(index) {//setter inn tekst og overskrift gitt ved index
     text.innerText = aboutText[index];
     heading.innerText = aboutHeading[index];
 }
