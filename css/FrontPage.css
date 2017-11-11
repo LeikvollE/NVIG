@@ -10,7 +10,7 @@ body {
 }
 
 main {
-    max-width: 1300px;
+    max-width: 1200px;
     width: 60vw;
     margin: auto;
 }
@@ -75,7 +75,7 @@ img {
     margin-top: 4vh;
     width: 60vw;
     max-height: 16.6vw;
-    max-width: 1300px;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
@@ -90,7 +90,7 @@ img {
 
 iframe {
     width: 29.5vw;
-    max-width: 637px;
+    max-width: 587px;
     height: 16.6vw;
 }
 

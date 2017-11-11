@@ -101,24 +101,17 @@ tr:first-child img{
     padding: 5px 10px;
     background-color: #3b5998;
     color: #f7f7f7;
-    width: inherit;
 }
 
 .shareLinkTwitter {
-    display: inline;
     padding: 5px 10px;
     margin: 10px;
     background-color: #55acee;
     color: #f5f8fa;
-    width: inherit;
 }
 
-.shareLinkTwitter:hover {
+.shareLinkTwitter:hover,.shareLinkFacebook:hover  {
     box-shadow: 2px 2px 3px #BBB ;
-}
-
-.shareLinkFacebook:hover {
-    box-shadow: 2px 2px 3px #BBB;
 }
 
 #fbBilde {
