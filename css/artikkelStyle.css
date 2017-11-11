@@ -47,6 +47,7 @@ section img{
 }
 
 #artikkel img{
+    width: auto;
     max-width: 90%;
 }
 
