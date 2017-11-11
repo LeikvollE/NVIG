@@ -8,20 +8,20 @@ Det vil si, linke til forsiden,
 
 
 //Lager alle elementene i headeren.
-var headerContainer = document.getElementById("headerContainer");
+let headerContainer = document.getElementById("headerContainer");
 
-var header = document.createElement("div"); //Lager div som skal inneholde link til forsiden.
+let header = document.createElement("div"); //Lager div som skal inneholde link til forsiden.
 header.id = "header";
 
-var frontLink = document.createElement("a"); //Lager a element som linker til forsiden.
+let frontLink = document.createElement("a"); //Lager a element som linker til forsiden.
 frontLink.href = "index.html";
 
-var logo = document.createElement("img"); //Lager og legger logoen inn i a elementet.
+let logo = document.createElement("img"); //Lager og legger logoen inn i a elementet.
 logo.src = "bilder/NVIGlogo2.png";
 logo.alt = "Hjem";
 frontLink.appendChild(logo);
 
-var title = document.createElement("h1"); //Lager og legger tittelen inn i a elementet.
+let title = document.createElement("h1"); //Lager og legger tittelen inn i a elementet.
 title.innerText = "NVIG";
 frontLink.appendChild(title);
 
@@ -29,12 +29,12 @@ header.appendChild(frontLink); //Legger inn link til forsiden i den øverste div
 headerContainer.appendChild(header);
 
 //Lager navbaren
-var navbar = document.createElement("div"); //Lager navbar-diven.
+let navbar = document.createElement("div"); //Lager navbar-diven.
 navbar.id = "navbar";
 
-var headings = ["Nyeste artikler","Interaktiv","Info"];
+let headings = ["Nyeste artikler","Interaktiv","Info"];
 
-var links = [
+let links = [
     //Viser til arrayen i artikellData.js
     // som holder info om nettstedets sider, denne brukes også av forsiden og artiklene selv
   [artikler[0][0], artikler[1][0], artikler[1][1]],
@@ -42,17 +42,17 @@ var links = [
   [artikler[2][1], ekstraSider[0], ekstraSider[1]]
 ];
 
-for (var a=0; a<headings.length; a++){
+for (let a=0; a<headings.length; a++){
     //lager en kolonne i navbaren
-  var newDiv = document.createElement("div");
+  let newDiv = document.createElement("div");
   newDiv.className = "menyDiv";
 
-  var boldHeading = document.createElement("b");
+  let boldHeading = document.createElement("b");
   boldHeading.innerText = headings[a];
   //setter inn linker
   newDiv.appendChild(boldHeading);
-  for (var b=0; b<links[a].length; b++){
-      var newLink = document.createElement("a");
+  for (let b=0; b<links[a].length; b++){
+      let newLink = document.createElement("a");
       newLink.href = links[a][b].fil;
       newLink.innerText = links[a][b].tittel;
 
@@ -67,13 +67,13 @@ for (var a=0; a<headings.length; a++){
 headerContainer.appendChild(navbar); //Legger baren inn i header containeren.
 
 //Lager knapp som åpner navbaren.
-var navOpener = document.createElement("div");
+let navOpener = document.createElement("div");
 navOpener.id = "navOpener";
 headerContainer.appendChild(navOpener);
 document.getElementById("navOpener").onclick = openNavbar; //Kaller funksjon som åpner navbaren.
 
 //Lager en pil som viser at man kan åpne navbaren
-var arrow = document.createElement("img");
+let arrow = document.createElement("img");
 arrow.src = "bilder/Arrow.png";
 arrow.alt = "^";
 arrow.id = "arrow";
