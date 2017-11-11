@@ -106,7 +106,7 @@ iframe {
     max-width: 587px;
     height: 16.6vw;
 }
-
+/*for små skjermer*/
 @media (max-width: 480px) {
     main {
         width: 100vw;
@@ -117,27 +117,11 @@ iframe {
         flex: 1 1 auto;
 
     }
-    .items_2 {
+    .items_2, .items_3 {
         width: 100%;
     }
-    .items_3 {
-        width: 100%;
-    }
-    .items_1 a {
-        height: 100%;
-        font-size: 4vw;
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-    }
-    .items_2 a {
-        height: 100%;
-        font-size: 4vw;
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-    }
-    .items_3 a {
+
+    .items_3 a, .items_2 a, .items_1 a {
         height: 100%;
         font-size: 4vw;
         font-weight: bold;
