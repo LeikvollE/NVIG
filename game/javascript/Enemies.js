@@ -47,6 +47,16 @@ class fireBall extends Entity {
             player.xPos = player.xStart;
             player.yPos = player.yStart;
             player.ySpeed = 0;
+            for (let i = 0; i < Entities.length; i++) {
+                if (Entities[i] instanceof fireBall) {
+                    Entities.splice(i, 1);
+                    i--;
+                    continue;
+                } else if (Entities[i] instanceof Boss) {
+                    Entities[i].x = Entities[i].initX;
+                    Entities[i].y = Entities[i].initY;
+                }
+            }
             setTimeout(function () {
                 resumeGame();
             },1000);
@@ -116,6 +126,12 @@ class Boss extends Enemy {
             player.xPos = player.xStart;
             player.yPos = player.yStart;
             player.ySpeed = 0;
+            for (let i = 0; i < Entities.length; i++) {
+                if (Entities[i] instanceof fireBall) {
+                    Entities.splice(i, 1);
+                    i--;
+                }
+            }
             setTimeout(function () {
                 resumeGame();
             },1000);
@@ -129,6 +145,7 @@ class nepalBoss extends Boss {
         super(x,y,health);
         this.speed = 0.5;
         this.timer = 0;
+        score.red = 1;
     }
 
     move(delta) {

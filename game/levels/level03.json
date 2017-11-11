@@ -20,9 +20,9 @@
     "y":10
   },
   "playerTextures":{
-    "red":"game/img/player/02Red.png",
-    "blue":"game/img/player/02Blue.png",
-    "yellow":"game/img/player/02Yellow.png"
+    "red":"game/img/player/03All.png",
+    "blue":"",
+    "yellow":""
   },
   "endSong":"",
   "leveTheme":""
