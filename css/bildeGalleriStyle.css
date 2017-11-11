@@ -4,6 +4,10 @@ Skrevet av:Lars Martin Hodne
 Når: November 2017
 Mening: Presentere innholdet i bildeGalleri.html på en attraktiv måte også beskrive ulike animasjoner på siden.
 */
+#galleri {
+    padding: 0 1vh;
+}
+
 .bildeRad, .sisteBildeRad {
     display: flex;
     justify-content: space-between;
