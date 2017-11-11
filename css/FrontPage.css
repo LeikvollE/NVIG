@@ -4,11 +4,11 @@ Skrevet av: Einar Viddal, Eirik Leikvoll, Lars Martin Hodne
 Når: Oktober/Noveber 2017
 Mening: Beskrive stilen til front siden.
 */
-
+/*setter text-align for siden*/
 body {
     text-align: center;
 }
-
+/*sentrerer inhhold, maksbredde*/
 main {
     max-width: 1200px;
     width: 60vw;
@@ -16,9 +16,10 @@ main {
 }
 
 main img {
+    /*gjør at bilder ikke flyter ut av containeren sin*/
     width: 100%;
 }
-
+/*hver rad med innhold på forsiden er en .contentsection*/
 .contentSection {
     margin-bottom: 10px;
     width: inherit;
@@ -27,50 +28,61 @@ main img {
 }
 
 .contentDiv {
+    /*contentdiv er hver enkelt artikkellink på siden*/
     background-color: #EEE;
     box-shadow: 0 1px 1px #BBB;
     width: 100%;
 }
 .contentDiv:hover {
+    /*hover-effekt*/
     box-shadow: 0 4px 10px #BBB
 }
 
+.items_1 a, .items_2 a, .items_3 a {
+    /*felles for alle a i "items" */
+    height: 100%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+/*overskriftene er en del av linkene i "items"*/
+.overskrift {
+    margin: 10px 0;
+    display: flex;
+    /*overskriften tar opp den tilgjengelige plassen*/
+    flex: 1 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
 .items_1  {
+    /*innhold sorteres dynamisk av js på siden*/
+    /*items_! viser til at den aktuelle contentSection viser et element*/
     width: 100%;
 }
 
-.items_1 a {
-    height: 100%;
-    font-size: 4vw;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-}
-
 .items_2 {
+    /*items 2 viser til at den aktuelle contentsection viser 2 element osv*/
     width: 49%;
-}
-
-.items_2 a {
-    height: 100%;
-    font-size: 2.9vw;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
 }
 
 .items_3 {
     width: 32%;
 }
 
-.items_3 a {
-    height: 100%;
-    font-size: 1.7vw;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
+.items_1 a {
+    font-size: 4vw;
 }
 
+.items_2 a {
+    font-size: 2.9vw;
+}
+
+.items_3 a {
+    font-size: 1.7vw;
+}
+
+/*div hvor sosiale medier er plassert*/
 #twitterOgYoutube {
     margin-top: 4vh;
     width: 60vw;
@@ -80,7 +92,7 @@ main img {
     justify-content: space-between;
     flex-flow: row wrap;
 }
-
+/*div hvor twitterlinken ligger i*/
 #twitter {
     overflow: hidden;
     width: 50%;
@@ -89,17 +101,10 @@ main img {
 }
 
 iframe {
+    /*youtube er en iframe*/
     width: 29.5vw;
     max-width: 587px;
     height: 16.6vw;
-}
-
-.overskrift {
-    margin: 10px 0;
-    display: flex;
-    flex: 1 0 auto;
-    align-items: center;
-    justify-content: center;
 }
 
 @media (max-width: 480px) {
