@@ -6,12 +6,14 @@ Mening: Presentere innholdet i about.html på en attraktiv måte.
 */
 
 main {
+    /*display flex slik at man lett kan sentrere innhold*/
     display: flex;
 }
 #content {
+    /*bestemmer høyde, sentrering av siden, sentrering av seg selv samt bakgrunnsfargeb*/
     align-self: center;
     display: flex;
-    margin: 0 auto;
+    margin: auto;
     width: 100vh;
     height: 60vh;
     background-color: #f2f2f2;
@@ -30,10 +32,12 @@ main {
 }
 
 .button:first-of-type {
+    /*den øverste knappen har ingen border øverst*/
     border-top: none;
 }
 
 #aboutDiv h2 {
+    /*overskrifter matcher fargetemaet ellers på siden*/
     color: #c33838;
 }
 
@@ -49,6 +53,7 @@ main {
     transition-duration: 0.3s;
     cursor: pointer;
     height: 20%;
+    /*border.box slik at boksens størrelse inkluderer borderen*/
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -59,6 +64,7 @@ main {
 }
 
 .button:focus {
+    /*når knappen er trykket, outline:none for å unngå blå highlight*/
     outline: none;
     background-color: #c33838;
     color: #FFF;

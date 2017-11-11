@@ -22,29 +22,25 @@ main {
 }
 a {
     text-decoration: none;
-    color: #000000;
+    color: #000;
 }
 
 /* Header */
 
 #header {
     background-color: #c33838;
-    text-align: center;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 10vh;
-    min-height: 40px;
-    box-shadow: 0px 4px 20px #BBB;
+    box-shadow: 0 4px 20px #BBB;
 }
-b {
+header b {
     color: #c33838;
 }
 #header h1 {
     margin: 0;
     color: #FFF;
-    display: inline;
     font-size: 6vh;
 }
 header a {
@@ -53,18 +49,11 @@ header a {
 }
 
 #header img {
-    display: inline;
-    width:auto;
-    border-radius: 0;
     height: 8vh;
 }
 
 #navbar {
     background-color: #eee;
-    left: 0;
-    top:100%;
-    padding: 0;
-    width: 100%;
     display: flex;
     justify-content: space-around;
     overflow: hidden;
@@ -126,13 +115,12 @@ header a {
 
 /* Footer */
 
-footer h3 {
+footer h3, footer a {
     color: #666666;
 }
 
 footer a {font-size: 120%;
     text-decoration: underline;
-    color: #666666;
 }
 
 footer {
@@ -140,13 +128,10 @@ footer {
     padding-top: 2vh;
     height: 18vh;
     text-align: center;
-    width: inherit;
     background-color: #dbdbdb;
     margin-top: 20px;
     border-top: 1px solid darkgrey;
 }
 footer a:hover {
-    cursor: pointer;
-    color: #666666;
     text-decoration: none;
 }

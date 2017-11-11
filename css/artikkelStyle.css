@@ -5,6 +5,7 @@ Når: November 2017
 Mening: Presentere innholdet i de ulike artiklene på en attraktiv og udistraherende måte.
 */
 
+
 .contentDiv {
     max-width: 1300px;
     width:inherit;
@@ -12,14 +13,9 @@ Mening: Presentere innholdet i de ulike artiklene på en attraktiv og udistraher
     padding-bottom:1vh;
 }
 
-h1 {
+.contentDiv h1 {
     margin: 10px 0 10px 0;
     font-size: 3vw;
-}
-
-.bilde {
-    width: inherit;
-    max-width: 1300px;
 }
 
 #artikkel {
@@ -32,6 +28,7 @@ h1 {
 #artikkel h4 {
     text-align: center;
 }
+
 #info p {
     font-size: 2.3vh;
 }
@@ -42,7 +39,7 @@ section {
     margin:0 auto;
 }
 
-img{
+section img{
     width: inherit;
     max-width: 1300px;
     display: block;
@@ -53,18 +50,22 @@ img{
     max-width: 90%;
 }
 
-blockquote a, .dobbelDiv a, p a {
+blockquote a, table a, p a {
+    /*linker i artiklene får underline*/
     text-decoration: underline;
 }
-blockquote a:hover, p a:hover, .dobbelDiv a:hover {
+blockquote a:hover, p a:hover, .table a:hover {
+    /*fjerner underline når musepeker kommer over*/
     text-decoration: none;
 }
 blockquote {
+    /*blockquotes har litt mindre italic skrift*/
     font-style: italic;
     font-size: 90%;
 }
 
 tr:nth-child(even) {
+    /*Gjelder overskrifter(de er even child) i tabellen*/
     width: 100%;
     justify-content: center;
     font-weight: bold;
@@ -75,6 +76,7 @@ tr:nth-child(even) {
 
 table {
     display: flex;
+    /*flex flow column slik at innhold "flyter" nedover*/
     flex-flow: column;
 }
 
@@ -85,6 +87,7 @@ tr {
 td {
     margin: 0 2vh;
     width: 50%;
+    /*plasserer seg selv øverst i parent*/
     align-self: flex-start;
 }
 
@@ -92,16 +95,11 @@ tr:first-child {
     display: block;
     margin: auto;
 }
-
-tr:first-child img{
-    padding:0 18vh;
-}
-
+/*facebook/twitter linker*/
 .shareLinkFacebook {
     padding: 5px 10px;
     background-color: #3b5998;
     color: #f7f7f7;
-    width: inherit;
 }
 
 .shareLinkTwitter {
@@ -110,13 +108,8 @@ tr:first-child img{
     margin: 10px;
     background-color: #55acee;
     color: #f5f8fa;
-    width: inherit;
 }
 
 .shareLinkTwitter:hover,.shareLinkFacebook:hover  {
     box-shadow: 2px 2px 3px #BBB ;
-}
-
-#fbBilde {
-    width: 500px;
 }
