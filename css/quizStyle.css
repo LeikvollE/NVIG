@@ -44,7 +44,7 @@ Mening: Beskrive stilen til quiz siden.
 }
 
 #SampleDiv img {
-    max-width: 100%;
+    max-width: 1000px;
     display: block;
     margin: 0 auto;
 }
