@@ -152,30 +152,30 @@ function move(elapsedSinceLastLoop) {
     // Increments the timer, this is done in the move function so the timer will only count when the player can move.
     activeSession += elapsedSinceLastLoop;
 
-    // Iterates through all entities and calls their move method, and checks if the have collided woth the player.
+    // Iterates through all entities and calls their move method, and checks if the have collided with the player.
     for (let i = 0; i < Entities.length; i++) {
         Entities[i].move(elapsedSinceLastLoop);
         Entities[i].checkCollision();
     }
 
     // Checks if the player has collided with anything in the horizontal direction, and calls the on collide method,
-    // of the tiles it have collied with
+    // of the tiles it has collied with
     checkCollisions(direction);
 
     // Checks if any of the four corners of the player sprite has collided with a solid block, and if not it will
     // allow the player to move.
-    if (!(tileAtScreenPos(player.xPos+player.speed*direction*elapsedSinceLastLoop*75, player.yPos).solid ||
-        tileAtScreenPos(player.xPos+player.speed*direction*elapsedSinceLastLoop*75, player.yPos+20).solid ||
-        tileAtScreenPos(player.xPos+20+player.speed*direction*elapsedSinceLastLoop*75, player.yPos).solid ||
-        tileAtScreenPos(player.xPos+20+player.speed*direction*elapsedSinceLastLoop*75, player.yPos+20).solid)) {
+    if (!(tileAtScreenPos(player.xPos+player.speed*direction*elapsedSinceLastLoop*70, player.yPos).solid ||
+        tileAtScreenPos(player.xPos+player.speed*direction*elapsedSinceLastLoop*70, player.yPos+20).solid ||
+        tileAtScreenPos(player.xPos+20+player.speed*direction*elapsedSinceLastLoop*70, player.yPos).solid ||
+        tileAtScreenPos(player.xPos+20+player.speed*direction*elapsedSinceLastLoop*70, player.yPos+20).solid)) {
         player.xPos += player.speed*direction*elapsedSinceLastLoop*70;
     }
 
     // Makes sure the player is teleported to the other side of the map if he leaves the canvas, in the x direction.
-    if (player.xPos <= -21) {
-        player.xPos = map.length*21-1;
+    if (player.xPos <= -20) {
+        player.xPos = map.length*21-2;
     } else if (player.xPos >=map.length*21) {
-        player.xPos = -20
+        player.xPos = -19
     }
 
     // Increments the speed in the y direction by 9.81 pixels every second.
