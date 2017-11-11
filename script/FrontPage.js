@@ -26,7 +26,6 @@ for (var a=0; a<artikler.length; a++){ //For løkke som lager seksjonene og legg
         newImg.alt = "artikkelbilde";
 
         newA.appendChild(newImg);
-        //newA.appendChild(newHeadline);
         newA.innerHTML += "<div class='overskrift'>" + artikler[a][b].tittel + "</div>";
         newDiv.appendChild(newA);
 

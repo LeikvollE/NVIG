@@ -1,9 +1,11 @@
+//Mening: Legger til artiklene på framsiden og legger inn bildet over den korresponderende artikkelen
+
 var artikler = [
     [
         {
-            tittel:"Til alle med hjerte for NTNUI",
-            bilde:"artikkelTopp.png",
-            fil:"til-alle-med-hjerte-i-ntnui.html"
+            tittel:"Til alle med hjerte for NTNUI", //Tittel fikser tittelen til artikkelen på framsiden
+            bilde:"artikkelTopp.png",               //Legger bildet til artikkelen
+            fil:"til-alle-med-hjerte-i-ntnui.html"  //HTML-filen artikkelen skal linke til
         }
     ],
     [
