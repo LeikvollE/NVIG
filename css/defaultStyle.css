@@ -29,22 +29,18 @@ a {
 
 #header {
     background-color: #c33838;
-    text-align: center;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 10vh;
-    min-height: 40px;
     box-shadow: 0 4px 20px #BBB;
 }
-b {
+header b {
     color: #c33838;
 }
 #header h1 {
     margin: 0;
     color: #FFF;
-    display: inline;
     font-size: 6vh;
 }
 header a {
@@ -53,18 +49,12 @@ header a {
 }
 
 #header img {
-    display: inline;
-    width:auto;
-    border-radius: 0;
+    width: auto;
     height: 8vh;
 }
 
 #navbar {
     background-color: #eee;
-    left: 0;
-    top:100%;
-    padding: 0;
-    width: 100%;
     display: flex;
     justify-content: space-around;
     overflow: hidden;

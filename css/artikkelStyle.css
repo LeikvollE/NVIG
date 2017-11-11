@@ -12,14 +12,9 @@ Mening: Presentere innholdet i de ulike artiklene på en attraktiv og udistraher
     padding-bottom:1vh;
 }
 
-h1 {
+.contentDiv h1 {
     margin: 10px 0 10px 0;
     font-size: 3vw;
-}
-
-.bilde {
-    width: inherit;
-    max-width: 1300px;
 }
 
 #artikkel {
@@ -42,7 +37,7 @@ section {
     margin:0 auto;
 }
 
-img{
+section img{
     width: inherit;
     max-width: 1300px;
     display: block;
