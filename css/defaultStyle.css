@@ -104,7 +104,7 @@ header a {
     font-weight: bold;
 }
 #arrow:hover {
-    cursor: auto;
+    cursor: pointer;
 }
 
 .closeArrow {
