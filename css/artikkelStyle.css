@@ -93,10 +93,6 @@ tr:first-child {
     margin: auto;
 }
 
-tr:first-child img{
-    padding:0 18vh;
-}
-
 .shareLinkFacebook {
     padding: 5px 10px;
     background-color: #3b5998;
@@ -104,6 +100,7 @@ tr:first-child img{
 }
 
 .shareLinkTwitter {
+    display: inline;
     padding: 5px 10px;
     margin: 10px;
     background-color: #55acee;
