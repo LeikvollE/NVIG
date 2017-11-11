@@ -3,8 +3,8 @@ Filnavn: BildeGalleriJS.js
 Skrevet av: Lars Martin Hodne
 Når: November 2017
 Mening: Legge inn bilder i bildegalleriet og reagere på brukerinput, skal også gjøre det lett å
-legge til nye bilder uten at koden "kollapser", samt å gi enkle konfigureringsmuligheter
- - f.eks kan man forandre antall bilder per rad gjennom en variabel
+legge til nye bilder uten at koden "kollapser"(legger du til nye bilder tilpasser siden seg automatisk)
+, samt å gi enkle konfigureringsmuligheter - f.eks kan man forandre antall bilder per rad gjennom en variabel
 */
 
 //alle henvendelser til arrayer viser til arrayene i data.js
