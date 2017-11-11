@@ -56,7 +56,7 @@ header a {
     background-color: #eee;
     display: flex;
     justify-content: space-around;
-    overflow: hidden;
+    overflow: auto;
     height: 0;
     font-size: 3vh;
     flex-flow: row wrap;
