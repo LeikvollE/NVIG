@@ -35,7 +35,7 @@ Mening: Beskrive stilen til quiz siden.
 }
 
 .quizValgBoks:hover, .byttKnapp:hover {
-    cursor: auto;
+    cursor: pointer;
 }
 
 #SampleDiv {

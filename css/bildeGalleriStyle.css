@@ -18,7 +18,7 @@ Mening: Presentere innholdet i bildeGalleri.html på en attraktiv måte også be
 }
 
 .imgDiv:hover img{
-    cursor: auto;
+    cursor: pointer;
     -ms-transform: translate(2px,2px); /* IE 9 */
     -webkit-transform: translate(2px,2px); /* Safari */
     transform: translate(2px,2px);
