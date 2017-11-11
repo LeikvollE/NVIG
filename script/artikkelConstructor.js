@@ -6,23 +6,24 @@ Mening: Lage artikler fra maler gitt i datamaler mappene og legge tidde ut på a
 */
 
 //henter hovedbilde diven
-var bildeVindu = document.getElementById("bildeVindu");
+let bildeVindu = document.getElementById("bildeVindu");
 
 //legger inn overskrift(alle verdier ligger i et eget js document for hver artikkel)
-var artikkelHeading = document.createElement("h1");
+let artikkelHeading = document.createElement("h1");
 artikkelHeading.innerText = mainPhoto.heading;
 bildeVindu.appendChild(artikkelHeading);
 
 //setter inn hovedbilde
-var artikkelBilde = document.createElement("img");
+let artikkelBilde = document.createElement("img");
 artikkelBilde.className = "bilde";
 artikkelBilde.src = "bilder/" + mainPhoto.source;
 artikkelBilde.alt = mainPhoto.alter;
 bildeVindu.appendChild(artikkelBilde);
 
-var artikkel = document.getElementById("artikkel");
-var shareLinkFacebook = document.createElement("a");
-var shareLinkTwitter = document.createElement("a");
+/*delingslinker for sosiale medier*/
+let artikkel = document.getElementById("artikkel");
+let shareLinkFacebook = document.createElement("a");
+let shareLinkTwitter = document.createElement("a");
 shareLinkFacebook.innerHTML = "Del på facebook!";
 shareLinkTwitter.innerHTML = "Del på twitter!";
 shareLinkFacebook.className = "shareLinkFacebook";
