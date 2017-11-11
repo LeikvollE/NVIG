@@ -1,22 +1,24 @@
+// Variables to see what keys are pressed
 var right = false;
 var left = false;
-var up = false;
 
 document.onkeydown = function (e) {
 
-    //Hindrer uønsket scrolling grunnet piltastbruk
+    // Prevents the page to scroll when using the arrow keys.
     if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
         e.preventDefault();
     }
 
+    // Checks what keys are pressed, and updates the correct variables telling the game the key have been pressed.
     if (e.keyCode === 39 && !right) {
         right = true;
     } else if (e.keyCode === 37 && !left) {
         left = true;
-    } else if (e.keyCode === 38 && !up && running && (tileAtScreenPos(player.xPos, player.yPos+24).solid || tileAtScreenPos(player.xPos+20, player.yPos+24).solid)) {
-        up = true;
+    } else if (e.keyCode === 38 && running && (tileAtScreenPos(player.xPos, player.yPos+24).solid || tileAtScreenPos(player.xPos+20, player.yPos+24).solid)) {
+        // Makes the player jump if the space key is pressed, and the player is standing on solid ground.
         player.ySpeed = -5;
     } else if (e.keyCode === 32 && !running && showingSplash) {
+        // Removes tha splash and resumes the game if a splash is shown.
         showingSplash = false;
         resumeGame();
     }
@@ -24,6 +26,7 @@ document.onkeydown = function (e) {
 
 };
 
+// Sets the variables to false when the user lets go of the keys.
 document.onkeyup = function (e) {
 
     if (e.keyCode == 39) {
