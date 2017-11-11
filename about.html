@@ -21,15 +21,17 @@ Mening: Presentere brukeren med info om NVIG og NVIGS prosjekt og mål.
   <header id="headerContainer"></header>
 
   <main>
-    <div id="content">
-        <div id="aboutNavigator">
+    <div id="content"><!--Alt innhold legges her-->
+        <div id="aboutNavigator"><!--Alle knapper legges til her-->
+            <!--Tabindex slik at knappene kan settes i "focus" i cssens øyne,
+            NVIG har -1 slik at ks kan legge til focus når siden laster-->
             <div id="VexologyButton" tabindex="1" class="button">Hvorfor vexillologi?</div>
             <div id="MALEButton" tabindex="1" class="button">MALE&#179;</div>
             <div id="NVIGButton" tabindex="-1" class="button">NVIG</div>
             <div id="LogoButton" tabindex="1" class="button">NVIGs Logo</div>
             <div id="GoalButton" tabindex="1" class="button">NVIG sitt mål</div>
         </div>
-        <div id="aboutDiv"></div>
+        <div id="aboutDiv"></div><!--INfo(tekst) legges her-->
     </div>
   </main>
 
