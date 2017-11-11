@@ -142,26 +142,27 @@ legge til nye bilder uten at koden "kollapser"(legger du til nye bilder tilpasse
      element.parentNode.parentNode.insertBefore(infoDiv, element.parentNode.nextSibling);
  }
 
- function lagBildeBeskrivelse(elementId) {
+ function lagBildeBeskrivelse(elementId) {//finner til flagget gitt ved elementId
      let img = document.createElement("img");
-     img.src = "bilder/" + bilder[elementId];
+     img.src = "bilder/" + bilder[elementId];//henter bilde
      img.alt = land[elementId];
      img.id = "bildeIBeskrivelse";
      return (img.outerHTML)
  }
- function lagFlaggBeskrivelse(elementId) {
-     let read = new XMLHttpRequest();
+ function lagFlaggBeskrivelse(elementId) {//henter beskrivelsen av flagget gitt ved elementId og
+                                          // returnerer en paragraf med tekst og overskrift
+     let read = new XMLHttpRequest();//henter beskrivelse
      read.open('GET', beskrivelser[elementId], false);
      read.send();
 
-     let overskrift = document.createElement("strong");
+     let overskrift = document.createElement("strong");//lager overskrift
      overskrift.classList.add("boldOverskrift");
      overskrift.innerText = land[elementId];
 
      let documentText = read.responseText;
      let paragraf = document.createElement("p");
      paragraf.id = "paragraf";
-     paragraf.innerHTML = overskrift.outerHTML + "<br><br>" + documentText;
+     paragraf.innerHTML = overskrift.outerHTML + "<br><br>" + documentText;//setter inn beskrivelse og overskrift
 
      return(paragraf.outerHTML);
  }
