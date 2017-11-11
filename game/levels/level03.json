@@ -3,12 +3,12 @@
   "map":"game/img/maps/map03.png",
   "nextLevel":"game/levels/levelWinscreen.json",
   "lines":[
-    "I sitt nyeste trekk har den spanske regjeringen bestemt",
-    "å fjerne fargene i katalonia sitt flagg. Du må hjelpe",
-    "katalonia å få tilbake fargene sine, men pass på for spanske",
-    "regjerings styrker. Blir du tatt vil de ta fra deg fargene",
-    "og du må starte på nytt",
-    ""
+    "Nepal er veldig sur på Kina etter at Kina sa at",
+    "flagget til Nepal var rart, siden Kina syntes det",
+    "så rart ut. Kina tullet egentlig bare, men Nepal",
+    "ville fortsatt ta hevn..."
+    "",
+    "Trykk på [SPACE] for å starte"
   ],
   "winCondition":{
     "red":1,
