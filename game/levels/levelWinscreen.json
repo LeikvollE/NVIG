@@ -3,7 +3,9 @@
   "map":"game/img/maps/mapWinscreen.png",
   "nextLevel":"",
   "lines":[
-    "Det ser ut til at alle flaggene i verden er trygge, takket være deg!"
+    "Det ser ut til at alle flaggene i verden er trygge, takket være deg!",
+    "",
+    "Trykk [F5] for å prøve på nå"
   ],
   "winCondition":{
     "red":1,
