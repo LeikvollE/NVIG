@@ -22,7 +22,7 @@ main {
 }
 a {
     text-decoration: none;
-    color: #000000;
+    color: #000;
 }
 
 /* Header */
@@ -116,7 +116,7 @@ header a {
 
 /* Footer */
 
-footer h3, a {
+footer h3, footer a {
     color: #666666;
 }
 

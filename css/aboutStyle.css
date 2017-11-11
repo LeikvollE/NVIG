@@ -11,7 +11,7 @@ main {
 #content {
     align-self: center;
     display: flex;
-    margin: 0 auto;
+    margin: auto;
     width: 100vh;
     height: 60vh;
     background-color: #f2f2f2;

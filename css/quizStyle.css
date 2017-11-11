@@ -13,6 +13,10 @@ Mening: Beskrive stilen til quiz siden.
 #velgQuiz {
   text-align: center;
 }
+
+#velgQuiz h2 {
+    font-size: 3vh;
+}
 #quizListe {
   display: flex;
   flex-flow: wrap row;
@@ -21,7 +25,6 @@ Mening: Beskrive stilen til quiz siden.
 }
 .quizValgBoks {
   background-color: #eee;
-  height: auto;
   margin: 10px;
   box-shadow: 0 1px 1px #BBB;
   width: 65vh;
@@ -30,11 +33,7 @@ Mening: Beskrive stilen til quiz siden.
 .quizValgBoks img {
   width: 100%;
 }
-.quizValgBoks p {
-  font-weight: bold;
-  font-size: 4vh;
-  margin: 5px;
-}
+
 .quizValgBoks:hover, .byttKnapp:hover {
     cursor: auto;
 }
