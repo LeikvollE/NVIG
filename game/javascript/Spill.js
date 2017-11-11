@@ -25,7 +25,7 @@ for (let i = 0; i < map.length; i++) {
 }
 
 var game = {
-    nextLevel: "game/levels/level03.json"
+    nextLevel: "game/levels/level01.json"
 }
 
 var player = {
@@ -125,11 +125,11 @@ function move(elapsedSinceLastLoop) {
 
     checkCollisionsHorizontal(direction);
 
-    if (!(tileAtScreenPos(player.xPos+player.speed*direction, player.yPos).solid ||
-        tileAtScreenPos(player.xPos+player.speed*direction, player.yPos+20).solid ||
-        tileAtScreenPos(player.xPos+20+player.speed*direction, player.yPos).solid ||
-        tileAtScreenPos(player.xPos+20+player.speed*direction, player.yPos+20).solid)) {
-        player.xPos += player.speed*direction;
+    if (!(tileAtScreenPos(player.xPos+player.speed*direction*elapsedSinceLastLoop*75, player.yPos).solid ||
+        tileAtScreenPos(player.xPos+player.speed*direction*elapsedSinceLastLoop*75, player.yPos+20).solid ||
+        tileAtScreenPos(player.xPos+20+player.speed*direction*elapsedSinceLastLoop*75, player.yPos).solid ||
+        tileAtScreenPos(player.xPos+20+player.speed*direction*elapsedSinceLastLoop*75, player.yPos+20).solid)) {
+        player.xPos += player.speed*direction*elapsedSinceLastLoop*75;
     }
 
 

@@ -13,7 +13,7 @@ main {
     /*bestemmer høyde, sentrering av siden, sentrering av seg selv samt bakgrunnsfargeb*/
     align-self: center;
     display: flex;
-    margin: 0 auto;
+    margin: auto;
     width: 100vh;
     height: 60vh;
     background-color: #f2f2f2;
@@ -25,7 +25,6 @@ main {
     width: 75%;
     padding: 10px;
 }
-
 
 #aboutNavigator {
     width: 25%;

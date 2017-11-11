@@ -5,10 +5,6 @@ Når: November 2017
 Mening: Beskrive stilen til quiz siden.
 */
 
-h2 {
-  font-size: 30px;
-}
-
 .contentDiv {
     width: 80vw;
     margin: auto;
@@ -17,8 +13,9 @@ h2 {
 #velgQuiz {
   text-align: center;
 }
-#velgQuiz input {
-  margin: 10px;
+
+#velgQuiz h2 {
+    font-size: 3vh;
 }
 #quizListe {
   display: flex;
@@ -28,26 +25,17 @@ h2 {
 }
 .quizValgBoks {
   background-color: #eee;
-  height: auto;
   margin: 10px;
   box-shadow: 0 1px 1px #BBB;
-  text-align: center;
   width: 65vh;
   max-width: 700px;
 }
 .quizValgBoks img {
   width: 100%;
 }
-.quizValgBoks p {
-  font-weight: bold;
-  font-size: 4vh;
-  margin: 5px;
-}
-.quizValgBoks:hover {
+
+.quizValgBoks:hover, .byttKnapp:hover {
     cursor: pointer;
-}
-.quizValgBoks input:focus {
-    outline:0;
 }
 
 #SampleDiv {
@@ -56,8 +44,8 @@ h2 {
 }
 
 #SampleDiv img {
+    max-width: 1000px;
     display: block;
-    height: 50vh;
     margin: 0 auto;
 }
 
@@ -68,6 +56,7 @@ h2 {
 }
 
 #sporsmaalsDiv h3 {
+    font-size: 2.5vh;
     margin: 10px 0 10px 10px;
 }
 
@@ -77,60 +66,43 @@ input[type=radio]{
 
 .label {
     display: block;
-    font-size: 20px;
+    font-size: 1.7vh;
 }
 
 #navDiv {
-    margin: 0 auto;
+    margin: 15px auto;
     max-width: 1200px;
-    margin-top: 15px;
     height: 10%;
     display: flex;
     justify-content: space-between;
-    position: relative;
-}
-
-#fremgang {
-    display: inline;
 }
 
 #ferdig {
   display: none;
-  height: 75vh;
-  background-color: #eee;
   text-align: center;
   padding: 20px;
 }
+
 #ferdig input {
-  margin-top: 20px;
+    font-size: 2vh;
   border-radius: 10px;
-      height: 8vh;
-  width: auto;
-    color: #f2f2f2;
+  height: 8vh;
+  color: #fff;
   background-color: #c33838;
 }
 
-.byttKnapp {
-    position: relative;
-    bottom: 10px;
-    display: inline-block;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    border: none;
-    font-size: 25px;
-    font-weight: bold;
-    max-height: 100%;
+#ferdig input:focus, .byttKnapp{
+    outline: none;
 }
 
-.byttKnapp:hover {
-    cursor: pointer;
+.byttKnapp {
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    font-size: 3vh;
+    font-weight: bold;
 }
 
 .byttKnapp:active {
     border: 1px solid black;
-    outline:none;
-}
-
-.byttKnapp:focus {
-    outline:0;
 }

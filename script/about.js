@@ -42,6 +42,9 @@ let about = document.getElementById("aboutDiv");
 let text  = document.createElement("div");
 let heading = document.createElement("h2");
 
+about.appendChild(heading);
+about.appendChild(text);
+
 
 //gjør at NVIGknappen er i focus i CSSens øyne
 document.getElementById("NVIGButton").focus();
@@ -49,8 +52,6 @@ document.getElementById("NVIGButton").focus();
 function showBox(index) {
     text.innerText = aboutText[index];
     heading.innerText = aboutHeading[index];
-    about.appendChild(heading);
-    about.appendChild(text);
 }
 //henter info om NVIG når bruker åpner siden
 showBox(0);

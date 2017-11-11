@@ -12,14 +12,9 @@ Mening: Presentere innholdet i de ulike artiklene på en attraktiv og udistraher
     padding-bottom:1vh;
 }
 
-h1 {
+.contentDiv h1 {
     margin: 10px 0 10px 0;
     font-size: 3vw;
-}
-
-.bilde {
-    width: inherit;
-    max-width: 1300px;
 }
 
 #artikkel {
@@ -42,7 +37,7 @@ section {
     margin:0 auto;
 }
 
-img{
+section img{
     width: inherit;
     max-width: 1300px;
     display: block;
@@ -93,15 +88,10 @@ tr:first-child {
     margin: auto;
 }
 
-tr:first-child img{
-    padding:0 18vh;
-}
-
 .shareLinkFacebook {
     padding: 5px 10px;
     background-color: #3b5998;
     color: #f7f7f7;
-    width: inherit;
 }
 
 .shareLinkTwitter {
@@ -110,15 +100,10 @@ tr:first-child img{
     margin: 10px;
     background-color: #55acee;
     color: #f5f8fa;
-    width: inherit;
 }
 
-.shareLinkTwitter:hover {
+.shareLinkTwitter:hover,.shareLinkFacebook:hover  {
     box-shadow: 2px 2px 3px #BBB ;
-}
-
-.shareLinkFacebook:hover {
-    box-shadow: 2px 2px 3px #BBB;
 }
 
 #fbBilde {
