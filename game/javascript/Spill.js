@@ -1,6 +1,8 @@
+// Retrieves the canvas and a 2d context to draw on
 var canvas = document.getElementById("game");
 var ctx = canvas.getContext("2d");
 
+// Sets the
 canvas.width = 840;
 canvas.height = 420;
 
