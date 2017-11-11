@@ -5,9 +5,9 @@ Når: November 2017
 Mening: Beskrive stilen til quiz siden.
 */
 
-.contentDiv {
+.contentDiv { /*Diven hvor man velger quiz og tar quiz*/
     width: 80vw;
-    margin: auto;
+    margin: auto; /*Sentrerer boksene*/
 }
 
 #velgQuiz {
@@ -17,7 +17,7 @@ Mening: Beskrive stilen til quiz siden.
 #velgQuiz h2 {
     font-size: 3vh;
 }
-#quizListe {
+#quizListe { /*Fikser bredde, og plassering av innhold*/
   display: flex;
   flex-flow: wrap row;
   justify-content: center;
@@ -34,12 +34,13 @@ Mening: Beskrive stilen til quiz siden.
   width: 100%;
 }
 
+/*Gjør det tydelig at man kan trykke på knappene*/
 .quizValgBoks:hover, .byttKnapp:hover {
     cursor: pointer;
 }
 
-#SampleDiv {
-  display: none;
+#SampleDiv { /*Boksen man tar en quiz i*/
+  display: none; /*Skuler den til man velger en quiz*/
   height: 75vh;
 }
 
@@ -55,36 +56,36 @@ Mening: Beskrive stilen til quiz siden.
     max-width: 1200px;
 }
 
-#sporsmaalsDiv h3 {
+#sporsmaalsDiv h3 { /*Spørsmålet i quizen*/
     font-size: 2.5vh;
     margin: 10px 0 10px 10px;
 }
 
-input[type=radio]{
-    margin: 10px;
-}
-
-.label {
+.label { /*Svaralternativene*/
     display: block;
     font-size: 1.7vh;
 }
 
-#navDiv {
+input[type=radio]{ /*Knapp i svaraltirnativene*/
+    margin: 10px;
+}
+
+#navDiv { /*Navigerings div*/
     margin: 15px auto;
     max-width: 1200px;
     height: 10%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /*Likt mellomrom mellom elementene inni diven*/
 }
 
-#ferdig {
-  display: none;
+#ferdig { /*Boks som viser resultat*/
+  display: none; /*Skjult til man er ferdig med quiz*/
   text-align: center;
   padding: 20px;
 }
 
-#ferdig input {
-    font-size: 2vh;
+#ferdig input { /*Knapp som avslutter quizen*/
+  font-size: 2vh;
   border-radius: 10px;
   height: 8vh;
   color: #fff;
@@ -92,10 +93,10 @@ input[type=radio]{
 }
 
 #ferdig input:focus, .byttKnapp{
-    outline: none;
+    outline: none; /*Fjerner standard outline på knapp*/
 }
 
-.byttKnapp {
+.byttKnapp { /*Knapper for å navigere mellom spørsmål*/
     border: 1px solid white;
     border-radius: 5px;
     background-color: #f2f2f2;
