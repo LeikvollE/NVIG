@@ -21,16 +21,16 @@ Mening: Lage en grunnstruktur for quiz siden.
   </header>
 
   <main>
-    <div id="velgQuiz" class="contentDiv">
+    <div id="velgQuiz" class="contentDiv"> <!-- I denne velger man quiz -->
       <h2>Velg en quiz!</h2>
-      <div id="quizListe">
+      <div id="quizListe"> <!-- En liste med alle quizene -->
 
-        <div class="quizValgBoks" id="quiz1">
+        <div class="quizValgBoks" id="quiz1"> <!-- Den første quizen -->
           <img src="bilder/mangeFlagg.jpg" alt="Flagg-Mosaikk">
           <h2> Hvor godt kjenner du disse flaggene</h2>
         </div>
 
-        <div class="quizValgBoks" id="quiz2">
+        <div class="quizValgBoks" id="quiz2"> <!-- Den andre quizen -->
           <img src="bilder/eu_flag.jpg" alt="Eu-flagg">
           <h2>Gjett på europeiske flagg</h2>
         </div>
@@ -38,26 +38,27 @@ Mening: Lage en grunnstruktur for quiz siden.
       </div>
     </div>
 
-    <div id="SampleDiv" class="contentDiv">
-        <img id="img" src="" alt="alt">
+    <div id="SampleDiv" class="contentDiv"> <!-- I denne tar man en quiz -->
+        <img id="img" src="" alt="alt"> <!-- Her kommer spørsmålet sitt bilde -->
         <div id="sporsmaalsDiv">
-            <h3 id="tekst"></h3>
-            <label class="label"></label>
+            <h3 id="tekst"></h3>  <!-- Spørsmålet  -->
+            <label class="label"></label> <!-- Svaralternativene  -->
             <label class="label"></label>
             <label class="label"></label>
             <label class="label"></label>
         </div>
-        <div id="navDiv">
+        <div id="navDiv"> <!-- Lar brukeren navigere og viser fremgang  -->
             <input type="button" class="byttKnapp" value="<" id="knappForrige">
             <div id="fremgang"></div>
             <input type="button" class="byttKnapp" value=">" id="knappNeste">
         </div>
     </div>
 
-    <div id="ferdig">
+    <div id="ferdig"> <!-- I denne ser man sine resultater -->
       <h2 id="antallRiktig"></h2>
-      <input type="button" id="avslutt" value="Tilbake til quiz startside">
+      <input type="button" id="avslutt" value="Tilbake til quiz startside"> <!-- Tar bruker tilbake til quizlsite  -->
     </div>
+
   </main>
   <footer id="footer"></footer>
   <script src="script/footer.js"></script>
