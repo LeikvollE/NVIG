@@ -31,8 +31,8 @@ class fireBall extends Entity {
     move(delta) {
 
         this.ySpeed += player.gravity*delta;
-        this.y+=this.ySpeed;
-        this.x+=this.xSpeed;
+        this.y+=this.ySpeed* delta*60;
+        this.x+=this.xSpeed* delta*60;
 
 
         if (this.y > map[0].length*21) {
@@ -78,7 +78,7 @@ class Enemy extends Entity {
         if (tileAtScreenPos(this.x+20+this.speed*this.direction, this.y).solid || (!tileAtScreenPos(this.x+20+this.speed*this.direction, this.y).solid && !tileAtScreenPos(this.x+20+this.speed*this.direction, this.y+25).solid)) {
             this.direction*=-1;
         }
-        this.x+=this.speed*this.direction;
+        this.x+=this.speed*this.direction* delta*50;
     }
 
     checkCollision() {
@@ -168,7 +168,7 @@ class nepalBoss extends Boss {
             this.direction = -1;
         }
         if (Math.abs(player.xPos - this.x) > 20) {
-            this.x += this.speed * this.direction;
+            this.x += this.speed * this.direction * delta*50;
         } else if (Math.abs(player.xPos - this.x) > 5) {
             this.x += this.speed*this.direction*(1 / (1 + Math.pow(Math.exp(1), (4 - Math.abs(this.x-player.xPos) / 2.5)))); //1 / (1 + e^(4 - x / 2.5))
         }
@@ -181,7 +181,7 @@ class nepalBoss extends Boss {
             tileAtScreenPos(this.x+20, this.y+this.ySpeed).solid) {
             this.ySpeed = 0;
         } else {
-            this.y += this.ySpeed;
+            this.y += this.ySpeed*delta*60;
         }
 
     }
