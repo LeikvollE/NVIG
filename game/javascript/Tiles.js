@@ -1,3 +1,4 @@
+// The base class for tiles
 class Tile {
     constructor(x, y) {
         this.solid = false;
