@@ -25,10 +25,14 @@ for (let a=0; a<artikler.length; a++){ //For løkke som lager seksjonene og legg
         newImg.src = "bilder/"+ artikler[a][b].bilde;
         newImg.alt = "artikkelbilde";
 
-        newA.appendChild(newImg);
-        newA.innerHTML += "<div class='overskrift'>" + artikler[a][b].tittel + "</div>";
+        let newHeading = document.createElement("div");//lager overskrift
+        newHeading.className = "overskrift";
+        newHeading.innerText = artikler[a][b].tittel;
+
+        newA.appendChild(newImg);//setter inn overskrift og bilde
+        newA.appendChild(newHeading);
         newDiv.appendChild(newA);
 
-        sections[a].innerHTML += newDiv.outerHTML;
+        sections[a].innerHTML += newDiv.outerHTML;//legger newDiv inn i sections[a]
     }
 }

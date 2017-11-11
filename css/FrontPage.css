@@ -90,7 +90,6 @@ main img {
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
-    flex-flow: row wrap;
 }
 /*div hvor twitterlinken ligger i*/
 #twitter {
@@ -107,7 +106,7 @@ iframe {
     height: 16.6vw;
 }
 /*for små skjermer*/
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     main {
         width: 100vw;
         padding: 0 10px 0 10px;
@@ -118,6 +117,7 @@ iframe {
 
     }
     .items_2, .items_3 {
+        margin: 10px 0;
         width: 100%;
     }
 
@@ -127,5 +127,33 @@ iframe {
         font-weight: bold;
         display: flex;
         flex-direction: column;
+    }
+
+    #twitterOgYoutube {
+        margin-top: 4vh;
+        width: 100vw;
+        max-height: 27.6vw;
+    }
+
+    iframe {
+        /*youtube er en iframe*/
+        width: 49vw;
+        max-width: 587px;
+        height: 27.6vw;
+    }
+}
+
+/*for "vanlige" skjermer*/
+@media only screen and (max-width: 1920px) {
+    .items_1 a {
+        font-size: 5.5vw;
+    }
+
+    .items_2 a {
+        font-size: 3.7vw;
+    }
+
+    .items_3 a {
+        font-size: 2.5vw;
     }
 }

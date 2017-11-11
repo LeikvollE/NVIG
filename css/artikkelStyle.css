@@ -115,17 +115,17 @@ tr:first-child {
     box-shadow: 2px 2px 3px #BBB ;
 }
 /*for store skjermer*/
-@media (min-height: 1080px) {
+@media (min-width: 1920px) {
     .contentDiv h1 {
         font-size: 2vw;
     }
 
     #artikkel {
-        font-size: 1.7vh;
+        font-size: 2vh;
 
     }
 
     #info p {
-        font-size: 1.5vh;
+        font-size: 1.7vh;
     }
 }
