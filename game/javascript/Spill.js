@@ -160,7 +160,7 @@ function move(elapsedSinceLastLoop) {
 
     // Checks if the player has collided with anything in the horizontal direction, and calls the on collide method,
     // of the tiles it have collied with
-    checkCollisionsHorizontal(direction);
+    checkCollisions(direction);
 
     // Checks if any of the four corners of the player sprite has collided with a solid block, and if not it will
     // allow the player to move.
@@ -180,9 +180,6 @@ function move(elapsedSinceLastLoop) {
 
     // Increments the speed in the y direction by 9.81 pixels every second.
     player.ySpeed += player.gravity*elapsedSinceLastLoop;
-
-    // Checks if the player has collided with any tiles in the y direction, and calls the tiles onCollide method.
-    checkCollisionVertical();
 
     // Checks all four corners if the are about to collide with anything solid in the y direction, if not it will move the
     // player according to the y speed.
