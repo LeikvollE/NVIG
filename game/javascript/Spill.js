@@ -169,6 +169,8 @@ function move(elapsedSinceLastLoop) {
         tileAtScreenPos(player.xPos+20+player.speed*direction*elapsedSinceLastLoop*70, player.yPos).solid ||
         tileAtScreenPos(player.xPos+20+player.speed*direction*elapsedSinceLastLoop*70, player.yPos+20).solid)) {
         player.xPos += player.speed*direction*elapsedSinceLastLoop*70;
+    } else {
+        player.xPos = Math.round(player.xPos/21)*21;
     }
 
     // Makes sure the player is teleported to the other side of the map if he leaves the canvas, in the x direction.
@@ -177,9 +179,6 @@ function move(elapsedSinceLastLoop) {
     } else if (player.xPos >=map.length*21) {
         player.xPos = -19
     }
-
-    // Increments the speed in the y direction by 9.81 pixels every second.
-    player.ySpeed += player.gravity*elapsedSinceLastLoop;
 
     // Checks all four corners if the are about to collide with anything solid in the y direction, if not it will move the
     // player according to the y speed.
@@ -191,7 +190,11 @@ function move(elapsedSinceLastLoop) {
         player.ySpeed = 0;
     } else {
         player.yPos += player.ySpeed*elapsedSinceLastLoop*60;
+
     }
+
+    // Increments the speed in the y direction by 9.81 pixels every second.
+    player.ySpeed += player.gravity*elapsedSinceLastLoop;
 
 
 }
