@@ -5,6 +5,7 @@ Når: November 2017
 Mening: Presentere innholdet i de ulike artiklene på en attraktiv og udistraherende måte.
 */
 
+
 .contentDiv {
     max-width: 1300px;
     width:inherit;
@@ -27,6 +28,7 @@ Mening: Presentere innholdet i de ulike artiklene på en attraktiv og udistraher
 #artikkel h4 {
     text-align: center;
 }
+
 #info p {
     font-size: 2.3vh;
 }
@@ -48,18 +50,22 @@ section img{
     max-width: 90%;
 }
 
-blockquote a, .dobbelDiv a, p a {
+blockquote a, table a, p a {
+    /*linker i artiklene får underline*/
     text-decoration: underline;
 }
-blockquote a:hover, p a:hover, .dobbelDiv a:hover {
+blockquote a:hover, p a:hover, .table a:hover {
+    /*fjerner underline når musepeker kommer over*/
     text-decoration: none;
 }
 blockquote {
+    /*blockquotes har litt mindre italic skrift*/
     font-style: italic;
     font-size: 90%;
 }
 
 tr:nth-child(even) {
+    /*Gjelder overskrifter(de er even child) i tabellen*/
     width: 100%;
     justify-content: center;
     font-weight: bold;
@@ -70,6 +76,7 @@ tr:nth-child(even) {
 
 table {
     display: flex;
+    /*flex flow column slik at innhold "flyter" nedover*/
     flex-flow: column;
 }
 
@@ -80,6 +87,7 @@ tr {
 td {
     margin: 0 2vh;
     width: 50%;
+    /*plasserer seg selv øverst i parent*/
     align-self: flex-start;
 }
 
@@ -87,7 +95,7 @@ tr:first-child {
     display: block;
     margin: auto;
 }
-
+/*facebook/twitter linker*/
 .shareLinkFacebook {
     padding: 5px 10px;
     background-color: #3b5998;
@@ -104,8 +112,4 @@ tr:first-child {
 
 .shareLinkTwitter:hover,.shareLinkFacebook:hover  {
     box-shadow: 2px 2px 3px #BBB ;
-}
-
-#fbBilde {
-    width: 500px;
 }
