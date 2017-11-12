@@ -95,5 +95,5 @@ function visSvar(quizNr) { //Åpner boks med resultat
 
 function tilbakeTilStart(){ //Tar bruker en tilbake til quiz listen
     document.getElementById("ferdig").style.display = "none"; //Skjuler resultatboks
-    document.getElementById("velgQuiz").style.display = "block"; //Viser boksen hvor bruker velger quiz.
+    document.getElementById("velgQuiz").style.display = "flex"; //Viser boksen hvor bruker velger quiz.
 }
