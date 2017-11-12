@@ -20,6 +20,7 @@ Mening: Beskrive stilen til quiz siden.
 #velgQuiz h2 {
     font-size: 3vh;
 }
+
 #quizListe { /*Fikser bredde, og plassering av innhold*/
     max-width: 140vh;
     align-self: center;
@@ -46,7 +47,7 @@ Mening: Beskrive stilen til quiz siden.
 }
 
 #SampleDiv { /*Boksen man tar en quiz i*/
-  display: none; /*Skuler den til man velger en quiz*/
+  display: none; /*Skjuler den til man velger en quiz*/
   height: 75vh;
 }
 
