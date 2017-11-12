@@ -7,7 +7,7 @@ legge til nye bilder uten at koden "kollapser"(legger du til nye bilder tilpasse
 , samt å gi enkle konfigureringsmuligheter - f.eks kan man forandre antall bilder per rad gjennom en variabel
 */
 
-//alle henvendelser til arrayer viser til arrayene i data.js
+//alle henvendelser til arrayer viser til arrayene i bildeGalleriData.js
  //diven der alt innhold bli plassert
  let bildeContentDiv = document.querySelector("#galleri");
 
