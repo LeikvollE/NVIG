@@ -37,22 +37,21 @@ let aboutText = [ "Har du noen gang sett det norske flagget i utlandet eller på
 "        verdt å samle seg bak.", "MALE³ er en gruppe med studenter fra NTNU som studerer informatikk. Gruppen består av" +
 "        Eirik Leikvoll, Emil Strand, Lars Martin Hodne, August Noer Steinset og Einar Viddal." +
 "        Navnet MALE³ kommer fra forbokstavene i navnene til medlemene av gruppa. MALE³" +
-"        er også grunnleggerne av NVIG."];
-
-//Overskrifter til beskrivelsene
-let aboutHeading = ["Hvorfor Vexillologi?", "MALE³", "NVIG", "Logo", "NVIGs mål"];
+"        er også grunnleggerne av NVIG."
+];
 
 let about = document.getElementById("aboutDiv");//henter container
 
 let text  = document.createElement("div");//lager div for tekst, lager overskrift
 let heading = document.createElement("h2");
-
 about.appendChild(heading);//setter disse inn i container
 about.appendChild(text);
 
-
 //gjør at NVIGknappen er i focus i CSSens øyne
-document.getElementById("NVIGButton").focus();
+buttons[2].focus();
+
+//Overskrifter til beskrivelsene
+let aboutHeading = ["Hvorfor Vexillologi?", "MALE³", "NVIG", "Logo", "NVIGs mål"];
 
 function showBox(index) {//setter inn tekst og overskrift gitt ved index
     text.innerText = aboutText[index];
