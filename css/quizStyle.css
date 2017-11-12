@@ -52,8 +52,9 @@ Mening: Beskrive stilen til quiz siden.
 }
 
 #SampleDiv img {
-    max-width: 800px;
-    width: 80vw;
+    height:30vw;
+    max-height: 600px;
+    max-width: 80vw;
     display: block;
     margin: 0 auto;
 }
