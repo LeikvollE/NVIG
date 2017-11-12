@@ -3,11 +3,14 @@ Filnavn: quizJS.js
 Skrevet av: Einar Viddal, Lars Martin Hodne
 Når: November 2017
 Mening: Gi funksjonalitet til quizen, dvs: la brukeren velge quiz, svare på spørsmål og få et resultat.
+Forsikre at man lett kan legge til nye quizer
 */
 document.getElementById("SampleDiv").style.display = "none"; //Skjuler quizboks
 
+//henter alle quizValgBoksene på siden
 let quizBokser = document.getElementsByClassName("quizValgBoks");
 
+//legger til eventlisteners på quizvalgene
 for (let i = 0;i<quizBokser.length;i++) {
     quizBokser[i].addEventListener("click", function(){ startQuiz(i); })
 }
