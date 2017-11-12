@@ -7,12 +7,27 @@ Forsikre at man lett kan legge til nye quizer
 */
 document.getElementById("SampleDiv").style.display = "none"; //Skjuler quizboks
 
-//henter alle quizValgBoksene på siden
-let quizBokser = document.getElementsByClassName("quizValgBoks");
+//henter quizValgBoksen
+let quizBoks = document.getElementById("quizListe");
 
-//legger til eventlisteners på quizvalgene
-for (let i = 0;i<quizBokser.length;i++) {
-    quizBokser[i].addEventListener("click", function(){ startQuiz(i); })
+//lager quizvalgene og legger til eventlistener
+for (let i = 0;i<quizer.length;i++) {//ser hvor mange quizvalg som skal lages
+    let quizDiv = document.createElement("div");//lager div for quizvalgalternativet
+    quizDiv.className = "quizValgBoks";
+
+    let quizImg = document.createElement("img");//lager bilde for quizvalget
+    quizImg.alt = quizer[i].navn;
+    quizImg.src = quizer[i].bilde;
+
+    let quizTema = document.createElement("h2");//lager tittel/beskrivelse
+    quizTema.innerText = quizer[i].navn;
+
+    quizDiv.appendChild(quizImg);//leger inn bilde/tittel
+    quizDiv.appendChild(quizTema);
+
+    quizBoks.appendChild(quizDiv);//leger dette inn i container fra htmlen
+
+    quizDiv.addEventListener("click", function(){ startQuiz(i); })//legger til eventlistener
 }
 
 let sporsmaalNr; //Viser til hvilket spørsmål man er på.

@@ -13,6 +13,7 @@ let quizer = [ //Lager en array som inneholder vær quiz som et objekt.
       //Et spørsmål i quizen bruker en indeks for å hente informasjon fra alle arrayene
 
     navn:"Hvor godt kjenner du disse flaggene?", //Navnet på quizen
+    bilde:"bilder/mangeFlagg.jpg",
     sporsmaal:[
       "Hvilket stjernebilde representerer de 5 stjernene i den høyre delen av Australias flagg?",
       "Hva representerer stripene i Hellas flagg?",
@@ -38,6 +39,7 @@ let quizer = [ //Lager en array som inneholder vær quiz som et objekt.
   },
   {
     navn:"Gjett på europeiske flagg",
+    bilde:"bilder/eu_flag.jpg",
     sporsmaal:[
       "Hvilket land har dette flagget?",
       "Hvilket land har dette flagget?",
