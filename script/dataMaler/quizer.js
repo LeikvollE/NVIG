@@ -35,7 +35,7 @@ let quizer = [ //Lager en array som inneholder vær quiz som et objekt.
       "bilder/Flagg/Sveits.png",
       "bilder/Flagg/Qatar.png"
     ],
-    riktigeSvar:[0,3,0,1,1]
+    riktigeSvar:[0,3,0,1,1]//riktigeSvar er 0-indeksert
   },
   {
     navn:"Gjett på europeiske flagg",
