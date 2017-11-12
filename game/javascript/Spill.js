@@ -154,8 +154,10 @@ function move(elapsedSinceLastLoop) {
 
     // Iterates through all entities and calls their move method, and checks if the have collided with the player.
     for (let i = 0; i < Entities.length; i++) {
+        if (Entities[i].checkCollision()) {
+            return;
+        }
         Entities[i].move(elapsedSinceLastLoop);
-        Entities[i].checkCollision();
     }
 
     // Checks if the player has collided with anything in the horizontal direction, and calls the on collide method,

@@ -31,8 +31,8 @@ class fireBall extends Entity {
     move(delta) {
 
         this.ySpeed += player.gravity*delta;
-        this.y+=this.ySpeed* delta*60;
-        this.x+=this.xSpeed* delta*60;
+        this.y+=this.ySpeed*delta*60;
+        this.x+=this.xSpeed*delta*60;
 
 
         if (this.y > map[0].length*21) {
@@ -60,7 +60,9 @@ class fireBall extends Entity {
             setTimeout(function () {
                 resumeGame();
             },1000);
+            return true;
         }
+        return false;
     }
 }
 
