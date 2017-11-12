@@ -105,44 +105,6 @@ iframe {
     max-width: 587px;
     height: 16.6vw;
 }
-/*for små skjermer*/
-@media only screen and (max-width: 480px) {
-    main {
-        width: 100vw;
-        padding: 0 10px 0 10px;
-    }
-    .contentSection {
-        flex-flow: column wrap;
-        flex: 1 1 auto;
-
-    }
-    .items_2, .items_3 {
-        margin: 10px 0;
-        width: 100%;
-    }
-
-    .items_3 a, .items_2 a, .items_1 a {
-        height: 100%;
-        font-size: 4vw;
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #twitterOgYoutube {
-        margin-top: 4vh;
-        width: 100vw;
-        max-height: 27.6vw;
-    }
-
-    iframe {
-        /*youtube er en iframe*/
-        width: 49vw;
-        max-width: 587px;
-        height: 27.6vw;
-    }
-}
-
 /*for "vanlige" skjermer*/
 @media only screen and (max-width: 1920px) {
     .items_1 a {
@@ -155,5 +117,48 @@ iframe {
 
     .items_3 a {
         font-size: 2.5vw;
+    }
+}
+
+/*for små skjermer*/
+@media only screen and (max-width: 480px) {
+    main {
+        width: 90vw;
+        padding: 0 10px 0 10px;
+    }
+    .contentSection {
+        flex-flow: column wrap;
+        flex: 1 1 auto;
+
+    }
+    .items_1, .items_2, .items_3 {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .items_3 a, .items_2 a, .items_1 a {
+        height: 100%;
+        font-size: 6vw;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #twitterOgYoutube {
+        margin-top: 0;
+        flex-wrap: wrap;
+        width: 100vw;
+        max-height: none;
+    }
+
+    iframe {
+        /*youtube er en iframe*/
+        width: 90vw;
+        height: 51.2vw;
+    }
+
+    #twitter {
+        width: 93%;
+        padding:2vh 0;
     }
 }
