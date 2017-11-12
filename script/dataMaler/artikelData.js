@@ -12,8 +12,8 @@ let artikler = [
     [
         {
             tittel:"Til alle med hjerte for NTNUI", //fikser tittelen til artikkelen på framsiden, i artikkelen, og i header
-            bilde:"artikkelTopp.png",               //Legger bildet til artikkelen, og på framsiden
-            fil:"til-alle-med-hjerte-i-ntnui.html"  //HTML-filen artikkelen skal linke til
+            bilde:"artikkelTopp.png",               //Bildet bildet til artikkelen,brukes også på framsiden
+            fil:"til-alle-med-hjerte-i-ntnui.html"  //HTML-filen forsiden og header skal linke til
         }
     ],
     [
