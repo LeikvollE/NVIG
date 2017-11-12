@@ -2,9 +2,11 @@
 Filnavn: FrontPage.js
 Skrevet av: Einar Viddal
 Når: Oktober 2017
-Mening: Fylle frontsiden med linker til artikler
+Mening: Fylle frontsiden med linker til artikler, gjøre det lett å legge til nye artikler
 */
 
+//for å legge til nye artikler trenger man bare legge til link, tittel og bileplassering
+//koden vil automatisk legge artikkelen til
 let div = document.getElementById('articleDiv'); //Henter div alle artiklene skal ligge i.
 let sections = document.getElementsByClassName('contentSection'); //Henter alle seksjonene (gruppen artikler på samme linje), denne starter tom.
 
