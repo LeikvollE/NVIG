@@ -3,8 +3,9 @@ Filnavn: quizer.js
 Skrevet av: Einar Viddal
 Når: November 2017
 Mening: Beskrive innholdet i quizene på quiz siden, dvs spørsmålene, svaralternativene, bildene og de riktige svarene.
-Gjør det lett å legge til ekstra spørsmål, det er bare å legge til informasjonen i arrayene,
- og quizen tilpasser seg automatisk.
+Gjøre det lett å legge til ekstra spørsmål, man trenger kun å legge til informasjonen i arrayene,
+ og quizen tilpasser seg automatisk. For å legge til en helt ny quiz må man også legge til en "quizValgBoks" i HTMLen
+ i tilegg til nye svar, spørsmål osv nedenfor
 */
 
 let quizer = [ //Lager en array som inneholder vær quiz som et objekt.
