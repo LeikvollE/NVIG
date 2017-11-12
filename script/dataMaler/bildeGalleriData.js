@@ -1,5 +1,5 @@
 /*
-Filnavn: data.js
+Filnavn: bildeGalleriData.js
 Skrevet av: Lars Martin Hodne
 Når: November 2017
 Mening: tilby filplasseringer og navn når BildeGalleriJs spør etter dette.
