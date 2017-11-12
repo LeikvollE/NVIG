@@ -3,11 +3,33 @@ Filnavn: quizJS.js
 Skrevet av: Einar Viddal, Lars Martin Hodne
 Når: November 2017
 Mening: Gi funksjonalitet til quizen, dvs: la brukeren velge quiz, svare på spørsmål og få et resultat.
+Forsikre at man lett kan legge til nye quizer
 */
-
 document.getElementById("SampleDiv").style.display = "none"; //Skjuler quizboks
-document.getElementById('quiz1').addEventListener("click", function(){ startQuiz(0); }); //starter quiz når brukeren velger en quiz
-document.getElementById('quiz2').addEventListener("click", function(){ startQuiz(1); });
+
+//henter quizValgBoksen
+let quizBoks = document.getElementById("quizListe");
+
+//lager quizvalgene og legger til eventlistener
+for (let i = 0;i<quizer.length;i++) {//ser hvor mange quizvalg som skal lages
+    let quizDiv = document.createElement("div");//lager div for quizvalgalternativet
+    quizDiv.className = "quizValgBoks";
+
+    let quizImg = document.createElement("img");//lager bilde for quizvalget
+    quizImg.alt = quizer[i].navn;
+    quizImg.src = quizer[i].bilde;
+
+    let quizTema = document.createElement("h2");//lager tittel/beskrivelse
+    quizTema.innerText = quizer[i].navn;
+
+    quizDiv.appendChild(quizImg);//leger inn bilde/tittel
+    quizDiv.appendChild(quizTema);
+
+    quizBoks.appendChild(quizDiv);//leger dette inn i container fra htmlen
+
+    quizDiv.addEventListener("click", function(){ startQuiz(i); })//legger til eventlistener
+}
+
 let sporsmaalNr; //Viser til hvilket spørsmål man er på.
 let valgteSvar;  //En array som tar vare på poeng brukeren får på hvert spørsmål.
 
@@ -88,5 +110,5 @@ function visSvar(quizNr) { //Åpner boks med resultat
 
 function tilbakeTilStart(){ //Tar bruker en tilbake til quiz listen
     document.getElementById("ferdig").style.display = "none"; //Skjuler resultatboks
-    document.getElementById("velgQuiz").style.display = "block"; //Viser boksen hvor bruker velger quiz.
+    document.getElementById("velgQuiz").style.display = "flex"; //Viser boksen hvor bruker velger quiz.
 }

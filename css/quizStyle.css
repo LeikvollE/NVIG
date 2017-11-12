@@ -11,13 +11,19 @@ Mening: Beskrive stilen til quiz siden.
 }
 
 #velgQuiz {
+    width: 100vw;
+    flex-flow:column;
   text-align: center;
+    display: flex;
 }
 
 #velgQuiz h2 {
     font-size: 3vh;
 }
+
 #quizListe { /*Fikser bredde, og plassering av innhold*/
+    max-width: 140vh;
+    align-self: center;
   display: flex;
   flex-flow: wrap row;
   justify-content: center;
@@ -30,6 +36,7 @@ Mening: Beskrive stilen til quiz siden.
   width: 65vh;
   max-width: 700px;
 }
+
 .quizValgBoks img {
   width: 100%;
 }
@@ -40,13 +47,14 @@ Mening: Beskrive stilen til quiz siden.
 }
 
 #SampleDiv { /*Boksen man tar en quiz i*/
-  display: none; /*Skuler den til man velger en quiz*/
+  display: none; /*Skjuler den til man velger en quiz*/
   height: 75vh;
 }
 
 #SampleDiv img {
-    max-width: 800px;
-    width: 80vw;
+    height:30vw;
+    max-height: 600px;
+    max-width: 80vw;
     display: block;
     margin: 0 auto;
 }

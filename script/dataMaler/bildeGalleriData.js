@@ -1,10 +1,12 @@
 /*
-Filnavn: data.js
+Filnavn: bildeGalleriData.js
 Skrevet av: Lars Martin Hodne
 Når: November 2017
 Mening: tilby filplasseringer og navn når BildeGalleriJs spør etter dette.
 */
-
+//det eneste man må gjøre for lå legge til bilder i galleriet
+//er å finne bilde, skrive en beskrivelse i .txt dokument,
+//også legge til filplasseringer og navn på landet under
 let bilder = [ //Linker til bildene i bildegalleriet.
     "Flagg/Australia.png","Flagg/Norge.png", "Flagg/Brasil.png","Flagg/Canada.png",
     "Flagg/Danmark.png","Flagg/Estland.png","Flagg/Etiopia.png", "Flagg/Finland.png",

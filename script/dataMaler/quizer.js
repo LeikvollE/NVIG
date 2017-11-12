@@ -3,15 +3,17 @@ Filnavn: quizer.js
 Skrevet av: Einar Viddal
 Når: November 2017
 Mening: Beskrive innholdet i quizene på quiz siden, dvs spørsmålene, svaralternativene, bildene og de riktige svarene.
-Gjør det lett å legge til ekstra spørsmål, det er bare å legge til informasjonen i arrayene,
+Gjøre det lett å legge til ekstra spørsmål, man trenger kun å legge til informasjonen i arrayene,
  og quizen tilpasser seg automatisk.
 */
-
+//For å legge til en helt ny quiz må man må man legge til svar, spørsmål, navn osv nedenfor
+//i en ny array
 let quizer = [ //Lager en array som inneholder vær quiz som et objekt.
   {//Spørsmålene, svarealternativene, bildene og de riktige svarene til quizen blir lagret som hver sin array.
       //Et spørsmål i quizen bruker en indeks for å hente informasjon fra alle arrayene
 
     navn:"Hvor godt kjenner du disse flaggene?", //Navnet på quizen
+    bilde:"bilder/mangeFlagg.jpg",
     sporsmaal:[
       "Hvilket stjernebilde representerer de 5 stjernene i den høyre delen av Australias flagg?",
       "Hva representerer stripene i Hellas flagg?",
@@ -33,10 +35,11 @@ let quizer = [ //Lager en array som inneholder vær quiz som et objekt.
       "bilder/Flagg/Sveits.png",
       "bilder/Flagg/Qatar.png"
     ],
-    riktigeSvar:[0,3,0,1,1]
+    riktigeSvar:[0,3,0,1,1]//riktigeSvar er 0-indeksert
   },
   {
     navn:"Gjett på europeiske flagg",
+    bilde:"bilder/eu_flag.jpg",
     sporsmaal:[
       "Hvilket land har dette flagget?",
       "Hvilket land har dette flagget?",
