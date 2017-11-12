@@ -32,11 +32,11 @@ headerContainer.appendChild(header);
 let navbar = document.createElement("div"); //Lager navbar-diven.
 navbar.id = "navbar";
 
-let headings = ["Nyeste artikler","Interaktiv","Info"];
+let headings = ["Nyeste artikler","Interaktiv","Info"];//overskrifter i navMenyen
 
 let links = [
     //Viser til arrayen i artikellData.js
-    // som holder info om nettstedets sider, denne brukes også av forsiden og artiklene selv
+    // som holder info(her brukes bare linkne) om nettstedets sider, denne brukes også av forsiden og artiklene selv
   [artikler[0][0], artikler[1][0], artikler[1][1]],
   [artikler[1][2], artikler[2][0]],
   [artikler[2][1], ekstraSider[0], ekstraSider[1]]
@@ -70,7 +70,7 @@ headerContainer.appendChild(navbar); //Legger baren inn i header containeren.
 let navOpener = document.createElement("div");
 navOpener.id = "navOpener";
 headerContainer.appendChild(navOpener);
-document.getElementById("navOpener").onclick = openNavbar; //Kaller funksjon som åpner navbaren.
+navOpener.onclick = openNavbar; //Kaller funksjon som åpner navbaren.
 
 //Lager en pil som viser at man kan åpne navbaren
 let arrow = document.createElement("img");
@@ -81,13 +81,13 @@ arrow.className = "closeArrow";
 navOpener.appendChild(arrow);
 
 function openNavbar(){ //Funksjon som åpner navbaren.
-  document.getElementById('navbar').style.animation = "openNavbar 0.3s forwards";
-  document.getElementById('navOpener').onclick = closeNavbar;
-  document.getElementById('arrow').className = "";
+  navbar.style.animation = "openNavbar 0.3s forwards";
+  navOpener.onclick = closeNavbar;
+  arrow.className = "";
 }
 
 function closeNavbar(){ //Funksjon som lukker navbaren.
-  document.getElementById('navbar').style.animation = "closeNavbar 0.3s forwards";
-  document.getElementById('navOpener').onclick = openNavbar;
-  document.getElementById('arrow').className = "closeArrow";
+  navbar.style.animation = "closeNavbar 0.3s forwards";
+  navOpener.onclick = openNavbar;
+  arrow.className = "closeArrow";
 }
