@@ -7,12 +7,11 @@ Mening: Fylle frontsiden med linker til artikler, gjøre det lett å legge til n
 
 //for å legge til nye artikler trenger man bare legge til link, tittel og bileplassering
 //koden vil automatisk legge artikkelen til
-let div = document.getElementById('articleDiv'); //Henter div alle artiklene skal ligge i.
+let articlePage = document.getElementById('articleDiv'); //Henter div alle artiklene skal ligge i.
 
 for (let a=0; a<artikler.length; a++){ //For løkke som lager seksjonene og legger artikler inn i de.
     let newSection = document.createElement("section");
     newSection.classList.add("contentSection");
-    div.appendChild(newSection);
 
     for (let b=0; b<artikler[a].length; b++){ //For løkke som legger artikler inn i seksjonene.
         let newDiv = document.createElement("div"); //Lager div som inneholder en enkelt artikkel.
@@ -33,5 +32,8 @@ for (let a=0; a<artikler.length; a++){ //For løkke som lager seksjonene og legg
         newA.appendChild(newImg);//setter inn overskrift og bilde
         newA.appendChild(newHeading);
         newDiv.appendChild(newA);
+
+        newSection.appendChild(newDiv);//legger newDiv inn i sections[a]
     }
+    articlePage.appendChild(newSection);
 }
