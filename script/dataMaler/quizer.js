@@ -4,10 +4,10 @@ Skrevet av: Einar Viddal
 Når: November 2017
 Mening: Beskrive innholdet i quizene på quiz siden, dvs spørsmålene, svaralternativene, bildene og de riktige svarene.
 Gjøre det lett å legge til ekstra spørsmål, man trenger kun å legge til informasjonen i arrayene,
- og quizen tilpasser seg automatisk. For å legge til en helt ny quiz må man også legge til en "quizValgBoks" i HTMLen
- i tilegg til nye svar, spørsmål osv nedenfor
+ og quizen tilpasser seg automatisk.
 */
-
+//For å legge til en helt ny quiz må man må man legge til svar, spørsmål, navn osv nedenfor
+//i en ny array
 let quizer = [ //Lager en array som inneholder vær quiz som et objekt.
   {//Spørsmålene, svarealternativene, bildene og de riktige svarene til quizen blir lagret som hver sin array.
       //Et spørsmål i quizen bruker en indeks for å hente informasjon fra alle arrayene
