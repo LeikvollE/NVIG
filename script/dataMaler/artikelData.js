@@ -5,19 +5,23 @@ Skrevet av: Lars Martin Hodne, Einar Viddal
 Når: November 2017
 Mening: Legger til artiklene på framsiden og legger inn bildet over den korresponderende artikkelen.
 gjør at man kan bytte bilde på forsiden og artiklene gjennom en fil,
-og bytte oversskrift i header, forside og artikkel i samme fil
+og bytte oversskrift i header, forside og artikkel i samme fil.
+Gjør det lett å legge til flere artikler
 */
 
+
+//for å legge til artikler legger man bare til enda en array i artikler arrayen og forsiden tilpasser seg automatisk.
+//Man kan velge mellom en stor artikkel, 2 middels eller 3 små(nå er forsiden på et 1 3 2 format).
 let artikler = [
     [
-        {
+        {//1
             tittel:"Til alle med hjerte for NTNUI", //fikser tittelen til artikkelen på framsiden, i artikkelen, og i header
             bilde:"artikkelTopp.png",               //Bildet bildet til artikkelen,brukes også på framsiden
             fil:"til-alle-med-hjerte-i-ntnui.html"  //HTML-filen forsiden og header skal linke til
         }
     ],
     [
-        {
+        {//3
             tittel:"Forslag til nytt NTNUI-flagg",
             bilde:"artikkelBilde6.png",
             fil:"NTNUIflaggforslag.html"
@@ -34,7 +38,7 @@ let artikler = [
         }
     ],
     [
-        {
+        {//2
             tittel:"Flaggquiz",
             bilde:"flaggquiz.png",
             fil:"quiz.html"
@@ -47,7 +51,7 @@ let artikler = [
     ]
 ];
 
-let ekstraSider = [ //sider som ikke vises på forsiden som artikkel ligger i ekstrasider
+let ekstraSider = [ //sider/linker som ikke vises på forsiden som artikkel ligger i ekstrasider
     {
         tittel:"Om oss",
         fil:"about.html"
