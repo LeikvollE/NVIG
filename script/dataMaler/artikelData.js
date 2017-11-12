@@ -23,7 +23,7 @@ let artikler = [
     [
         {//3
             tittel:"Forslag til nytt NTNUI-flagg",
-            bilde:"artikkelBilde6.png",
+            bilde:"NTNUI-nytt-flagg.png",
             fil:"NTNUIflaggforslag.html"
         },
         {
