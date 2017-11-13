@@ -23,6 +23,5 @@
     "blue":"",
     "yellow":""
   },
-  "endSong":"",
-  "leveTheme":""
+  "levelTheme":"game/sound/boss.mp3"
 }

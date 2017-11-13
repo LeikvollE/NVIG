@@ -122,7 +122,7 @@ tr:first-child {
         font-size: 1.7vh;
     }
 }
-
+/*for mobiler*/
 @media (max-width: 580px) {
     section {/*alt innhold på siden*/
         width: 90vw;

@@ -12,17 +12,17 @@ legge til nye bilder uten at koden "kollapser"(legger du til nye bilder tilpasse
  //diven der alt innhold bli plassert
  let bildeContentDiv = document.querySelector("#galleri");
 
-
+let antallBilderPerRad;
 //identifiserer om enhet er mobil eller ikke, fra "Baraa" -
 // https://stackoverflow.com/questions/6666907/how-to-detect-a-mobile-device-with-javascript
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
     //lar man bestemme antall bilder per rad, høyden på bildene tilpasses automatisk
-    const antallBilderPerRad = 3
+    antallBilderPerRad = 3
 }
 else {
-    const antallBilderPerRad = 5;
+    antallBilderPerRad = 5;
 }
- const antallBilderPerRad = 5;
+console.log(antallBilderPerRad);
 
  //regner ut antall rader gitt ved antallbilderperrad
  const antallRader = (bilder.length - bilder.length%antallBilderPerRad)/antallBilderPerRad;

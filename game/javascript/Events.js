@@ -19,7 +19,10 @@ document.onkeydown = function (e) {
         player.ySpeed = -5;
     } else if (e.keyCode === 32 && !running && showingSplash) {
         // Removes tha splash and resumes the game if a splash is shown.
+        e.preventDefault();
         showingSplash = false;
+        mainAudio.src = game.music;
+        mainAudio.play();
         resumeGame();
     }
 

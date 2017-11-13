@@ -26,6 +26,5 @@
     "blue":"game/img/player/01Blue.png",
     "yellow":""
   },
-  "endSong":"game/sound/norge.mp3",
-  "levelTheme":""
+  "levelTheme":"game/sound/level1.mp3"
 }
