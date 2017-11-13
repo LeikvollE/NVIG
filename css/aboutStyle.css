@@ -85,9 +85,13 @@ main {
 }
 /*for mobiler*/
 @media (max-width: 580px) {
-.button {
-    text-align: center;
-    font-size: 2.3vh;
-}
+    .button {
+        text-align: center;
+        font-size: 2.2vh;
+    }
+    #content {
+        max-width: 95vw;
+    }
+
 }
 
