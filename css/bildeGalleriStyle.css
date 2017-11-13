@@ -134,6 +134,7 @@ Mening: Presentere innholdet i bildeGalleri.html på en attraktiv måte også be
         100% {height: 0;}
     }
     #infoDiv {
+        padding-top: 2vh;
         overflow: auto;
         flex-wrap: wrap;
     }
@@ -146,6 +147,7 @@ Mening: Presentere innholdet i bildeGalleri.html på en attraktiv måte også be
     /*max størrelser på show-case bildet*/
     #bildeBeskrivelse img {
         max-width: 90vw;
+        max-height: 40vh;
     }
 }
 
