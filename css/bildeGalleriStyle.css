@@ -127,10 +127,10 @@ Mening: Presentere innholdet i bildeGalleri.html på en attraktiv måte også be
 @media (max-width: 580px) {
     @keyframes extend {/*infodiven åpnes*/
         0% {height: 0;}
-        100% {height: 90vh;}
+        100% {height: 95vh;}
     }
     @keyframes retract {/*infodiven lukkes*/
-        0% {height: 90vh}
+        0% {height: 95vh}
         100% {height: 0;}
     }
     #infoDiv {
