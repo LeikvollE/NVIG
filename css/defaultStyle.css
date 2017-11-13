@@ -101,8 +101,7 @@ header a {/*link i header - NVIG logo*/
 /*Her beskrives animasjonene som gjennomføres når navbaren åpnes og lukkes*/
 @keyframes openNavbar{
     0%    {height: 0; padding: 0;}
-    99%   {overflow: hidden}/*fjerner plagsomt rykk i inholdet som skyldes scroll-baren som spretter inn og forsvinner*/
-    100%  {height: 20vh; padding: 1vh 0 4vh 0; overflow: auto}
+    100%  {height: 20vh; padding: 1vh 0 4vh 0;}
 }
 @keyframes closeNavbar{
     0%    {height: 20vh; padding: 1vh 0 4vh 0; overflow: hidden}
@@ -141,4 +140,15 @@ footer a {/*link i footer*/
 
 footer a:hover {/*hover-effekt*/
     text-decoration: none;
+}
+
+@media only screen and(max-width: 580px) {
+    @keyframes openNavbar{
+        0%    {height: 0; padding: 0;}
+        100%  {height: 40vh; padding: 1vh 0 4vh 0;}
+    }
+    @keyframes closeNavbar{
+        0%    {height: 40vh; padding: 1vh 0 4vh 0; overflow: hidden}
+        100%  {height: 0; padding: 0;}
+    }
 }
