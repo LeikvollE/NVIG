@@ -125,16 +125,11 @@ iframe {
 
 /*for små skjermer*/
 @media (max-width: 580px) {
-    body {
+    body {/*fikser problem med horisontal scrolling på mobil*/
         overflow-x: hidden;
-        width: 100%;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
     }
     main {
         width: 90vw;
-       justify-self: center;
     }
     .contentSection {
         flex-flow: column wrap;
