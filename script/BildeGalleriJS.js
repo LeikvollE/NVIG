@@ -22,7 +22,6 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phon
 else {
     const antallBilderPerRad = 5;
 }
- const antallBilderPerRad = 5;
 
  //regner ut antall rader gitt ved antallbilderperrad
  const antallRader = (bilder.length - bilder.length%antallBilderPerRad)/antallBilderPerRad;
