@@ -12,7 +12,6 @@ section {/*alt innhold på siden*/
 
 section img{/*alle bilder sentres*/
     width: inherit;
-    display: block;
     margin:0 auto;
     max-width: 1300px;
 }
