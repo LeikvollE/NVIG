@@ -87,8 +87,8 @@ header a {/*link i header - NVIG logo*/
 }
 
 .closeArrow {/*roterings klasse*/
-  -ms-transform: rotate(180deg) !important; /* IE 9 */
-  -webkit-transform: rotate(180deg) !important; /* Safari */
+    -ms-transform: rotate(180deg) !important; /* IE 9 */
+    -webkit-transform: rotate(180deg) !important; /* Safari */
     transform: rotate(180deg) !important;
     transition: all 0.3s ease !important;
 }
