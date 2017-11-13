@@ -25,6 +25,5 @@
     "blue":"game/img/player/02Blue.png",
     "yellow":"game/img/player/02Yellow.png"
   },
-  "endSong":"game/sound/catalonia.mp3",
-  "levelTheme":""
+  "levelTheme":"game/sound/level2.mp3"
 }
