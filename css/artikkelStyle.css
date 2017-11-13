@@ -11,18 +11,14 @@ section {/*alt innhold på siden*/
 }
 
 section img{/*alle bilder sentres*/
-    width: inherit;
+    width: 100%;
     display: block;
     margin:0 auto;
     max-width: 1300px;
 }
 
 #bildeVindu, #artikkel {/*bildevindu er hovedbilde og tittel, artikkel er selve artikkelen*/
-    width:inherit;
-}
-
-#bildeVindu img {
-    margin:0;
+    width:100%;
 }
 
 #bildeVindu h1 {/*overskriften*/
