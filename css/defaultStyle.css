@@ -93,19 +93,19 @@ header a {/*link i header - NVIG logo*/
     background-color: #eee;
     display: flex;
     justify-content: space-around;
-    overflow: auto;/*gir scroll-bar på små skjermer*/
     height: 0;
     font-size: 3vh;
     flex-flow: row wrap;
 }
 /*Her beskrives animasjonene som gjennomføres når navbaren åpnes og lukkes*/
 @keyframes openNavbar{
-    0%    { height: 0; padding: 0;}
-    100%  { height: 20vh; padding: 1vh 0 4vh 0;  }
+    0%    { height: 0; padding: 0; overflow: hidden;}
+    99% {overflow: hidden}/*fjerner plagsomt rykk i inholdet som skyldes crollaren som spretter inn og forsvinner*/
+    100%  { height: 20vh; padding: 1vh 0 4vh 0; overflow: auto}
 }
 @keyframes closeNavbar{
-    0%    { height: 20vh; padding: 1vh 0 4vh 0;  }
-    100%  { height: 0; padding: 0;}
+    0%    { height: 20vh; padding: 1vh 0 4vh 0; overflow: hidden}
+    100%  { height: 0; padding: 0; overflow: hidden}
 }
 
 /*Her beskrives stilen til de ulike kolonnene i navbaren*/
