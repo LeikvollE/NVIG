@@ -93,7 +93,7 @@ header a {/*link i header - NVIG logo*/
     background-color: #eee;
     display: flex;
     justify-content: space-around;
-    overflow: auto;
+    overflow: auto;/*gir scroll-bar på små skjermer*/
     height: 0;
     font-size: 3vh;
     flex-flow: row wrap;
