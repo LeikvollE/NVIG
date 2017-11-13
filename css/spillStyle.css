@@ -1,0 +1,35 @@
+/*
+Filnavn: spillStyle.css
+Skrevet av: Eirik leikvoll, Lars Martin Hodne
+Når: November 2017
+Mening: Beskrive utseende på flaggspillet, vise feilmelding for mobil-brukere.
+*/
+#game {
+    /*Forsikrer at spillet er sentrert og matcher størrelsen på skjermen*/
+    align-self: center;
+    max-height: 65vh;
+    height: 40vw;
+    width: 80vw;
+    max-width: 130vh;
+}
+main {/*sentrerer spillet*/
+    display: flex;
+    justify-content: center;
+    width: inherit;
+    height: 70vh;
+}
+#error {/*skjult feilmelding, vises for mobiler*/
+    display: none;
+    align-self: center;
+    text-align: center;
+}
+
+/*for mobiler, viser feilmelding, fjerner canvas*/
+@media (max-width: 580px) {
+    canvas {
+        display: none;
+    }
+    #error {
+        display: block;
+    }
+}
