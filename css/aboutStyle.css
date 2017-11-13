@@ -83,7 +83,7 @@ main {
         font-size: 2vh;
     }
 }
-
+/*for mobiler*/
 @media (max-width: 580px) {
 .button {
     text-align: center;
