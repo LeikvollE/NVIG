@@ -133,6 +133,12 @@ header a {/*link i header - NVIG logo*/
     .menyDiv a {/*linker i kolonnene*/
         margin: 1.4vh 0;
     }
+
+    #navOpener {/*liten "kuppel" som viser at man kan trykke her for å åpne navbare*/
+        margin: 0 auto;
+        width: 45%;
+        height: 5vh;
+    }
 }
 
 /* Footer */
