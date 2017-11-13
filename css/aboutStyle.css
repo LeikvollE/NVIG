@@ -9,8 +9,8 @@ main {
     /*display flex slik at man lett kan sentrere innhold*/
     display: flex;
 }
-#content {
-    /*bestemmer høyde, sentrering av siden, sentrering av seg selv samt bakgrunnsfargeb*/
+#content { /*container for alt innhold på siden*/
+    /*bestemmer høyde, sentrering av siden, sentrering av seg selv samt bakgrunnsfarge*/
     align-self: center;
     display: flex;
     margin: auto;
@@ -21,13 +21,18 @@ main {
     max-width: 90vw;
 }
 
-#aboutDiv {
+#aboutDiv {/*Om oss teksten kommer her*/
     font-size: 3vh;
     width: 75%;
     padding: 10px;
 }
 
-#aboutNavigator {
+#aboutDiv h2 {
+    /*overskrifter matcher fargetemaet ellers på siden*/
+    color: #c33838;
+}
+
+#aboutNavigator {/*Navigerigsstrukturen kommer her*/
     width: 25%;
     height: inherit;
 }
@@ -37,12 +42,7 @@ main {
     border-top: none;
 }
 
-#aboutDiv h2 {
-    /*overskrifter matcher fargetemaet ellers på siden*/
-    color: #c33838;
-}
-
-.button {
+.button {/*Gjelder alle navigasjonsknappene*/
     display: flex;
     font-size: 2.5vh;
     align-items: center;
@@ -50,16 +50,16 @@ main {
     border-style: solid;
     border-color: #c33838;
     border-width: 1px 1px 0 0;
-    transition-duration: 0.3s;
+    transition-duration: 0.3s;/*gjelder når musen kommer over*/
     cursor: pointer;
     height: 20%;
-    /*border.box slik at boksens størrelse inkluderer borderen*/
+    /*border-box slik at boksens størrelse inkluderer borderen*/
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.button:hover {
+.button:hover {/*skifter bakgrunn*/
   background-color: #c33838;
 }
 
@@ -71,6 +71,7 @@ main {
     font-weight: bold;
 }
 
+/*for større skjermer*/
 @media (min-width: 1920px) {
     #aboutDiv {
         font-size: 2.5vh;

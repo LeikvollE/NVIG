@@ -4,16 +4,23 @@ Skrevet av: Lars Martin Hodne, Eirik Leikvolll, Emil Strand
 Når: November 2017
 Mening: Presentere innholdet i de ulike artiklene på en attraktiv og udistraherende måte.
 */
-
-
-.contentDiv {
+section {
     max-width: 1300px;
-    width:inherit;
-    margin-bottom: 10px;
-    padding-bottom:1vh;
+    width: 60vw;
+    margin:0 auto;
 }
 
-.contentDiv h1 {
+section img{
+    width: inherit;
+    display: block;
+    margin:0 auto;
+}
+
+#bildeVindu, #artikkel {
+    width:inherit;
+}
+
+#bildeVindu h1 {
     margin: 10px 0 10px 0;
     font-size: 3vw;
 }
@@ -31,19 +38,6 @@ Mening: Presentere innholdet i de ulike artiklene på en attraktiv og udistraher
 
 #info p {
     font-size: 2.3vh;
-}
-
-section {
-    max-width: 1300px;
-    width: 60vw;
-    margin:0 auto;
-}
-
-section img{
-    width: inherit;
-    max-width: 1300px;
-    display: block;
-    margin:0 auto;
 }
 
 #artikkel img{
@@ -116,7 +110,7 @@ tr:first-child {
 }
 /*for store skjermer*/
 @media (min-width: 1920px) {
-    .contentDiv h1 {
+    #bildeVindu h1 {
         font-size: 2vw;
     }
 
