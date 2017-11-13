@@ -1,6 +1,6 @@
 /*
 Filnavn: quizer.js
-Skrevet av: Einar Viddal
+Skrevet av: Einar Viddal, Lars Martin Hodne
 Når: November 2017
 Mening: Beskrive innholdet i quizene på quiz siden, dvs spørsmålene, svaralternativene, bildene og de riktige svarene.
 Gjøre det lett å legge til ekstra spørsmål, man trenger kun å legge til informasjonen i arrayene,
