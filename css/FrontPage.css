@@ -111,7 +111,7 @@ iframe {
 /*for "vanlige" skjermer*/
 @media (max-width: 1920px) {
     .items_1 a {
-        font-size: 5vw;
+        font-size: 4.3vw;
     }
 
     .items_2 a {
