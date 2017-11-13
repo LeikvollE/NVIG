@@ -123,3 +123,9 @@ tr:first-child {
         font-size: 1.7vh;
     }
 }
+
+@media (max-width: 580px) {
+    #bildeVindu h1 {
+        font-size: 6vw;
+    }
+}
