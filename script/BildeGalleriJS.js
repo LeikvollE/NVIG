@@ -8,25 +8,26 @@ legge til nye bilder uten at koden "kollapser"(legger du til nye bilder tilpasse
 */
 
 //alle henvendelser til arrayer viser til arrayene i bildeGalleriData.js
+
  //diven der alt innhold bli plassert
  let bildeContentDiv = document.querySelector("#galleri");
 
- //lar man bestemme antall bilder per rad
+ //lar man bestemme antall bilder per rad, høyden på bildene tilpasses automatisk
  const antallBilderPerRad = 5;
 
  //regner ut antall rader gitt ved antallbilderperrad
  const antallRader = (bilder.length - bilder.length%antallBilderPerRad)/antallBilderPerRad;
 
- //regner ut en hoydekonstant til bildene gitt ut ifra antallBilderPerRade
+ //regner ut en hoydekonstant til bildene gitt ut ifra antallBilderPerRad
  //en hoydekonstant paa 14 fungerer fint med 4 bilder per rad,vi ganger med 4/antallbilderperrad slik at konstanen
- //blir riktig i situasjoner hvor mengden rader er anderledes(man kan forandre antallBilderPerRad og siden tilpasser seg automatisk)
+ //blir riktig i situasjoner hvor antall bilder per rad er anderledes
  const hoyde = 14*(4/antallBilderPerRad);
 
  //regner ut hvor mange bilder som "flyter over" og må legges på bunnen
  const antallBilderPaaBunnen = bilder.length%antallBilderPerRad;
 
 
- //legger til bilder på en rad, velger bilder fra bildearrayen med indeks fra start til men ikke med slutt
+ //legger til bilder på en rad, velger bilder fra bildearrayen med indeks fra start og til men ikke med slutt
  function leggTilRad(start,slutt) {
      let bildeRad = document.createElement("p");
      bildeRad.className = "bildeRad";
@@ -67,17 +68,17 @@ legge til nye bilder uten at koden "kollapser"(legger du til nye bilder tilpasse
 //hvis noen bilder "flyter over" legges disse til i en egen div på bunnen
  if (antallBilderPaaBunnen) {
      leggTilRad(bilder.length - antallBilderPaaBunnen,bilder.length);
-     bildeContentDiv.lastChild.className = "sisteBildeRad";
+     bildeContentDiv.lastChild.className = "sisteBildeRad";//gir den siste raden id sisteBildeRad
  }
 
  //forrigediv viser til den forrige åpnede infodiven
- let forrigeDiv = "";
- //eksisterendeDiv er en bollsk verdi for om det er en infodiv til stede eller ikke
+ let forrigeDiv;
+ //eksisterendeDiv er en boolsk verdi for om det er en infodiv til stede eller ikke
  let eksisterendeDiv = false;
  function visInfo() {
      //hvis det eksister en div kjøres det følgende
      if (eksisterendeDiv) {
-         //hvis infodiven som skal skapes ligger i samme rad som forrigediv byttes bare innholdet
+         //hvis infodiven som skal skapes ligger i samme rad som forrigediv byttes bare innholdet eller..
          if (forrigeDiv.parentNode === this.parentNode) {
              //hvis forrigediv er lik den nye diven lukkes denne
              if (forrigeDiv === this) {
@@ -94,7 +95,7 @@ legge til nye bilder uten at koden "kollapser"(legger du til nye bilder tilpasse
                  lagPil(this);
              }
          }
-         //hvis infodiven som skal skapes ikke ligger i samme rad som forrige div lages en ny infordiv på den nye raden,
+         //hvis infodiven som skal skapes ikke ligger i samme rad som forrige div lages en ny infodiv på den nye raden,
          // og den forrige fjernes
          else {
              fjernDiv(document.getElementById("infoDiv"));
@@ -117,7 +118,7 @@ legge til nye bilder uten at koden "kollapser"(legger du til nye bilder tilpasse
  function lagPil (element) {
      let pilDiv = document.createElement("div");
      pilDiv.id = "pilDiv";
-     element.appendChild(pilDiv);
+     element.appendChild(pilDiv);//denne legges til i parentdiven til bilde
  }
 //lager infodiv
  function lagInfoDiv (element) {

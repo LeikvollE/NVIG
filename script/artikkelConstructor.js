@@ -3,6 +3,7 @@ Filnavn: artikkelConstructor.js
 Skrevet av: Eirik Leikvoll, Lars Martin Hodne
 Når: November 2017
 Mening: Lage artikler fra maler gitt i datamaler mappene og legge disse ut på artikkel siden. Forsikrer modularitet.
+gjør det lett å bytte bilde, overskrift og link for artikkelen på hele nettsiden
 */
 
 //henter hovedbilde diven

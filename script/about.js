@@ -5,7 +5,7 @@ Når: November 2017
 Mening: Legge til innhold i about.html siden.
 */
 
-//legger eventlisteners på knappene, kjører showBox med hensyn til tilhørende index i arrayene
+//legger eventlisteners på knappene, showBox vil kjøre med hensyn til tilhørende index i arrayene
 let buttons = document.getElementsByClassName("button");//henter knappene
 for (let i = 0;i<buttons.length;i++) {
     buttons[i].addEventListener("click", function () {showBox(i)})
