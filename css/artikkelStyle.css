@@ -125,6 +125,10 @@ tr:first-child {
 }
 
 @media (max-width: 580px) {
+    section {/*alt innhold på siden*/
+        width: 90vw;
+    }
+
     #bildeVindu h1 {
         font-size: 6vw;
     }
