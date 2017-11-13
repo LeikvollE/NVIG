@@ -71,6 +71,8 @@ header a {/*link i header - NVIG logo*/
 #navOpener img {/*pilen i openeren er eit bilde, bilde roteres alt etter om openeren er aktivertr eller ikke*/
     width: auto;
     max-height: 4vh;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Safari */
     transform: rotate(0deg);
     transition: all 0.3s ease;
 }
@@ -85,6 +87,8 @@ header a {/*link i header - NVIG logo*/
 }
 
 .closeArrow {/*roterings klasse*/
+  -ms-transform: rotate(180deg) !important; /* IE 9 */
+  -webkit-transform: rotate(180deg) !important; /* Safari */
     transform: rotate(180deg) !important;
     transition: all 0.3s ease !important;
 }
