@@ -17,10 +17,10 @@ let antallBilderPerRad;
 // https://stackoverflow.com/questions/6666907/how-to-detect-a-mobile-device-with-javascript
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
     //lar man bestemme antall bilder per rad, høyden på bildene tilpasses automatisk
-    antallBilderPerRad = 3
+    antallBilderPerRad = 3//gjelder på mobile enheter
 }
 else {
-    antallBilderPerRad = 5;
+    antallBilderPerRad = 5;//litt flere flagg per rad dersom enheten ikke er mobil
 }
 console.log(antallBilderPerRad);
 
