@@ -83,11 +83,24 @@ input[type=radio]{ /*Knapp i svaraltirnativene*/
 }
 
 #navDiv { /*Navigerings div*/
+    font-size: 2.2vh;
+    font-weight: bold;
     margin: 15px auto;
     max-width: 1200px;
     height: 10%;
     display: flex;
     justify-content: space-between; /*Likt mellomrom mellom elementene inni diven*/
+}
+
+.byttKnapp { /*Knapper for å navigere mellom spørsmål*/
+    border: 1px solid white;/*slik at den ikke flytter seg når den får border av :hover*/
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    font-size: 3vh;
+}
+
+.byttKnapp:active {
+    border: 1px solid black;
 }
 
 #ferdig { /*Boks som viser resultat*/
@@ -106,16 +119,4 @@ input[type=radio]{ /*Knapp i svaraltirnativene*/
 
 #ferdig input:focus, .byttKnapp{
     outline: none; /*Fjerner standard outline på knapp*/
-}
-
-.byttKnapp { /*Knapper for å navigere mellom spørsmål*/
-    border: 1px solid white;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    font-size: 3vh;
-    font-weight: bold;
-}
-
-.byttKnapp:active {
-    border: 1px solid black;
 }
