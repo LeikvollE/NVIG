@@ -38,7 +38,8 @@ for (let i = 0; i < map.length; i++) {
 
 // Is an object containing important information about the state of the game
 var game = {
-    nextLevel: "game/levels/level01.json"
+    nextLevel: "game/levels/level01.json",
+    music: ""
 }
 
 // The player object, contains all the information about the player

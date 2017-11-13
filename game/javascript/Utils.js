@@ -19,6 +19,8 @@ function loadMap(levelFile) {
     var image = new Image();
     image.src = level.map;
 
+    game.music = level.levelTheme;
+
     image.onload = function () {
         // Creates a new canvas and draws the map information on it, this will make it possible to get information
         // about individual pixels.
@@ -193,6 +195,7 @@ function movePlayerToPoint(x, y, speed, whenDone) {
 
 // Function to request the next level to be loaded.
 function nextLevel() {
+    mainAudio.pause();
     // Resets the score
     score.red = 0;
     score.blue = 0;
