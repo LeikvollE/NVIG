@@ -4,7 +4,7 @@ Skrevet av: Lars Martin Hodne
 Når: November 2017
 Mening: tilby filplasseringer og navn når BildeGalleriJs spør etter dette.
 */
-//det eneste man må gjøre for lå legge til bilder i galleriet
+//det eneste man må gjøre for å legge til bilder i galleriet
 //er å finne bilde, skrive en beskrivelse i .txt dokument,
 //også legge til filplasseringer og navn på landet under
 let bilder = [ //Linker til bildene i bildegalleriet.

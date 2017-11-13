@@ -1,12 +1,11 @@
-//Mening: Legger til artiklene på framsiden og legger inn bildet over den korresponderende artikkelen
 /*
 Filnavn: artikelData.js
 Skrevet av: Lars Martin Hodne, Einar Viddal
 Når: November 2017
-Mening: Legger til artiklene på framsiden og legger inn bildet over den korresponderende artikkelen.
+Mening: holder navn og link til artiklene på siden og filplassering til bildet for den korresponderende artikkelen.
 gjør at man kan bytte bilde på forsiden og artiklene gjennom en fil,
 og bytte oversskrift i header, forside og artikkel i samme fil.
-Gjør det lett å legge til flere artikler
+Gjør det også lett å legge til flere artikler
 */
 
 

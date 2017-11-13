@@ -6,36 +6,35 @@ Mening: Beskrive innholdet i quizene på quiz siden, dvs spørsmålene, svaralte
 Gjøre det lett å legge til ekstra spørsmål, man trenger kun å legge til informasjonen i arrayene,
  og quizen tilpasser seg automatisk.
 */
-//For å legge til en helt ny quiz må man må man legge til svar, spørsmål, navn osv nedenfor
-//i en ny array
+//For å legge til en helt ny quiz må man legge til svar, spørsmål, navn osv nedenfor, i en ny array i quizer
 let quizer = [ //Lager en array som inneholder vær quiz som et objekt.
   {//Spørsmålene, svarealternativene, bildene og de riktige svarene til quizen blir lagret som hver sin array.
       //Et spørsmål i quizen bruker en indeks for å hente informasjon fra alle arrayene
 
     navn:"Hvor godt kjenner du disse flaggene?", //Navnet på quizen
-    bilde:"bilder/mangeFlagg.jpg",
-    sporsmaal:[
+    bilde:"bilder/mangeFlagg.jpg",//bilde for quizValg siden
+    sporsmaal:[//spørsmål for quizen
       "Hvilket stjernebilde representerer de 5 stjernene i den høyre delen av Australias flagg?",
       "Hva representerer stripene i Hellas flagg?",
       "Nepals flagg er unikt fordi..",
       "Hva er opprinnelsen til korset i Sveits flagg?",
       "Qatars flagg er unikt fordi.."
     ],
-    svar:[
+    svar:[//svar til de ulike spøsmålene
       ["Sørkorset","Delfinen", "Alteret","Paradisfuglen"],
       ["De 5 viktige importvarene i Hellas: mat, petroleum, stål, olivenolje og tobakk", "De 9 største byene i Hellas.", "De 5 fem samfunnsklassene i Athen på den tiden Solon oppfant demokratiet.", 'De 9 stavelsene i en gresk læresetning "frihet eller døden".'],
       ["Det er det eneste nasjonalflagget som ikke er firkantet", "Det er har mer enn ett symbol i seg", "Det tar i bruk det gylne snitt", "Det tar i bruk det omvendte gylne snitt"],
       ["Det kristne korset", "Et kampflagg for sveitsiske forsvarstyrker", "Det røde korset, et av Røde Kors sine symboler", "Ordenen Riddere av det hvite kors"],
       ["Der det eneste flagget med 2 farger", "Det har det høyeste forholdet mellom sidene, av alle nasjonalflagg", "Det skal henges opp med begge endene festet til flaggstangen", "Man fester undersiden til flaggstangen"]
     ],
-    bilder:[
+    bilder:[//bilder til de ulike spørsmålene
       "bilder/Flagg/Australia.png",
       "bilder/Flagg/Hellas.png",
       "bilder/Flagg/Nepal.png",
       "bilder/Flagg/Sveits.png",
       "bilder/Flagg/Qatar.png"
     ],
-    riktigeSvar:[0,3,0,1,1]//riktigeSvar er 0-indeksert
+    riktigeSvar:[0,3,0,1,1]//riktigeSvar - er 0-indeksert
   },
   {
     navn:"Gjett på europeiske flagg",
