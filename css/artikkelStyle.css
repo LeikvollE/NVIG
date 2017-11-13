@@ -87,7 +87,8 @@ td {
 }
 
 tr:first-child {
-    display: block;
+    display: flex;
+    justify-content: space-around;
     margin: auto;
 }
 /*facebook/twitter linker*/
