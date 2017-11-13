@@ -1,3 +1,8 @@
+// Filnavn: Events.js
+// Skrevet av: Eirik leikvoll
+// Når: Oktober 2017
+// Mening: Behandler input fra brukeren.
+
 // Variables to see what keys are pressed
 var right = false;
 var left = false;

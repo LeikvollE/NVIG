@@ -1,4 +1,9 @@
-// The base class for tiles
+// Filnavn: Tiles.js
+// Skrevet av: Eirik leikvoll
+// Når: Oktober 2017
+// Mening: Definerer tilsene i spillet.
+
+// Definisjon av en helt enkel tile.
 class Tile {
     constructor(x, y) {
         this.solid = false;
@@ -6,10 +11,12 @@ class Tile {
         this.y = y;
     }
 
+    // Funlsjon som skal kalles når spilleren kolliderer med tilen.
     onCollide() {
         return;
     }
 
+    // Skal returnere posisjonen til bilde som skal tegnes på skjermen.
     get texture() {
         return null;
     }
@@ -23,6 +30,7 @@ class grassTile extends Tile {
     }
 
     get texture() {
+        // Sjekker hvilket bilde som skal tegnes basert på hvilke tiles som er rundt seg.
         if (this.y > 0 && map[this.x][this.y-1] instanceof grassTile) {
             return [2, 5];
         } else if (this.x > 0 && !(map[this.x-1][this.y] instanceof grassTile)) {
@@ -35,6 +43,7 @@ class grassTile extends Tile {
     }
 }
 
+// Er helt lik som grassTile, bare at bildene er snø belagte.
 class grassSnowTile extends Tile {
     constructor(x, y) {
         super(x, y);
@@ -67,9 +76,11 @@ class bridgeTile extends Tile {
     }
 }
 
+// Et flagg som spilleren kan plukke opp
 class FlagTile extends Tile {
     constructor(x, y) {
         super(x, y);
+        // Variabler for å gi flagget en animasjon
         this.frame = 0;
         this.frameCounter = 0;
     }
@@ -97,12 +108,14 @@ class redFlagTile extends FlagTile {
     }
 
     onCollide() {
+        // Setter scoren 'red' til 1 dersom den er 0
         if (score.red <= 0) {
             score.red = 1;
         }
     }
 }
 
+// Samme som rød, bare med blå
 class blueFlagTile extends FlagTile {
     constructor(x, y) {
         super(x, y);
@@ -130,6 +143,7 @@ class blueFlagTile extends FlagTile {
     }
 }
 
+// Samme som rød og blå, bare med gul
 class yellowFlagTile extends FlagTile {
     constructor(x, y) {
         super(x, y);
@@ -157,6 +171,7 @@ class yellowFlagTile extends FlagTile {
     }
 }
 
+// Spak som kan aktiveres
 class leverTile extends Tile {
     constructor(x, y) {
         super(x, y);
@@ -164,7 +179,7 @@ class leverTile extends Tile {
     }
 
     get texture() {
-
+        // returnerer riktig bilde ut i fra om den er aktivert eller ikke
         if (this.activated) {
             return [10, 8];
         } else {
@@ -174,10 +189,12 @@ class leverTile extends Tile {
     }
 
     onCollide() {
+        // Hvis spaken ikke er aktivert, så aktiveres den
         if (!this.activated) {
             this.activated = true;
             for (let i = 0; i < map.length; i++) {
                 for (let j = 0; j < map[i].length; j++) {
+                    // Fjerner alle bridge tile når den aktiveres.
                     if (map[i][j] instanceof bridgeTile) {
                         map[i][j] = new Tile(i, j);
                     }
@@ -187,6 +204,7 @@ class leverTile extends Tile {
     }
 }
 
+// Tile som brukeren skal gå til på slutten.
 class poleTile extends Tile {
     constructor(x, y) {
         super(x, y);
@@ -198,6 +216,7 @@ class poleTile extends Tile {
     }
 
     onCollide() {
+        // Sjekker om spilleren har vunnet levelet, og hvis han har blir han sendt videre til neste level.
         if (score.yellow >= score.goalYellow && score.blue >= score.goalBlue && score.red >= score.goalRed && !this.hasCollided) {
             this.hasCollided = true;
             running = false;
@@ -213,6 +232,7 @@ class poleTile extends Tile {
     }
 }
 
+// Den midterste tilen i flaggstangen.
 class poleMiddleTile extends Tile {
     constructor(x, y) {
         super(x, y);
@@ -223,6 +243,7 @@ class poleMiddleTile extends Tile {
     }
 }
 
+// Den øverset tilen i flaggstangen.
 class poleTopTile extends Tile {
     constructor(x, y) {
         super(x, y);
