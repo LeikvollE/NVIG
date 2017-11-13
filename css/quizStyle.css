@@ -97,7 +97,7 @@ input[type=radio]{ /*Knapp i svaraltirnativene*/
     border: 1px solid white;/*slik at den ikke flytter seg når den får border av :hover*/
     border-radius: 5px;
     background-color: #f2f2f2;
-    font-size: 3vh;
+    font-size: 5vh;
 }
 
 .byttKnapp:active {
