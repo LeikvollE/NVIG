@@ -21,6 +21,10 @@ section img{/*alle bilder sentres*/
     width:inherit;
 }
 
+#bildeVindu img {
+    margin:0;
+}
+
 #bildeVindu h1 {/*overskriften*/
     margin: 10px 0 10px 0;
     font-size: 3vw;
