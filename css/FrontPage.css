@@ -7,6 +7,7 @@ Mening: Beskrive stilen til front siden.
 /*setter text-align for siden*/
 body {
     text-align: center;
+    display: flex;
 }
 /*sentrerer inhhold, maksbredde*/
 main {
@@ -124,9 +125,16 @@ iframe {
 
 /*for små skjermer*/
 @media (max-width: 580px) {
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
     main {
         width: 90vw;
-        padding: 0 10px 0 10px;
+       justify-self: center;
     }
     .contentSection {
         flex-flow: column wrap;
