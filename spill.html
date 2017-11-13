@@ -24,6 +24,20 @@ Mening: Gi brukeren et engasjerende interaktivt (flaggrelatert) tilbud.
             width: inherit;
             height: 70vh;
         }
+        #error {
+            display: none;
+            align-self: center;
+            text-align: center;
+        }
+        @media (max-width: 580px) {
+            canvas {
+                display: none;
+            }
+            #error {
+                display: block;
+            }
+        }
+
     </style>
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="shortcut icon" type="image/png" href="bilder/NVIGlogo2.png"/>
@@ -37,6 +51,7 @@ Mening: Gi brukeren et engasjerende interaktivt (flaggrelatert) tilbud.
 
 <main>
 <canvas id="game"></canvas>
+<h2 id="error">Du kan ikke spille flaggspillet på mobil</h2>
 </main>
 
 <footer id="footer"></footer>
