@@ -8,6 +8,7 @@ Mening: Presentere innholdet i about.html på en attraktiv måte.
 main {
     /*display flex slik at man lett kan sentrere innhold*/
     display: flex;
+    height: 70vh;
 }
 #content { /*container for alt innhold på siden*/
     /*bestemmer høyde, sentrering av siden, sentrering av seg selv samt bakgrunnsfarge*/
