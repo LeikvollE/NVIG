@@ -1,3 +1,8 @@
+// Filnavn: Spill.js
+// Skrevet av: Eirik leikvoll
+// Når: Oktober 2017
+// Mening: Hoved javascript til spillet, med variabler, viktig set-up.
+
 // Retrieves the canvas and a 2d context to draw on
 var canvas = document.getElementById("game");
 var ctx = canvas.getContext("2d");

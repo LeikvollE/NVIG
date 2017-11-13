@@ -1,3 +1,9 @@
+// Filnavn: Utils.js
+// Skrevet av: Eirik leikvoll
+// Når: Oktober 2017
+// Mening: Diverse funksjoner som brukes til spillet.
+
+
 // Function to find out what tile is located at a certain screen position
 function tileAtScreenPos(x, y) {
     // If the position is outside the canvas it will return an empty tile.
