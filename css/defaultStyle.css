@@ -87,8 +87,8 @@ header a {/*link i header - NVIG logo*/
 }
 
 .closeArrow {/*roterings klasse*/
-  -ms-transform: rotate(180deg) !important; /* IE 9 */
-  -webkit-transform: rotate(180deg) !important; /* Safari */
+    -ms-transform: rotate(180deg) !important; /* IE 9 */
+    -webkit-transform: rotate(180deg) !important; /* Safari */
     transform: rotate(180deg) !important;
     transition: all 0.3s ease !important;
 }
@@ -124,14 +124,20 @@ header a {/*link i header - NVIG logo*/
 @media (max-width: 580px) {
     @keyframes openNavbar{
         0%    {height: 0; padding: 0;}
-        100%  {height: 42vh; padding: 1vh 0 4vh 0;}
+        100%  {height: 45vh; padding: 1vh 0 4vh 0;}
     }
     @keyframes closeNavbar{
-        0%    {height: 42vh; padding: 1vh 0 4vh 0;}
+        0%    {height: 45vh; padding: 1vh 0 4vh 0;}
         100%  {height: 0; padding: 0;}
     }
     .menyDiv a {/*linker i kolonnene*/
         margin: 1.4vh 0;
+    }
+
+    #navOpener {/*liten "kuppel" som viser at man kan trykke her for å åpne navbare*/
+        margin: 0 auto;
+        width: 45%;
+        height: 5vh;
     }
 }
 
