@@ -121,3 +121,7 @@ input[type=radio]{ /*Knapp i svaraltirnativene*/
 #ferdig input:focus, .byttKnapp{
     outline: none; /*Fjerner standard outline på knapp*/
 }
+
+@media (max-width: 580px) {
+
+}
