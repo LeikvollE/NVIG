@@ -22,9 +22,11 @@ main {
 }
 
 #aboutDiv {/*Om oss teksten kommer her*/
+    overflow: auto;
     font-size: 3vh;
     width: 75%;
     padding: 10px;
+    max-height: 90%;
 }
 
 #aboutDiv h2 {
