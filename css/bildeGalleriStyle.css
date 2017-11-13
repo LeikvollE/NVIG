@@ -124,3 +124,28 @@ Mening: Presentere innholdet i bildeGalleri.html på en attraktiv måte også be
     100% {opacity: 0;}
 }
 
+@media (max-width: 580px) {
+    @keyframes extend {/*infodiven åpnes*/
+        0% {height: 0;}
+        100% {height: 90vh;}
+    }
+    @keyframes retract {/*infodiven lukkes*/
+        0% {height: 90vh}
+        100% {height: 0;}
+    }
+    #infoDiv {
+        overflow: auto;
+        flex-wrap: wrap;
+    }
+    /*infodiven er delt i to, en showcase av bilde og en beskrivelse av selve bildet*/
+    #bildeBeskrivelse, #flaggBeskrivelse {
+        width: 100%;
+        height: auto;
+    }
+
+    /*max størrelser på show-case bildet*/
+    #bildeBeskrivelse img {
+        max-width: 90vw;
+    }
+}
+

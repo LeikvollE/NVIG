@@ -121,6 +121,20 @@ header a {/*link i header - NVIG logo*/
     margin: 0.7vh 0;
 }
 
+@media (max-width: 580px) {
+    @keyframes openNavbar{
+        0%    {height: 0; padding: 0;}
+        100%  {height: 42vh; padding: 1vh 0 4vh 0;}
+    }
+    @keyframes closeNavbar{
+        0%    {height: 42vh; padding: 1vh 0 4vh 0;}
+        100%  {height: 0; padding: 0;}
+    }
+    .menyDiv a {/*linker i kolonnene*/
+        margin: 1.4vh 0;
+    }
+}
+
 /* Footer */
 /* Her beskrives stilen til footeren som finnes på alle sidene */
 footer {/*slve footeren*/
@@ -144,15 +158,4 @@ footer a {/*link i footer*/
 
 footer a:hover {/*hover-effekt*/
     text-decoration: none;
-}
-
-@media (max-width: 480px) {
-    @keyframes openNavbar{
-        0%    {height: 0; padding: 0;}
-        100%  {height: 40vh; padding: 1vh 0 4vh 0;}
-    }
-    @keyframes closeNavbar{
-        0%    {height: 40vh; padding: 1vh 0 4vh 0;}
-        100%  {height: 0; padding: 0;}
-    }
 }
