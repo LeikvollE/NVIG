@@ -14,6 +14,7 @@ section img{/*alle bilder sentres*/
     width: inherit;
     display: block;
     margin:0 auto;
+    max-width: 1300px;
 }
 
 #bildeVindu, #artikkel {/*bildevindu er hovedbilde og tittel, artikkel er selve artikkelen*/
