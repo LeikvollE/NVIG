@@ -111,8 +111,6 @@ header a {/*link i header - NVIG logo*/
 /*Her beskrives stilen til de ulike kolonnene i navbaren*/
 .menyDiv {
     text-align: left;
-    display:flex;
-    flex-direction: column;
     padding: 10px;
 }
 .menyDiv a {/*linker i kolonnene*/
