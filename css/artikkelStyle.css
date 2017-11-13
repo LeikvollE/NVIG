@@ -4,48 +4,48 @@ Skrevet av: Lars Martin Hodne, Eirik Leikvolll, Emil Strand
 Når: November 2017
 Mening: Presentere innholdet i de ulike artiklene på en attraktiv og udistraherende måte.
 */
-section {
+section {/*alt innhold på siden*/
     max-width: 1300px;
     width: 60vw;
     margin:0 auto;
 }
 
-section img{
+section img{/*alle bilder sentres*/
     width: inherit;
     display: block;
     margin:0 auto;
 }
 
-#bildeVindu, #artikkel {
+#bildeVindu, #artikkel {/*bildevindu er hovedbilde og tittel, artikkel er selve artikkelen*/
     width:inherit;
 }
 
-#bildeVindu h1 {
+#bildeVindu h1 {/*overskriften*/
     margin: 10px 0 10px 0;
     font-size: 3vw;
 }
 
-#artikkel {
+#artikkel {/*her kommer innholdet til selve artikkelen*/
     max-width: 1000px;
     font-size: 2.5vh;
     line-height: 1.625em;
     font-family: "Helvetica", sans-serif;
     margin: 0 auto;
 }
-#artikkel h4 {
+#artikkel h4 {/*Gjelder ene artikkelen, som har en del h4 i en tabell*/
     text-align: center;
 }
 
-#info p {
+#info p {/*infoboks med dato og forfatter*/
     font-size: 2.3vh;
 }
 
-#artikkel img{
+#artikkel img{/*bilder i artikkel*/
     width: auto;
     max-width: 90%;
 }
 
-blockquote a, table a, p a {
+blockquote a, table a, p a {/*Linker i artikkel*/
     /*linker i artiklene får underline*/
     text-decoration: underline;
 }
@@ -59,6 +59,12 @@ blockquote {
     font-size: 90%;
 }
 
+table {/*for tabell i ene artikkelen*/
+    display: flex;
+    /*flex flow column slik at innhold "flyter" nedover*/
+    flex-flow: column;
+}
+
 tr:nth-child(even) {
     /*Gjelder overskrifter(de er even child) i tabellen*/
     width: 100%;
@@ -67,12 +73,6 @@ tr:nth-child(even) {
     align-self: center;
     font-size: 120%;
     margin: 3vh;
-}
-
-table {
-    display: flex;
-    /*flex flow column slik at innhold "flyter" nedover*/
-    flex-flow: column;
 }
 
 tr {

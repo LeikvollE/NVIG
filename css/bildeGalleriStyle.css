@@ -4,6 +4,7 @@ Skrevet av:Lars Martin Hodne
 Når: November 2017
 Mening: Presentere innholdet i bildeGalleri.html på en attraktiv måte også beskrive ulike animasjoner på siden.
 */
+
 /*hele galleriet får litt padding*/
 #galleri {
     padding: 0 1vh;
@@ -25,13 +26,14 @@ Mening: Presentere innholdet i bildeGalleri.html på en attraktiv måte også be
 /*hvert bilde ligger i en egen imgDiv - hovereffekt*/
 .imgDiv:hover .bilde{
     cursor: pointer;
+    /*flytter bilde noeen få piksler*/
     -ms-transform: translate(2px,2px); /* IE 9 */
     -webkit-transform: translate(2px,2px); /* Safari */
     transform: translate(2px,2px);
 }
 
 #pilDiv {
-    /*liten pil(firkant rotert 45 grader)
+    /*liten pil(firkantet div rotert 45 grader)
     som viser hvilket bilde man får informasjon om. */
     background-color: #dbdbdb;
     height: 20px;
@@ -56,35 +58,33 @@ Mening: Presentere innholdet i bildeGalleri.html på en attraktiv måte også be
     animation: extend 0.4s ease-out 0s 1 forwards;
 }
 
-/*overskrift i infodive, farge som matcher resten av siden, litt større skrift*/
+/*overskrift i infodiven, farge som matcher resten av siden, litt større skrift*/
 .boldOverskrift {
     font-size: 140%;
     color: #c33838;
 }
 
 #fjernDiv {
-    /*id som gis til infodiver som trykkes bort
-    enkelte andre objekter som også slettes, gjør at infodiv flytter seg 5px
-    bottom -px; løser dette*/
-    background-color: #dbdbdb;
-    position: relative;
+    /*id som gis til infodiver som trykkes bort.
+    pga enkelte andre objekter som også slettes, vil infodiv flytte seg 5px
+    bottom -5px; løser dette*/
     bottom: -5px;
     /*retract animasjon*/
     animation: retract 0.4s ease-out 0s 1 forwards;
 }
 
-@keyframes extend {
+@keyframes extend {/*infodiven åpnes*/
     0% {height: 0;}
     100% {height: 63vh;}
 }
-@keyframes retract {
+@keyframes retract {/*infodiven lukkes*/
     0% {height: 63vh}
     100% {height: 0;}
 }
 
 /*infodiven er delt i to, en showcase av bilde og en beskrivelse av selve bildet*/
 #bildeBeskrivelse, #flaggBeskrivelse {
-    display: inline-flex;
+    display: inline-flex;/*inline visning som gir flex muligheter*/
     justify-content: center;
     align-items: center;
     width: 50%;
@@ -104,20 +104,20 @@ Mening: Presentere innholdet i bildeGalleri.html på en attraktiv måte også be
     /*teksten bryter når den holder på å flyte over og ved linebreaks*/
     white-space: pre-line;
     padding: 5px;
-    /*gir scrollbar om teksten flyter over*/
+    /*gir scroll-bar om teksten flyter over*/
     overflow: auto;
     max-height: 90%;
     width: 90%;
     font-size: 2.6vh;
 }
 
-@keyframes bliSynlig {
+@keyframes bliSynlig {/*innholdet blir gradvis mer synlig kjøres parralelt med at infodiven åpnes*/
     0% {opacity: 0;}
     25% {opacity: 0.4;}
     100% {opacity: 1;}
 }
 
-@keyframes bliUsynlig {
+@keyframes bliUsynlig {/*innholdet blir gradvis mindre synlig kjøres parralelt med at infodiven lukkes*/
     0% {opacity: 1;}
     25% {opacity: 0.4;}
     50% {opacity: 0}

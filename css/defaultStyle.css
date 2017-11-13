@@ -18,7 +18,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-main {
+main {/*main utvider seg til tilgjengelig plass*/
     flex: 1 0 auto;
 }
 a {
@@ -28,7 +28,7 @@ a {
 
 /* Header */
 /* Her beskrives stilen til headeren og innholdet i den */
-#header {
+#header {/*selve headeren*/
     background-color: #c33838;
     display: flex;
     align-items: center;
@@ -36,24 +36,60 @@ a {
     height: 10vh;
     box-shadow: 0 4px 20px #BBB;
 }
-header b {
+
+header b {/*bold tekst i header*/
     color: #c33838;
 }
-#header h1 {
+
+#header h1 {/*h1 i header ("NVIG")*/
     margin: 0;
     color: #FFF;
     font-size: 6vh;
 }
-header a {
+
+header a {/*link i header - NVIG logo*/
     display: flex;
     align-items: center;
 }
 
-#header img {
+#header img {/*Logoen i header*/
     height: 8vh;
 }
 
-#navbar {
+/*Her beskrives stilen til kanppen som åpner og lukker navbaren*/
+#navOpener {/*liten "kuppel" som viser at man kan trykke her for å åpne navbare*/
+    margin: auto auto 2vh auto;
+    width: 33%;
+    height: 4vh;
+    background-color: #eee;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;/*gir kuppel formen*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navOpener img {/*pilen i openeren er eit bilde, bilde roteres alt etter om openeren er aktivertr eller ikke*/
+    width: auto;
+    max-height: 4vh;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+#arrow{/*selve pilbilde*/
+    font-size: 4vh;
+    padding-top: 1vh;
+    font-weight: bold;
+}
+#arrow:hover {/*hover effekt*/
+    cursor: pointer;
+}
+
+.closeArrow {/*roterings klasse*/
+    transform: rotate(180deg) !important;
+    transition: all 0.3s ease !important;
+}
+
+#navbar {/*diven som åpnes av navOpener*/
     background-color: #eee;
     display: flex;
     justify-content: space-around;
@@ -64,12 +100,12 @@ header a {
 }
 /*Her beskrives animasjonene som gjennomføres når navbaren åpnes og lukkes*/
 @keyframes openNavbar{
-    0%    { height: 0;       padding: 0;            }
+    0%    { height: 0; padding: 0;}
     100%  { height: 20vh; padding: 1vh 0 4vh 0;  }
 }
 @keyframes closeNavbar{
     0%    { height: 20vh; padding: 1vh 0 4vh 0;  }
-    100%  { height: 0;       padding: 0;            }
+    100%  { height: 0; padding: 0;}
 }
 
 /*Her beskrives stilen til de ulike kolonnene i navbaren*/
@@ -79,56 +115,13 @@ header a {
     flex-direction: column;
     padding: 10px;
 }
-.menyDiv a {
+.menyDiv a {/*linker i kolonnene*/
     margin: 0.7vh 0;
 }
 
-/*Her beskrives stilen til kanppen som åpner og lukker navbaren*/
-#navOpener {
-    margin: auto;
-    width: 33%;
-    height: 4vh;
-    background-color: #eee;
-    border-radius: 0 0 50% 50% / 0 0 100% 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2vh;
-}
-
-#navOpener img {
-    width: auto;
-    max-height: 4vh;
-    transform: rotate(0deg);
-    transition: all 0.3s ease;
-}
-
-#arrow{
-    font-size: 4vh;
-    padding-top: 1vh;
-    font-weight: bold;
-}
-#arrow:hover {
-    cursor: pointer;
-}
-
-.closeArrow {
-    transform: rotate(180deg) !important;
-    transition: all 0.3s ease !important;
-}
-
-
 /* Footer */
 /* Her beskrives stilen til footeren som finnes på alle sidene */
-footer h3, footer a {
-    color: #666666;
-}
-
-footer a {font-size: 120%;
-    text-decoration: underline;
-}
-
-footer {
+footer {/*slve footeren*/
     font-size: 2vh;
     padding-top: 2vh;
     height: 18vh;
@@ -137,6 +130,16 @@ footer {
     margin-top: 20px;
     border-top: 1px solid darkgrey;
 }
-footer a:hover {
+
+footer h3, footer a {/*farge på tekst/linker*/
+    color: #666666;
+}
+
+footer a {/*link i footer*/
+    font-size: 120%;
+    text-decoration: underline;
+}
+
+footer a:hover {/*hover-effekt*/
     text-decoration: none;
 }

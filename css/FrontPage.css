@@ -15,8 +15,7 @@ main {
     margin: auto;
 }
 
-main img {
-    /*gjør at bilder ikke flyter ut av containeren sin*/
+main img {/*gjør at bilder ikke flyter ut av containeren sin*/
     width: 100%;
 }
 /*hver rad med innhold på forsiden er en .contentsection*/
@@ -38,6 +37,22 @@ main img {
     box-shadow: 0 4px 10px #BBB
 }
 
+.items_1  {
+    /*item-klassegiving sorteres dynamisk av js på siden*/
+    /*items_1 viser til at den aktuelle contentSection viser et element*/
+    width: 100%;
+}
+
+.items_2 {
+    /*items 2 viser til at den aktuelle contentsection viser 2 element(derfor litt mindre bredde) osv*/
+    width: 49%;
+}
+
+.items_3 {/*3 element i contentsection*/
+    width: 32%;
+}
+
+
 .items_1 a, .items_2 a, .items_3 a {
     /*felles for alle a i "items" */
     height: 100%;
@@ -45,6 +60,19 @@ main img {
     display: flex;
     flex-direction: column;
 }
+
+.items_1 a {/*items 1 får stor skrift*/
+    font-size: 4vw;
+}
+
+.items_2 a {/*middels stor skrift*/
+    font-size: 2.9vw;
+}
+
+.items_3 a {/*liten skrift*/
+    font-size: 1.7vw;
+}
+
 /*overskriftene er en del av linkene i "items"*/
 .overskrift {
     margin: 10px 0;
@@ -53,33 +81,6 @@ main img {
     flex: 1 0 auto;
     align-items: center;
     justify-content: center;
-}
-
-.items_1  {
-    /*innhold sorteres dynamisk av js på siden*/
-    /*items_! viser til at den aktuelle contentSection viser et element*/
-    width: 100%;
-}
-
-.items_2 {
-    /*items 2 viser til at den aktuelle contentsection viser 2 element osv*/
-    width: 49%;
-}
-
-.items_3 {
-    width: 32%;
-}
-
-.items_1 a {
-    font-size: 4vw;
-}
-
-.items_2 a {
-    font-size: 2.9vw;
-}
-
-.items_3 a {
-    font-size: 1.7vw;
 }
 
 /*div hvor sosiale medier er plassert*/

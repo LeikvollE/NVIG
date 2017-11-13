@@ -10,26 +10,28 @@ Mening: Beskrive stilen til quiz siden.
     margin: auto; /*Sentrerer boksene*/
 }
 
-#velgQuiz {
+#velgQuiz {/*inneholder quiz-liset og overskrift*/
+    /*css er forberedt på at flere quiz-alternativ legges til i quizer-js*/
     width: 100vw;
     flex-flow:column;
-  text-align: center;
+    text-align: center;
     display: flex;
 }
 
-#velgQuiz h2 {
+#velgQuiz h2 {/*overskrift*/
     font-size: 3vh;
 }
 
-#quizListe { /*Fikser bredde, og plassering av innhold*/
+#quizListe { /*quiz-liste*/
+    /*Fikser bredde, og plassering av innhold*/
     max-width: 140vh;
     align-self: center;
-  display: flex;
-  flex-flow: wrap row;
-  justify-content: center;
-  width: inherit;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    width: inherit;
 }
-.quizValgBoks {
+.quizValgBoks {/*quiz-alternativ*/
   background-color: #eee;
   margin: 10px;
   box-shadow: 0 1px 1px #BBB;
@@ -37,7 +39,7 @@ Mening: Beskrive stilen til quiz siden.
   max-width: 700px;
 }
 
-.quizValgBoks img {
+.quizValgBoks img {/*bilde for alternativet*/
   width: 100%;
 }
 
@@ -51,8 +53,8 @@ Mening: Beskrive stilen til quiz siden.
   height: 75vh;
 }
 
-#SampleDiv img {
-    border: 1px solid #dbdbdb;
+#SampleDiv img {/*bilde for det aktuelle spørsmålet*/
+    border: 1px solid #dbdbdb;/*gjør at flaggene ikke går i ett med bakgrunnen*/
     height:25vw;
     max-height: 600px;
     max-width: 80vw;
@@ -60,7 +62,7 @@ Mening: Beskrive stilen til quiz siden.
     margin: 0 auto;
 }
 
-#sporsmaalsDiv {
+#sporsmaalsDiv {/*div for sprøsmålene*/
     margin:0 auto;
     height: 30%;
     max-width: 1200px;
